@@ -1,0 +1,50 @@
+@import "./fonts.scss";
+
+// Bootstrap
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "BMS Humanity";
+}
+
+header {
+  .header-top {
+    background-color: #EEE7E7;
+
+    .warning {
+      text-align: center;
+      padding: 9px 0;
+      display: block;
+      line-height: 1;
+    }
+  }
+
+  .header-bottom {
+    .navbar {
+      padding: 0 1rem;
+
+      .navbar-brand {
+        padding: 0;
+        display: flex;
+        align-items: center;
+
+        .nav-link {
+          padding: 0;
+        }
+
+        .header-at {
+          color: #BE2BBB;
+          font-weight: 300;
+          font-size: 24px;
+          margin: 0.5rem 0 0 3rem;
+        }
+      }
+
+      .nav-link {
+        color: #595454;
+      }
+    }
+  }
+}
