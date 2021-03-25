@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import ScrollToTopButton from "./UI/ScrollToTopButton";
 
 const Footer = () =>
 {
+
   return (
     <footer>
       <div className="footer-top">
@@ -22,11 +23,11 @@ const Footer = () =>
               <div className="footer-top-right">
                 <p>Follow Us</p>
                 <div className="social-icons-wrapper">
-                  <Link to="#"><FontAwesomeIcon icon={ faFacebookSquare } /></Link>
-                  <Link to="#"><FontAwesomeIcon icon={ faInstagram } /></Link>
-                  <Link to="#"><FontAwesomeIcon icon={ faLinkedin } /></Link>
-                  <Link to="#"><FontAwesomeIcon icon={ faTwitter } /></Link>
-                  <Link to="#"><FontAwesomeIcon icon={ faYoutube } /></Link>
+                  <a href="https://www.facebook.com/BristolMyersSquibb"><FontAwesomeIcon icon={ faFacebookSquare } /></a>
+                  <a href="https://www.instagram.com/bristolmyerssquibb/"><FontAwesomeIcon icon={ faInstagram } /></a>
+                  <a href="https://www.linkedin.com/company/bristol-myers-squibb/"><FontAwesomeIcon icon={ faLinkedin } /></a>
+                  <a href="https://twitter.com/BMSNEWS"><FontAwesomeIcon icon={ faTwitter } /></a>
+                  <a href="https://www.youtube.com/bristolmyerssquibb"><FontAwesomeIcon icon={ faYoutube } /></a>
                 </div>
               </div>
             </Col>
@@ -35,13 +36,13 @@ const Footer = () =>
             <Col md={12} className="footer-top-links-wrapper">
               <ul>
                 <li>
-                  <Link to="#">Legal Notice</Link>
+                  <a href="https://www.bms.com/legal-notice.html">Legal Notice</a>
                 </li>
                 <li>
-                  <Link to="#">Privacy Policy</Link>
+                  <a href="https://www.bms.com/privacy-policy.html">Privacy Policy</a>
                 </li>
                 <li>
-                  <Link to="#">Contact Us</Link>
+                  <a href="https://www.bms.com/about-us/contact-us.html">Contact Us</a>
                 </li>
               </ul>
             </Col>
@@ -58,8 +59,10 @@ const Footer = () =>
           </Row>
         </Container>
       </div>
+
+      <ScrollToTopButton />
     </footer>
   );
 };
 
-export default Footer;
+export default React.memo(Footer);

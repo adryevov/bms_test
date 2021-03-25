@@ -1,11 +1,13 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import { Button, Col, Carousel, Container, Row } from "react-bootstrap";
+import { Button, Col, Carousel, Container, Modal, Row } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 
 const Home = () =>
 {
+  const [ isContactDialogOpen, setIsContactDialogOpen ] = useState(false);
+
   return (
     <Fragment>
       <Header />
@@ -88,9 +90,9 @@ const Home = () =>
             <h3>Pipeline & Clinical Trials</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/pipeline.svg" } alt="Oncology" className="homepage-card-3-image" />
             <ul className="homepage-card-links">
-              <li><Link to="/">Our Oncology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/">Our Hematology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><a href="https://www.bmsstudyconnect.com/">Our Oncology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/trial-finder/">Our Hematology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
           </div>
         </Container>
@@ -122,12 +124,12 @@ const Home = () =>
         <Container>
           <div md={6} className="homepage-bottom-card">
             <h3>BMS Access Support<sup>&reg;</sup></h3>
-            <Button>Learn More</Button>
+            <a href="https://www.bmsaccesssupportvirtual.com/">Learn More</a>
           </div>
 
           <div md={6} className="homepage-bottom-card">
             <h3>Connect with BMS</h3>
-            <Button>Contact Us</Button>
+            <Link to="#" onClick={ () => setIsContactDialogOpen(true) }>Contact Us</Link>
           </div>
         </Container>
       </section>
@@ -139,8 +141,24 @@ const Home = () =>
       </section>
 
       <Footer />
+
+      <Modal
+        show={ isContactDialogOpen }
+        onHide={ () => setIsContactDialogOpen(false) }
+        backdrop="static"
+        centered
+        className="modal-homepage-wrapper"
+      >
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <ul className="homepage-modal-links">
+            <li><Link to="/about-us/contact-us">Contact Us <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+            <li><a href="https://www.bms.com/researchers-and-partners/independent-research.html">Our New Independent Research Process <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+          </ul>
+        </Modal.Body>
+      </Modal>
     </Fragment>
   );
 };
 
-export default Home;
+export default React.memo(Home);
