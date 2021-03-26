@@ -21,7 +21,7 @@ const Header = () =>
           <Nav.Link as={ Link } className="logo" to="/">
             <img src="/img/logo.png" alt="BMS logo" />
           </Nav.Link>
-          <span className="header-at">at AACR 2021</span>
+          <Nav.Link as={ Link } className="header-at" to="/">at AACR 2021</Nav.Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse>

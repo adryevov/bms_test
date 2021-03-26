@@ -1,12 +1,13 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import { Button, Col, Carousel, Container, Modal, Row } from "react-bootstrap";
+import { Button, Col, Carousel, Container, Row } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
+import useModal from "./UI/ContactUsModal";
 
 const Home = () =>
 {
-  const [ isContactDialogOpen, setIsContactDialogOpen ] = useState(false);
+  const { setIsContactDialogOpen } = useModal();
 
   return (
     <Fragment>
@@ -19,7 +20,7 @@ const Home = () =>
               <p className="home-slide-1-welcome">Welcome to Bristol myers Squibb</p>
               <h2 className="home-slide-1-h2">at AACR 2021</h2>
               <p className="home-slide-1-latest">The latest data presentations, product theaters, research, resources and information from BMS</p>
-              <Button>Explore Abstracts</Button>
+              <Link to="/abstracts" className="button-pink">Explore Abstracts</Link>
             </Container>
           </div>
         </Carousel.Item>
@@ -30,7 +31,7 @@ const Home = () =>
               <Row>
                 <Col md={12}>
                   <h2>Learn more about an approval in Hematology!</h2>
-                  <Button>Click Here</Button>
+                  <Button className="button-pink">Click Here</Button>
                 </Col>
               </Row>
             </Container>
@@ -44,7 +45,7 @@ const Home = () =>
               <Row>
                 <Col md={12} className="home-slide-3-wrapper">
                   <h2>Learn more about a new approval in Oncology!</h2>
-                  <Button>Click Here</Button>
+                  <Button className="button-pink">Click Here</Button>
                 </Col>
               </Row>
             </Container>
@@ -58,7 +59,7 @@ const Home = () =>
               <Row>
                 <Col md={12}>
                   <h2>Join Us for Our Product Theater</h2>
-                  <Button>View the Schedule</Button>
+                  <Link to="/product-theater-schedule" className="button-pink">View the Schedule</Link>
                 </Col>
               </Row>
             </Container>
@@ -68,7 +69,7 @@ const Home = () =>
 
       <section className="homepage-cards-wrapper">
         <Container>
-          <div md={4} className="homepage-card">
+          <div className="homepage-card">
             <h3>Oncology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/oncology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
@@ -77,7 +78,7 @@ const Home = () =>
             </ul>
           </div>
 
-          <div md={4} className="homepage-card">
+          <div className="homepage-card">
             <h3>Hematology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/hematology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
@@ -86,7 +87,7 @@ const Home = () =>
             </ul>
           </div>
 
-          <div md={4} className="homepage-card">
+          <div className="homepage-card">
             <h3>Pipeline & Clinical Trials</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/pipeline.svg" } alt="Oncology" className="homepage-card-3-image" />
             <ul className="homepage-card-links">
@@ -100,19 +101,19 @@ const Home = () =>
 
       <section className="homepage-cards-middle-wrapper">
         <Container>
-          <div md={4} className="homepage-middle-card">
+          <div className="homepage-middle-card">
             <h3>Our Product Theater</h3>
             <span className="homepage-middle-card-line"></span>
-            <Link to="/" className="homepage-middle-card-link">View Schedule <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+            <Link to="/product-theater-schedule" className="homepage-middle-card-link">View Schedule <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
 
-          <div md={4} className="homepage-middle-card">
+          <div className="homepage-middle-card">
             <h3>Our Abstracts</h3>
             <span className="homepage-middle-card-line"></span>
-            <Link to="/" className="homepage-middle-card-link">View List <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+            <Link to="/abstracts" className="homepage-middle-card-link">View List <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
 
-          <div md={4} className="homepage-middle-card">
+          <div className="homepage-middle-card">
             <h3>Our Educational Resources</h3>
             <span className="homepage-middle-card-line"></span>
             <Link to="/" className="homepage-middle-card-link">Explore Hematology <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
@@ -122,14 +123,14 @@ const Home = () =>
 
       <section className="homepage-cards-bottom-wrapper">
         <Container>
-          <div md={6} className="homepage-bottom-card">
+          <div className="homepage-bottom-card">
             <h3>BMS Access Support<sup>&reg;</sup></h3>
-            <a href="https://www.bmsaccesssupportvirtual.com/">Learn More</a>
+            <a href="https://www.bmsaccesssupportvirtual.com/" className="button-pink">Learn More</a>
           </div>
 
-          <div md={6} className="homepage-bottom-card">
+          <div className="homepage-bottom-card">
             <h3>Connect with BMS</h3>
-            <Button onClick={ () => setIsContactDialogOpen(true) }>Contact Us</Button>
+            <Button onClick={ () => setIsContactDialogOpen(true) } className="button-pink">Contact Us</Button>
           </div>
         </Container>
       </section>
@@ -141,22 +142,6 @@ const Home = () =>
       </section>
 
       <Footer />
-
-      <Modal
-        show={ isContactDialogOpen }
-        onHide={ () => setIsContactDialogOpen(false) }
-        backdrop="static"
-        centered
-        className="modal-homepage-wrapper"
-      >
-        <Modal.Header closeButton></Modal.Header>
-        <Modal.Body>
-          <ul className="homepage-modal-links">
-            <li><a href="https://www.bms.com/about-us/contact-us.html">Contact Us <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-            <li><a href="https://www.bms.com/researchers-and-partners/independent-research.html">Our New Independent Research Process <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-          </ul>
-        </Modal.Body>
-      </Modal>
     </Fragment>
   );
 };

@@ -17,6 +17,45 @@ a:hover {
   padding: 0;
 }
 
+.button-pink {
+  background-color: #BE2BBB;
+  color: #ffffff;
+  border: 0;
+  border-radius: 23px;
+  height: 45px;
+  width: 194px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:focus {
+    background-color: #BE2BBB;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #BE2BBB;
+  }
+}
+
+.arrow-link-pink {
+  color: #BE2BBB;
+  font-size: 22px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    margin: 0 0 0 0.5rem;
+  }
+
+  &:hover {
+    color: #BE2BBB;
+  }
+}
+
 header {
   .header-top {
     background-color: #EEE7E7;
@@ -93,19 +132,6 @@ header {
       font-weight: 200;
       max-width: 520px;
       margin: 0 0 2rem;
-    }
-
-    a, button {
-      background-color: #BE2BBB;
-      color: #ffffff;
-      border: 0;
-      border-radius: 23px;
-      height: 45px;
-      width: 194px;
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     .home-slide-2-not-patient {
@@ -275,22 +301,8 @@ header {
         color: #595454;
       }
 
-      a, button {
-        background-color: #BE2BBB;
-        color: #ffffff;
-        border: 0;
-        border-radius: 23px;
+      .button-pink {
         height: 35px;
-        width: 140px;
-        font-size: 18px;
-        font-weight: 300;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:focus {
-          background-color: #BE2BBB;
-        }
       }
     }
   }
@@ -471,6 +483,136 @@ footer {
 
   span {
     line-height: 1;
+  }
+}
+
+.marker-lady-wrapper {
+  max-height: 384px;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vw / 5);
+
+  h1 {
+    font-size: 60px;
+    font-weight: 100;
+    max-width: 400px;
+    line-height: 1.1;
+  }
+}
+
+.abstracts-cards {
+  padding: 7.5rem 0;
+  color: #707070;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2.5rem;
+
+    .abstract-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #F5F0F0;
+      padding: 2.75rem;
+
+      .name, .type, .number {
+        font-weight: 800;
+        margin: 0;
+      }
+
+      .description {
+        font-size: 20px;
+        margin: 0 0 1rem;
+      }
+    }
+  }
+}
+
+.smiling-guy-wrapper {
+  max-height: 405px;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vw / 4.75);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .content-wrapper {
+      max-width: 450px;
+      padding: 0 170px 0 0;
+
+      h2 {
+        font-size: 32px;
+        font-weight: 100;
+        line-height: 1.1;
+        margin: 0 0 1rem;
+      }
+    }
+  }
+}
+
+.banner-theater-schedule-wrapper {
+  max-height: 384px;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(100vw / 5);
+
+  h1 {
+    font-size: 60px;
+    font-weight: 100;
+    max-width: 400px;
+    line-height: 1.1;
+  }
+}
+
+.product-theater-schedule-cards {
+  padding: 5rem 0 7.5rem;
+  color: #707070;
+
+  .product-theater-schedule-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F5F0F0;
+    padding: 2.5rem 2.5rem 2rem;
+
+    p {
+      margin: 0;
+    }
+
+    .speaker-name {
+      font-weight: 800;
+    }
+
+    .event-name {
+      font-size: 28px;
+      font-weight: 300;
+      min-height: 9rem;
+    }
+
+    .date {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .arrow-link-pink {
+      justify-content: flex-end;
+    }
   }
 }
 

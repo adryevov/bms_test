@@ -6,7 +6,6 @@ import ScrollToTopButton from "./UI/ScrollToTopButton";
 
 const Footer = () =>
 {
-
   return (
     <footer>
       <div className="footer-top">

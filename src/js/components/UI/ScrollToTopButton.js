@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
-const StandardScrollButton = () =>
+const ScrollToTopButton = () =>
 {
   const [ isActive, setIsActive ] = useState(false);
 
@@ -34,11 +34,11 @@ const StandardScrollButton = () =>
       window.removeEventListener('scroll', listenScrollEvent);
       window.removeEventListener('resize', listenScrollEvent);
     };
-  }, [ isActive ]);
+  }, [ listenScrollEvent ]);
 
   if (!isActive) return null;
 
   return <Link to="#" onClick={ makeScroll } className="scroll-button"><FontAwesomeIcon icon={ faChevronUp } /> <span>Top</span></Link>;
 };
 
-export default React.memo(StandardScrollButton);
+export default React.memo(ScrollToTopButton);
