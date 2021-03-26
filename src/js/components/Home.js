@@ -129,7 +129,7 @@ const Home = () =>
 
           <div md={6} className="homepage-bottom-card">
             <h3>Connect with BMS</h3>
-            <Link to="#" onClick={ () => setIsContactDialogOpen(true) }>Contact Us</Link>
+            <Button onClick={ () => setIsContactDialogOpen(true) }>Contact Us</Button>
           </div>
         </Container>
       </section>
@@ -152,7 +152,7 @@ const Home = () =>
         <Modal.Header closeButton></Modal.Header>
         <Modal.Body>
           <ul className="homepage-modal-links">
-            <li><Link to="/about-us/contact-us">Contact Us <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+            <li><a href="https://www.bms.com/about-us/contact-us.html">Contact Us <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             <li><a href="https://www.bms.com/researchers-and-partners/independent-research.html">Our New Independent Research Process <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
           </ul>
         </Modal.Body>
