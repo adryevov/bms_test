@@ -9,7 +9,7 @@ const OurMedicines = () =>
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={null} className="carousel-our-medicines">
+      <Carousel controls={false} interval={5000} className="carousel-our-medicines">
         <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-oncology-medicines.png)" }}>
             <Container>
@@ -38,7 +38,7 @@ const OurMedicines = () =>
                 <Col md={12} className="home-slide-3-wrapper">
                   <h2 className="our-medinices-slide-3-h2">Starting therapy can feel overwhelming</h2>
                   <p className="our-medinices-slide-3-p">Bristol Myers Squibb has developed resources to help your patients adjust to and understand their treatment</p>
-                  <Button className="our-medinices-slide-3-button">Visit our online classroom</Button>
+                  <a href="https://www.opdivo.bmscustomerconnect.com/immuno-oncologyteach?cid=v_291" target="_blank" className="our-medinices-slide-3-button">Visit our online classroom</a>
                 </Col>
               </Row>
             </Container>
