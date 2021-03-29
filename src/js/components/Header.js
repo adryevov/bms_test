@@ -29,7 +29,7 @@ const Header = () =>
             <Nav.Link as={ Link } to="/">
               <FontAwesomeIcon icon={ faHome } /> Home
             </Nav.Link>
-            <a className="nav-link" href="https://www.bms.com/about-us/contact-us.html">Contact Us</a>
+            <a className="nav-link" href="https://www.bms.com/about-us/contact-us.html" target="_blank">Contact Us</a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

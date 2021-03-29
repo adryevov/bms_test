@@ -13,7 +13,7 @@ const Home = () =>
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={5000}>
+      <Carousel controls={false} interval={5000} className="carousel-homepage">
         <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-welcome.png)" }}>
             <Container>
@@ -73,8 +73,8 @@ const Home = () =>
             <h3>Oncology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/oncology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
-              <li><Link to="/">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/our-medicines" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/our-recearch" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
 
@@ -82,8 +82,8 @@ const Home = () =>
             <h3>Hematology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/hematology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
-              <li><Link to="/">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="#" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
 
@@ -91,9 +91,9 @@ const Home = () =>
             <h3>Pipeline & Clinical Trials</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/pipeline.svg" } alt="Oncology" className="homepage-card-3-image" />
             <ul className="homepage-card-links">
-              <li><a href="https://www.bmsstudyconnect.com/">Our Oncology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-              <li><a href="https://www.bolderscience.com/bmspipeline/trial-finder/">Our Hematology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bmsstudyconnect.com/" className="arrow-link-pink">Our Oncology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/trial-finder/" className="arrow-link-pink">Our Hematology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
           </div>
         </Container>
@@ -104,19 +104,19 @@ const Home = () =>
           <div className="homepage-middle-card">
             <h3>Our Product Theater</h3>
             <span className="homepage-middle-card-line"></span>
-            <Link to="/product-theater-schedule" className="homepage-middle-card-link">View Schedule <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+            <Link to="/product-theater-schedule" className="arrow-link-pink">View Schedule <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
 
           <div className="homepage-middle-card">
             <h3>Our Abstracts</h3>
             <span className="homepage-middle-card-line"></span>
-            <Link to="/abstracts" className="homepage-middle-card-link">View List <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+            <Link to="/abstracts" className="arrow-link-pink">View List <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
 
           <div className="homepage-middle-card">
             <h3>Our Educational Resources</h3>
             <span className="homepage-middle-card-line"></span>
-            <Link to="/" className="homepage-middle-card-link">Explore Hematology <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+            <Link to="/" className="arrow-link-pink">Explore Hematology <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
         </Container>
       </section>

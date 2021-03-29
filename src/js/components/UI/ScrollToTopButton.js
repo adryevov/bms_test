@@ -14,11 +14,11 @@ const ScrollToTopButton = () =>
 
   const listenScrollEvent = useCallback(() =>
   {
-    if (window.pageYOffset > window.innerHeight && !isActive)
+    if (window.pageYOffset > 0 && !isActive)
     {
       setIsActive(!isActive);
     }
-    else if (isActive && window.innerHeight > window.pageYOffset)
+    else if (isActive && window.pageYOffset === 0)
     {
       setIsActive(false);
     }
