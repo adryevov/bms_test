@@ -26,15 +26,15 @@ const OurResearch = () =>
           <div className="research-card">
             <h3 className="now-enrolling-heading">Now Enrolling</h3>
             <p>Two clinical studies in ER+/HER2- primary breast cancer</p>
-            <a href="https://www.bmsstudyconnect.com/us/en/help/physicians/breast-cancer-studies-for-patients.html" target="_blank" className="button-pink">Learn More</a>
+            <a href="https://www.bmsstudyconnect.com/us/en/help/physicians/breast-cancer-studies-for-patients.html" target="_blank" rel="noreferrer" className="button-pink">Learn More</a>
           </div>
 
           <div className="research-card">
             <h3 className="quick-links-underline">Quick Links</h3>
             <ul className="research-card-links">
               <li><Link to="/abstracts" className="arrow-link-pink">Our AACR Abstracts <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><a href="https://www.bmsstudyconnect.com/us/en/home.html" target="_blank" className="arrow-link-pink">Our Oncology Clinical Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-1/" target="_blank" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bmsstudyconnect.com/us/en/home.html" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Oncology Clinical Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-1/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
           </div>
         </Container>
@@ -157,7 +157,7 @@ const OurResearch = () =>
               <div className="text-content-wrapper">
                 <h4>How do signaling pathways work together?</h4>
                 <p>An exploration of how multiple pathways may work together to modulate the antitumor immune response.</p>
-                <a href="https://www.youtube.com/watch?v=QCiF3HjyAUI" target="_blank" className="arrow-link-pink">Watch <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
+                <a href="https://www.youtube.com/watch?v=QCiF3HjyAUI" target="_blank" rel="noreferrer" className="arrow-link-pink">Watch <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
               </div>
             </div>
           </div>

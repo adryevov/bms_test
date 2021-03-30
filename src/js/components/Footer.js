@@ -22,11 +22,11 @@ const Footer = () =>
               <div className="footer-top-right">
                 <p>Follow Us</p>
                 <div className="social-icons-wrapper">
-                  <a href="https://www.facebook.com/BristolMyersSquibb" target="_blank"><FontAwesomeIcon icon={ faFacebookSquare } /></a>
-                  <a href="https://www.instagram.com/bristolmyerssquibb/" target="_blank"><FontAwesomeIcon icon={ faInstagram } /></a>
-                  <a href="https://www.linkedin.com/company/bristol-myers-squibb/" target="_blank"><FontAwesomeIcon icon={ faLinkedin } /></a>
-                  <a href="https://twitter.com/BMSNEWS" target="_blank"><FontAwesomeIcon icon={ faTwitter } /></a>
-                  <a href="https://www.youtube.com/bristolmyerssquibb" target="_blank"><FontAwesomeIcon icon={ faYoutube } /></a>
+                  <a href="https://www.facebook.com/BristolMyersSquibb" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faFacebookSquare } /></a>
+                  <a href="https://www.instagram.com/bristolmyerssquibb/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faInstagram } /></a>
+                  <a href="https://www.linkedin.com/company/bristol-myers-squibb/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faLinkedin } /></a>
+                  <a href="https://twitter.com/BMSNEWS" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faTwitter } /></a>
+                  <a href="https://www.youtube.com/bristolmyerssquibb" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faYoutube } /></a>
                 </div>
               </div>
             </Col>
@@ -35,13 +35,13 @@ const Footer = () =>
             <Col md={12} className="footer-top-links-wrapper">
               <ul>
                 <li>
-                  <a href="https://www.bms.com/legal-notice.html" target="_blank">Legal Notice</a>
+                  <a href="https://www.bms.com/legal-notice.html" target="_blank" rel="noreferrer">Legal Notice</a>
                 </li>
                 <li>
-                  <a href="https://www.bms.com/privacy-policy.html" target="_blank">Privacy Policy</a>
+                  <a href="https://www.bms.com/privacy-policy.html" target="_blank" rel="noreferrer">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="https://www.bms.com/about-us/contact-us.html" target="_blank">Contact Us</a>
+                  <a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer">Contact Us</a>
                 </li>
               </ul>
             </Col>

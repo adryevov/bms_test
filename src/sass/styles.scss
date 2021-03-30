@@ -950,6 +950,38 @@ footer {
   border-radius: 4px;
 }
 
+@media (max-width: 1440px) {
+  .carousel-homepage {
+    .carousel-slide {
+      .home-slide-2-not-patient {
+        right: 2%;
+        font-size: 16px;
+      }
+
+      .home-slide-3-not-patient {
+        right: 1%;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .carousel-homepage {
+    .carousel-slide {
+      .home-slide-2-not-patient {
+        font-size: 12px;
+      }
+
+
+      .home-slide-3-not-patient {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding-left: 15px;

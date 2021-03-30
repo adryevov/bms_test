@@ -38,7 +38,7 @@ const OurMedicines = () =>
                 <Col md={12} className="home-slide-3-wrapper">
                   <h2 className="our-medinices-slide-3-h2">Starting therapy can feel overwhelming</h2>
                   <p className="our-medinices-slide-3-p">Bristol Myers Squibb has developed resources to help your patients adjust to and understand their treatment</p>
-                  <a href="https://www.opdivo.bmscustomerconnect.com/immuno-oncologyteach?cid=v_291" target="_blank" className="our-medinices-slide-3-button">Visit our online classroom</a>
+                  <a href="https://www.opdivo.bmscustomerconnect.com/immuno-oncologyteach?cid=v_291" target="_blank" rel="noreferrer" className="our-medinices-slide-3-button">Visit our online classroom</a>
                 </Col>
               </Row>
             </Container>
@@ -48,7 +48,7 @@ const OurMedicines = () =>
 
       <section className="section-medicines-top">
         <Container>
-          <a href="https://www.bmsaccesssupport.bmscustomerconnect.com/" target="_blank" className="arrow-link-pink">BMS Access Support<sup>&reg;</sup> <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
+          <a href="https://www.bmsaccesssupport.bmscustomerconnect.com/" target="_blank" rel="noreferrer" className="arrow-link-pink">BMS Access Support<sup>&reg;</sup> <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
         </Container>
       </section>
 
@@ -56,7 +56,7 @@ const OurMedicines = () =>
         <Container>
           <div className="medicines-card card-fullwidth">
             <div className="medicines-inner">
-              <a href="https://www.opdivocombotherapy.com/" target="_blank">
+              <a href="https://www.opdivocombotherapy.com/" target="_blank" rel="noreferrer">
                 <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-yervoy.svg" } alt="Opdivo + Yervoy" />
               </a>
             </div>
@@ -65,7 +65,7 @@ const OurMedicines = () =>
 
           <div className="medicines-card">
             <div className="medicines-inner">
-              <a href="https://www.opdivoclinicaldata.com/advanced-rcc-opdivo-cabometyx" target="_blank">
+              <a href="https://www.opdivoclinicaldata.com/advanced-rcc-opdivo-cabometyx" target="_blank" rel="noreferrer">
                 <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-cabometyx.svg" } alt="Opdivo + Cabomeryx" />
               </a>
             </div>
@@ -74,7 +74,7 @@ const OurMedicines = () =>
 
           <div className="medicines-card">
             <div className="medicines-inner">
-              <a href="https://www.opdivohcp.com/" target="_blank">
+              <a href="https://www.opdivohcp.com/" target="_blank" rel="noreferrer">
                 <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo.svg" } alt="Opdivo" />
               </a>
             </div>
@@ -83,7 +83,7 @@ const OurMedicines = () =>
 
           <div className="medicines-card">
             <div className="medicines-inner">
-              <a href="https://www.abraxanepro.com/" target="_blank">
+              <a href="https://www.abraxanepro.com/" target="_blank" rel="noreferrer">
                 <img src={ process.env.PUBLIC_URL + "/img/icons/abraxane.svg" } alt="Abraxane" />
               </a>
             </div>
