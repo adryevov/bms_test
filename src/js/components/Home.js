@@ -1,19 +1,27 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button, Col, Carousel, Container, Row } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 import useModal from "./UI/ContactUsModal";
+import { useMetaInfo } from "../utils/hooks";
 
 const Home = () =>
 {
   const { setIsContactDialogOpen } = useModal();
+  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
+
+  useEffect(() =>
+  {
+    updateMetaTitle("Home");
+    updateMetaDescription("Homepage.");
+  }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={null} className="carousel-homepage">
+      <Carousel controls={false} interval={5000} className="carousel-homepage">
         <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-welcome.png)" }}>
             <Container>

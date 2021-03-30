@@ -1,10 +1,19 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Button, Carousel, Col, Container, Row } from "react-bootstrap";
+import { useMetaInfo } from "../utils/hooks";
 
 const OurMedicines = () =>
 {
+  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
+
+  useEffect(() =>
+  {
+    updateMetaTitle("Our Medicines");
+    updateMetaDescription("Our Medicines.");
+  }, [ updateMetaTitle, updateMetaDescription ]);
+
   return (
     <Fragment>
       <Header />

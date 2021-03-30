@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Button, Container } from "react-bootstrap";
@@ -6,10 +6,18 @@ import { useModal } from "./UI/ContactUsModal";
 import { Link } from "react-router-dom";
 import { faAngleDown, faFile, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useMetaInfo } from "../utils/hooks";
 
 const OurResearch = () =>
 {
   const { setIsContactDialogOpen } = useModal();
+  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
+
+  useEffect(() =>
+  {
+    updateMetaTitle("Our Research");
+    updateMetaDescription("Our Research.");
+  }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
     <Fragment>
