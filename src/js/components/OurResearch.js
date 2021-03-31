@@ -66,7 +66,7 @@ const OurResearch = () =>
         <Container>
           <div className="pathway-categories-section-name">
             <h3>Pathway categories</h3>
-            <Link to="#" onClick={ () => console.log('ololo') } className="related-resources"><FontAwesomeIcon icon={ faAngleDown }/> Related Resources</Link>
+            <Link to="#" onClick={ () => document.querySelector("#related-resources-section").scrollIntoView({ behavior: 'smooth' }) } className="related-resources"><FontAwesomeIcon icon={ faAngleDown }/> Related Resources</Link>
           </div>
 
           <div className="pathway-categories-wrapper">
@@ -117,7 +117,7 @@ const OurResearch = () =>
         </Container>
       </section>
 
-      <section className="related-resources-section">
+      <section className="related-resources-section" id="related-resources-section">
         <Container className="section-border-top"></Container>
 
         <Container>

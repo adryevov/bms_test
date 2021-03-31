@@ -82,7 +82,7 @@ const Home = () =>
             <img src={ process.env.PUBLIC_URL + "/img/icons/oncology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
               <li><Link to="/our-medicines" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/our-recearch" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/our-research" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
 
@@ -99,9 +99,9 @@ const Home = () =>
             <h3>Pipeline & Clinical Trials</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/pipeline.svg" } alt="Oncology" className="homepage-card-3-image" />
             <ul className="homepage-card-links">
-              <li><a href="https://www.bmsstudyconnect.com/" className="arrow-link-pink">Our Oncology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-              <li><a href="https://www.bolderscience.com/bmspipeline/trial-finder/" className="arrow-link-pink">Our Hematology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bmsstudyconnect.com/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Oncology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/trial-finder/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Hematology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
           </div>
         </Container>
@@ -133,7 +133,7 @@ const Home = () =>
         <Container>
           <div className="homepage-bottom-card">
             <h3>BMS Access Support<sup>&reg;</sup></h3>
-            <a href="https://www.bmsaccesssupportvirtual.com/" className="button-pink">Learn More</a>
+            <a href="https://www.bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="button-pink">Learn More</a>
           </div>
 
           <div className="homepage-bottom-card">

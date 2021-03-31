@@ -16,7 +16,7 @@ function App() {
           <Route exact path={ "/abstracts" } component={ Abstracts } />
           <Route exact path={ "/product-theater-schedule" } component={ TheaterSchedule } />
           <Route exact path={ "/our-medicines" } component={ OurMedicines } />
-          <Route exact path={ "/our-recearch" } component={ OurResearch } />
+          <Route exact path={ "/our-research" } component={ OurResearch } />
         </Switch>
       </ModalProvider>
     </div>
