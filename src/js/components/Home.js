@@ -66,7 +66,7 @@ const Home = () =>
             <Container>
               <Row>
                 <Col md={12}>
-                  <h2>Join Us for Our Product Theater</h2>
+                  <h2 className="home-slide-4-h2">Join Us for Our Product Theater</h2>
                   <Link to="/product-theater-schedule" className="button-pink">View the Schedule</Link>
                 </Col>
               </Row>
