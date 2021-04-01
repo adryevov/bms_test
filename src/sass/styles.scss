@@ -155,7 +155,7 @@ header {
       left: 2%;
       font-size: 20px;
     }
-    
+
     .home-slide-4-h2 {
       max-width: 400px;
     }
@@ -954,6 +954,10 @@ footer {
   border-radius: 4px;
 }
 
+.page-not-found-section {
+  padding: 5rem 0;
+}
+
 @media (max-width: 1440px) {
   .carousel-homepage {
     .carousel-slide {
@@ -969,7 +973,6 @@ footer {
     }
   }
 }
-
 
 @media (max-width: 1024px) {
   .carousel-homepage {
