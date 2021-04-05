@@ -39,7 +39,7 @@ const Home = () =>
               <Row>
                 <Col md={12}>
                   <h2>Learn more about an approval in Hematology!</h2>
-                  <Button className="button-pink">Click Here</Button>
+                  <a href="/hematology/our-medicines" className="button-pink">Click Here</a>
                 </Col>
               </Row>
             </Container>
@@ -90,8 +90,8 @@ const Home = () =>
             <h3>Hematology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/hematology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
-              <li><Link to="#" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/hematology/our-medicines" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/hematology/our-research" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
 
@@ -124,7 +124,7 @@ const Home = () =>
           <div className="homepage-middle-card">
             <h3>Our Educational Resources</h3>
             <span className="homepage-middle-card-line"></span>
-            <Link to="/" className="arrow-link-pink">Explore Hematology <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+            <Link to="/hematology/our-educational-resources" className="arrow-link-pink">Explore Hematology <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
         </Container>
       </section>

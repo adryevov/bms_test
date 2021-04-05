@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 import { Button, Carousel, Col, Container, Row } from "react-bootstrap";
-import { useMetaInfo } from "../utils/hooks";
+import { useMetaInfo } from "../../utils/hooks";
 
 const OurMedicines = () =>
 {
@@ -33,7 +33,7 @@ const OurMedicines = () =>
               <Row>
                 <Col md={12}>
                   <h2 className="our-medinices-slide-2-h2">Experience the OPDIVO + YERVOY Interactive Brick Builder Activity</h2>
-                  <Button className="button-pink">Play Now</Button>
+                  <a href="https://bms-celgene-1610-git-legogame-globacore.vercel.app/" target="_blank" rel="noreferrer" className="button-pink">Play Now</a>
                 </Col>
               </Row>
             </Container>

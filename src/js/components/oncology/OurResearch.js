@@ -1,12 +1,12 @@
 import React, { Fragment, useEffect } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "../Header";
+import Footer from "../Footer";
 import { Button, Container } from "react-bootstrap";
-import { useModal } from "./UI/ContactUsModal";
+import { useModal } from "../UI/ContactUsModal";
 import { Link } from "react-router-dom";
 import { faAngleDown, faFile, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMetaInfo } from "../utils/hooks";
+import { useMetaInfo } from "../../utils/hooks";
 
 const OurResearch = () =>
 {
