@@ -1436,6 +1436,200 @@ footer {
   }
 }
 
+.hematology-our-educational-resources-wrapper {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vw / 1.77777778);
+
+  .hematology-our-educational-resources-header {
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-wrapper {
+      position: absolute;
+      left: 2%;
+      max-height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .main-area {
+    height: 80%;
+    width: 100%;
+    position: relative;
+
+    .main-area-wrapper {
+      width: 100%;
+      height: 100%;
+      padding: 0 7%;
+      position: absolute;
+
+      .main-area-wrapper-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        h1 {
+          position: absolute;
+          top: 7%;
+          left: 4.5%;
+          width: 58.5%;
+          height: 11%;
+          font-size: 3.25rem;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .clinical-nurse-connections-wrapper {
+          position: absolute;
+          top: 57%;
+          left: 7.75%;
+          width: 13%;
+          height: 25%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+
+          h2 {
+            font-size: 2.5rem;
+            line-height: 1.25;
+          }
+
+          p {
+            margin: 0;
+            font-size: 1.25rem;
+          }
+        }
+
+        .contact-us-wrapper {
+          position: absolute;
+          top: 24%;
+          left: 42.25%;
+          width: 11.25%;
+          height: 19%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          span {
+            color: $pink-color;
+            display: block;
+            line-height: 1.25;
+            font-size: 1.5rem;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 5%;
+            right: 10%;
+          }
+        }
+
+        .link-wrapper {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 1rem 3rem 0;
+
+          h2 {
+            font-size: 1.75rem;
+            margin: 0;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+
+        .multiple-myeloma-wrapper {
+          top: 11.5%;
+          left: 70%;
+          width: 23%;
+          height: 10.5%;
+        }
+
+        .myelodysplastic-syndromes-wrapper {
+          top: 24.5%;
+          left: 70%;
+          width: 23%;
+          height: 11.5%;
+        }
+
+        .acute-myeloid-leukemia-wrapper {
+          top: 38.5%;
+          left: 70%;
+          width: 23%;
+          height: 11%;
+        }
+
+        .car-t-wrapper {
+          top: 51.5%;
+          left: 70%;
+          width: 23%;
+          height: 10.5%;
+        }
+
+        .lymphoma-wrapper {
+          top: 65.5%;
+          left: 70%;
+          width: 23%;
+          height: 10.5%;
+        }
+      }
+    }
+  }
+
+  .hematology-our-educational-resources-footer {
+    height: 11%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    p.copyright-info {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+
+    .back-to-home {
+      position: absolute;
+      left: 1rem;
+      bottom: calc(50% - 20px);
+      height: 41px;
+      width: 236px;
+
+      img {
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    .privacy-policy-btn {
+      position: absolute;
+      bottom: calc(50% - 20px);
+      right: 1rem;
+      height: 41px;
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   .carousel-homepage {
     .carousel-slide {
@@ -1481,7 +1675,7 @@ footer {
           h1 {
             font-size: 2.5rem;
           }
-          
+
           .scientific-resources-wrapper {
             span {
               font-size: 1.25rem;
@@ -1503,7 +1697,33 @@ footer {
         }
       }
     }
+  }
 
+  .hematology-our-educational-resources-wrapper {
+    .main-area {
+      .main-area-wrapper {
+        .main-area-wrapper-inner {
+          .clinical-nurse-connections-wrapper {
+            h2 {
+              font-size: 2rem;
+              margin: 0;
+            }
+
+            p {
+              font-size: 1rem;
+            }
+          }
+
+          .link-wrapper {
+            padding: 0.5rem 3rem 0;
+            
+            h2 {
+              font-size: 1.25rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
