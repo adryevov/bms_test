@@ -3,6 +3,8 @@
 // Bootstrap
 @import "~bootstrap/dist/css/bootstrap.css";
 
+$pink-color: #BE2BBB;
+
 html, body {
   margin: 0;
   font-size: 14px;
@@ -19,7 +21,7 @@ a:hover {
 }
 
 .button-pink {
-  background-color: #BE2BBB;
+  background-color: $pink-color;
   color: #ffffff;
   border: 0;
   border-radius: 23px;
@@ -31,17 +33,39 @@ a:hover {
   align-items: center;
 
   &:not(:disabled):not(.disabled):focus, &:not(:disabled):not(.disabled):active {
-    background-color: #BE2BBB;
+    background-color: $pink-color;
   }
 
   &:hover {
     color: #ffffff;
-    background-color: #BE2BBB;
+    background-color: $pink-color;
+  }
+}
+
+.button-dark {
+  background-color: #585454;
+  color: #ffffff;
+  border: 0;
+  border-radius: 23px;
+  height: 45px;
+  width: 194px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:disabled):not(.disabled):focus, &:not(:disabled):not(.disabled):active {
+    background-color: #585454;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #585454;
   }
 }
 
 body .arrow-link-pink {
-  color: #BE2BBB;
+  color: $pink-color;
   font-size: 22px;
   font-weight: 300;
   display: flex;
@@ -53,7 +77,22 @@ body .arrow-link-pink {
   }
 
   &:hover {
-    color: #BE2BBB;
+    color: $pink-color;
+  }
+}
+
+.pink-circle {
+  background-color: $pink-color;
+  color: #ffffff;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &:hover {
+    color: #ffffff;
   }
 }
 
@@ -83,7 +122,7 @@ header {
         }
 
         .header-at {
-          color: #BE2BBB;
+          color: $pink-color;
           font-weight: 300;
           font-size: 24px;
           margin: 0.5rem 0 0 3rem;
@@ -398,7 +437,7 @@ footer {
       justify-content: flex-end;
 
       button {
-        color: #BE2BBB;
+        color: $pink-color;
         opacity: 1;
         padding: 0;
         margin: 0;
@@ -428,7 +467,7 @@ footer {
 
           a {
             font-size: 22px;
-            color: #BE2BBB;
+            color: $pink-color;
             font-weight: 300;
           }
         }
@@ -447,7 +486,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  color: #BE2BBB;
+  color: $pink-color;
   height: 48px;
   width: 48px;
   border-radius: 100%;
@@ -772,7 +811,7 @@ footer {
         font-size: 22px;
         font-weight: 800;
         text-transform: uppercase;
-        border-bottom: 3px solid #BE2BBB;
+        border-bottom: 3px solid $pink-color;
         padding: 0 0 0.25rem;
         margin: 0 0 2rem;
       }
@@ -828,7 +867,7 @@ footer {
     }
 
     .related-resources {
-      color: #BE2BBB;
+      color: $pink-color;
     }
   }
 
@@ -958,6 +997,253 @@ footer {
   padding: 5rem 0;
 }
 
+.hematology-our-medicines-wrapper {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vw / 1.77777778);
+
+  .hematology-our-medicines-header {
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-wrapper {
+      position: absolute;
+      left: 2%;
+      max-height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    span {
+      font-size: 1.25rem;
+      font-weight: 400;
+    }
+  }
+
+  .main-area {
+    height: 80%;
+    width: 100%;
+    position: relative;
+
+    .main-area-wrapper {
+      width: 100%;
+      height: 100%;
+      padding: 0 7%;
+      position: absolute;
+
+      .main-area-wrapper-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        h1 {
+          position: absolute;
+          top: 9.5%;
+          left: 23.5%;
+          font-size: 3.25rem;
+          margin: 0;
+        }
+
+        .bms-access-support-wrapper {
+          position: absolute;
+          top: 5%;
+          left: 64.75%;
+          width: 11%;
+          height: 16%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          span {
+            color: $pink-color;
+            display: block;
+            max-width: 60px;
+            line-height: 1.25;
+            font-size: 1.25rem;
+          }
+
+          .pink-circle {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
+        .contact-us-wrapper {
+          position: absolute;
+          top: 3.25%;
+          left: 82.25%;
+          width: 11.25%;
+          height: 19%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+
+          span {
+            color: $pink-color;
+            display: block;
+            line-height: 1.25;
+            font-size: 1.5rem;
+          }
+
+          .pink-circle {
+            position: absolute;
+            bottom: 5%;
+            left: 0;
+          }
+        }
+
+        .link-wrapper {
+          cursor: pointer;
+
+          &:hover {
+            border: 5px solid $pink-color;
+          }
+        }
+
+        .abecma-wrapper {
+          position: absolute;
+          top: 25.25%;
+          left: 4%;
+          width: 22.25%;
+          height: 25%;
+        }
+
+        .breyanzi-wrapper {
+          position: absolute;
+          top: 25.25%;
+          left: 27.25%;
+          width: 22.25%;
+          height: 25%;
+        }
+
+        .reblozyl-wrapper {
+          position: absolute;
+          top: 25.25%;
+          left: 50.5%;
+          width: 22.25%;
+          height: 25%;
+        }
+
+        .onureg-wrapper {
+          position: absolute;
+          top: 25.25%;
+          left: 73.75%;
+          width: 22.25%;
+          height: 25%;
+        }
+
+        .revlimid-wrapper {
+          position: absolute;
+          top: 52.25%;
+          left: 3.75%;
+          width: 16.25%;
+          height: 18%;
+        }
+
+        .pomalyst-wrapper {
+          position: absolute;
+          top: 52.25%;
+          left: 21.5%;
+          width: 16.25%;
+          height: 18%;
+        }
+
+        .empliciti-wrapper {
+          position: absolute;
+          top: 52.25%;
+          left: 39.25%;
+          width: 16.25%;
+          height: 18%;
+        }
+
+        .r2-wrapper {
+          position: absolute;
+          top: 52.25%;
+          left: 56.5%;
+          width: 16.25%;
+          height: 18%;
+        }
+
+        .inrebic-wrapper {
+          position: absolute;
+          top: 74%;
+          left: 3.75%;
+          width: 16.25%;
+          height: 18%;
+        }
+
+        .sprycel-wrapper {
+          position: absolute;
+          top: 74%;
+          left: 21.5%;
+          width: 16.25%;
+          height: 18%;
+        }
+
+        .idhifa-wrapper {
+          position: absolute;
+          top: 74%;
+          left: 39%;
+          width: 16.25%;
+          height: 18%;
+        }
+      }
+    }
+  }
+
+  .hematology-our-medicines-footer {
+    height: 11%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    p.info {
+      font-size: 1.75rem;
+      text-align: center;
+      margin: 0.25rem 0 0;
+      line-height: 1.5;
+    }
+
+    p.copyright-info {
+      margin: 0.5rem 0 0;
+      font-size: 1.25rem;
+    }
+
+    .back-to-home {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      height: 41px;
+      width: 236px;
+
+      img {
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    .privacy-policy-btn {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      height: 41px;
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   .carousel-homepage {
     .carousel-slide {
@@ -969,6 +1255,29 @@ footer {
       .home-slide-3-not-patient {
         right: 1%;
         font-size: 16px;
+      }
+    }
+  }
+
+  .hematology-our-medicines-wrapper {
+    .main-area {
+      .main-area-wrapper {
+        .main-area-wrapper-inner {
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+
+    .hematology-our-medicines-footer {
+      p.info {
+        font-size: 1.25rem;
+        line-height: 1;
+      }
+
+      p.copyright-info {
+        font-size: 1rem;
       }
     }
   }

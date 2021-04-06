@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import { Button, Carousel, Col, Container, Row } from "react-bootstrap";
+import { Carousel, Col, Container, Row } from "react-bootstrap";
 import { useMetaInfo } from "../../utils/hooks";
 
 const OurMedicines = () =>

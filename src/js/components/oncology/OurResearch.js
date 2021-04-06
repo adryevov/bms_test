@@ -54,7 +54,7 @@ const OurResearch = () =>
         <Container>
           <div className="bristol-myers-first-line-wrapper">
             <h3>Bristol Myers Squibb:<br />At the forefront of Immuno-Oncology research</h3>
-            <img src={ process.env.PUBLIC_URL + "/img/our-research/immuno-oncology.svg" } alt="Immuno-Oncology" />
+            <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/immuno-oncology.svg" } alt="Immuno-Oncology" />
           </div>
           <p className="oncology-research">Oncology research seeks to restore the body's ability to fight cancer </p>
           <p>Numerous pathways may enhance the immune system's ability to recognize and eliminate cancer cells.<sup>1-3</sup> The pathways may be grouped into 4 essential categories that are important in determining the outcome of tumor and immune system interaction.<sup>4-6</sup></p>
@@ -71,7 +71,7 @@ const OurResearch = () =>
 
           <div className="pathway-categories-wrapper">
             <div className="pathway-category">
-              <img src={ process.env.PUBLIC_URL + "/img/our-research/pathway-category-1.png" } alt="Effector cell function" />
+              <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/pathway-category-1.png" } alt="Effector cell function" />
               <div className="text-content-wrapper">
                 <h4>Effector cell function<sup>7,8</sup></h4>
                 <p>Various components of the immune system and tumor microenvironment may regulate an effector cell’s ability to eliminate tumors. Modulating pathways involved in the regulation of effector cells may enhance their activity.</p>
@@ -83,7 +83,7 @@ const OurResearch = () =>
             </div>
 
             <div className="pathway-category">
-              <img src={ process.env.PUBLIC_URL + "/img/our-research/pathway-category-2.png" } alt="Tumor cell recognition" />
+              <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/pathway-category-2.png" } alt="Tumor cell recognition" />
               <div className="text-content-wrapper">
                 <h4>Tumor cell recognition<sup>7,9</sup></h4>
                 <p>Tumors may adapt mechanisms to evade immune detection. Leveraging pathways, including those involved in antigen presentation and phagocytosis, may promote better tumor cell recognition.</p>
@@ -94,7 +94,7 @@ const OurResearch = () =>
             </div>
 
             <div className="pathway-category">
-              <img src={ process.env.PUBLIC_URL + "/img/our-research/pathway-category-3.png" } alt="Immunosuppression" />
+              <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/pathway-category-3.png" } alt="Immunosuppression" />
               <div className="text-content-wrapper">
                 <h4>Immunosuppression<sup>10,11</sup></h4>
                 <p>Some tumors may avoid destruction by thriving in an immunosuppressive environment and dampening the immune response. Modulating pathways that regulate immunosuppressive activity may increase anti-tumor activity.</p>
@@ -105,7 +105,7 @@ const OurResearch = () =>
             </div>
 
             <div className="pathway-category">
-              <img src={ process.env.PUBLIC_URL + "/img/our-research/pathway-category-4.png" } alt="Tumor-intrinsic pathways" />
+              <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/pathway-category-4.png" } alt="Tumor-intrinsic pathways" />
               <div className="text-content-wrapper">
                 <h4>Tumor-intrinsic pathways<sup>12,13</sup></h4>
                 <p>Various signaling and metabolic pathways intrinsic to tumor cells may drive oncogenesis and tumor growth. Blocking these pathways may promote tumor cell death.</p>
@@ -124,12 +124,12 @@ const OurResearch = () =>
           <h2>Related resources</h2>
           <div className="related-resources-wrapper">
             <div className="related-resource">
-              <div className="related-resource-image-wrapper" style={{ backgroundImage: "url(/img/our-research/related-resource-gradient.png)" }}>
+              <div className="related-resource-image-wrapper" style={{ backgroundImage: "url(/img/oncology/our-research/related-resource-gradient.png)" }}>
                 <div className="resource-type">
                   <FontAwesomeIcon icon={ faFile } />
                   <span>PDF</span>
                 </div>
-                <img src={ process.env.PUBLIC_URL + "/img/our-research/content-area-1.png" } alt="Understanding the science behind Immuno-Oncology" />
+                <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/content-area-1.png" } alt="Understanding the science behind Immuno-Oncology" />
               </div>
 
               <div className="text-content-wrapper">
@@ -140,12 +140,12 @@ const OurResearch = () =>
             </div>
 
             <div className="related-resource">
-              <div className="related-resource-image-wrapper" style={{ backgroundImage: "url(/img/our-research/related-resource-gradient.png)" }}>
+              <div className="related-resource-image-wrapper" style={{ backgroundImage: "url(/img/oncology/our-research/related-resource-gradient.png)" }}>
                 <div className="resource-type">
                   <FontAwesomeIcon icon={ faFile } />
                   <span>PDF</span>
                 </div>
-                <img src={ process.env.PUBLIC_URL + "/img/our-research/content-area-2.png" } alt="Looking deeper into the science of Immuno-Oncology" />
+                <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/content-area-2.png" } alt="Looking deeper into the science of Immuno-Oncology" />
               </div>
               <div className="text-content-wrapper">
                 <h4>Looking deeper into the science of Immuno-Oncology</h4>
@@ -155,12 +155,12 @@ const OurResearch = () =>
             </div>
 
             <div className="related-resource">
-              <div className="related-resource-image-wrapper" style={{ backgroundImage: "url(/img/our-research/related-resource-gradient.png)" }}>
+              <div className="related-resource-image-wrapper" style={{ backgroundImage: "url(/img/oncology/our-research/related-resource-gradient.png)" }}>
                 <div className="resource-type">
                   <FontAwesomeIcon icon={ faVideo } />
                   <span>Video</span>
                 </div>
-                <img src={ process.env.PUBLIC_URL + "/img/our-research/content-area-3.png" } alt="How do signaling pathways work together?" />
+                <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/content-area-3.png" } alt="How do signaling pathways work together?" />
               </div>
               <div className="text-content-wrapper">
                 <h4>How do signaling pathways work together?</h4>
