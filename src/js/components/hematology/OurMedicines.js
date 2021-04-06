@@ -1,10 +1,19 @@
-import React from  "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useMetaInfo } from "../../utils/hooks";
 
 const OurMidicines = () =>
 {
+  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
+
+  useEffect(() =>
+  {
+    updateMetaTitle("Our Medicines");
+    updateMetaDescription("Our Medicines.");
+  }, [ updateMetaTitle, updateMetaDescription ]);
+
   return (
     <div className="hematology-our-medicines-wrapper"  style={{ backgroundImage: "url(/img/hematology/background-hematology-medicines.png)" }}>
       <div className="hematology-our-medicines-header">

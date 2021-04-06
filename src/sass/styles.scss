@@ -1106,6 +1106,7 @@ footer {
 
         .link-wrapper {
           cursor: pointer;
+          position: absolute;
 
           &:hover {
             border: 5px solid $pink-color;
@@ -1113,7 +1114,6 @@ footer {
         }
 
         .abecma-wrapper {
-          position: absolute;
           top: 25.25%;
           left: 4%;
           width: 22.25%;
@@ -1121,7 +1121,6 @@ footer {
         }
 
         .breyanzi-wrapper {
-          position: absolute;
           top: 25.25%;
           left: 27.25%;
           width: 22.25%;
@@ -1129,7 +1128,6 @@ footer {
         }
 
         .reblozyl-wrapper {
-          position: absolute;
           top: 25.25%;
           left: 50.5%;
           width: 22.25%;
@@ -1137,7 +1135,6 @@ footer {
         }
 
         .onureg-wrapper {
-          position: absolute;
           top: 25.25%;
           left: 73.75%;
           width: 22.25%;
@@ -1145,7 +1142,6 @@ footer {
         }
 
         .revlimid-wrapper {
-          position: absolute;
           top: 52.25%;
           left: 3.75%;
           width: 16.25%;
@@ -1153,7 +1149,6 @@ footer {
         }
 
         .pomalyst-wrapper {
-          position: absolute;
           top: 52.25%;
           left: 21.5%;
           width: 16.25%;
@@ -1161,7 +1156,6 @@ footer {
         }
 
         .empliciti-wrapper {
-          position: absolute;
           top: 52.25%;
           left: 39.25%;
           width: 16.25%;
@@ -1169,7 +1163,6 @@ footer {
         }
 
         .r2-wrapper {
-          position: absolute;
           top: 52.25%;
           left: 56.5%;
           width: 16.25%;
@@ -1177,7 +1170,6 @@ footer {
         }
 
         .inrebic-wrapper {
-          position: absolute;
           top: 74%;
           left: 3.75%;
           width: 16.25%;
@@ -1185,7 +1177,6 @@ footer {
         }
 
         .sprycel-wrapper {
-          position: absolute;
           top: 74%;
           left: 21.5%;
           width: 16.25%;
@@ -1193,7 +1184,6 @@ footer {
         }
 
         .idhifa-wrapper {
-          position: absolute;
           top: 74%;
           left: 39%;
           width: 16.25%;
@@ -1244,6 +1234,208 @@ footer {
   }
 }
 
+.hematology-our-research-wrapper {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vw / 1.77777778);
+
+  .hematology-our-research-header {
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo-wrapper {
+      position: absolute;
+      left: 2%;
+      max-height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .main-area {
+    height: 80%;
+    width: 100%;
+    position: relative;
+
+    .main-area-wrapper {
+      width: 100%;
+      height: 100%;
+      padding: 0 7%;
+      position: absolute;
+
+      .main-area-wrapper-inner {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        h1 {
+          position: absolute;
+          top: 9.5%;
+          left: 26.5%;
+          font-size: 3.25rem;
+          margin: 0;
+        }
+
+        .scientific-resources-wrapper {
+          position: absolute;
+          top: 56%;
+          left: 73%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .medical-information-wrapper {
+          position: absolute;
+          top: 88.5%;
+          left: 61%;
+          width: 36%;
+          height: 7%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 0 4% 0 0;
+
+          span {
+            font-size: 2.25rem;
+            font-weight: 600;
+          }
+
+          .pink-circle {
+            position: absolute;
+            right: 0;
+          }
+        }
+
+        .link-wrapper {
+          cursor: pointer;
+          border: 5px solid transparent;
+          position: absolute;
+
+          &:hover {
+            border: 5px solid $pink-color;
+          }
+
+          h2 {
+            margin: 0 0 0.25rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+          }
+        }
+
+        .myeloid-disease-wrapper {
+          top: 24%;
+          left: 4.25%;
+          width: 21.5%;
+          height: 28.5%;
+        }
+
+        .lymphoma-wrapper {
+          top: 24%;
+          left: 27%;
+          width: 21.5%;
+          height: 28.5%;
+        }
+
+        .multiple-myeloma-wrapper {
+          top: 24%;
+          left: 49.75%;
+          width: 21.5%;
+          height: 28.5%;
+        }
+
+        .cereblon-modulation-wrapper {
+          top: 24%;
+          left: 72.5%;
+          width: 21.5%;
+          height: 28.5%;
+        }
+
+        .car-t-cell-therapy-wrapper {
+          top: 56.5%;
+          left: 4.25%;
+          width: 21.5%;
+          height: 28.5%;
+        }
+
+        .our-pipeline-wrapper {
+          top: 56.5%;
+          left: 27%;
+          width: 21.5%;
+          height: 28.5%;
+        }
+
+        .our-clinical-trials-wrapper {
+          top: 56.5%;
+          left: 49.75%;
+          width: 21.5%;
+          height: 28.5%;
+        }
+      }
+    }
+  }
+
+  .hematology-our-research-footer {
+    height: 11%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    p.copyright-info {
+      margin: 0;
+      font-size: 1.25rem;
+    }
+
+    .back-to-home {
+      position: absolute;
+      left: 1rem;
+      bottom: calc(50% - 20px);
+      height: 41px;
+      width: 236px;
+
+      img {
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    .privacy-policy-btn {
+      position: absolute;
+      bottom: calc(50% - 20px);
+      right: 1rem;
+      height: 41px;
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   .carousel-homepage {
     .carousel-slide {
@@ -1280,6 +1472,38 @@ footer {
         font-size: 1rem;
       }
     }
+  }
+
+  .hematology-our-research-wrapper {
+    .main-area {
+      .main-area-wrapper {
+        .main-area-wrapper-inner {
+          h1 {
+            font-size: 2.5rem;
+          }
+          
+          .scientific-resources-wrapper {
+            span {
+              font-size: 1.25rem;
+            }
+          }
+
+          .medical-information-wrapper {
+            span {
+              font-size: 1.5rem;
+            }
+          }
+
+          .link-wrapper {
+            h2 {
+              font-size: 1.5rem;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
   }
 }
 
