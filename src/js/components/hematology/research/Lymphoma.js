@@ -10,8 +10,8 @@ const Lymphoma = () =>
 
   useEffect(() =>
   {
-    updateMetaTitle("Myeloid Disease");
-    updateMetaDescription("Myeloid Disease.");
+    updateMetaTitle("Lymphoma");
+    updateMetaDescription("Lymphoma.");
   }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
@@ -25,34 +25,34 @@ const Lymphoma = () =>
           <div className="main-area-wrapper-inner">
             <h1>Lymphoma</h1>
 
-            <div className="myelofibrosis-mechanism link-wrapper">
-              <img alt="Myelofibrosis mechanism of disease " className="myelofibrosis-mechanism-img" src="/img/hematology/research/myelofibrosis-mechanism-of-disease.png"></img>
-              <h2>Myelofibrosis mechanism of disease (video)</h2>
+            <div className="nhl-and-cll-wrapper link-wrapper">
+              <img alt="Clinical research in NHL and CLL" className="nhl-and-cll-img" src="/img/hematology/research/Clinical-research-in-NHL-and-CLL.png"></img>
+              <h2>Clinical research in NHL and CLL</h2>
             </div>
 
-            <div className="additional-clinical-trials-wrapper">
+            <div className="lymphoma-additional-clinical-trials-wrapper">
               <span>Additional Clinical Trials</span>
               <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
-            <div className="myeloid-scientific-resources-wrapper">
+            <div className="lymphoma-scientific-resources-wrapper">
               <span>Scientific Resources</span>
               <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
-            <div className="fedratinib-wrapper link-wrapper">
-              <img alt="Clinical trial: Fedratinib in myelofibrosis" className="fedratinib-img" src="/img/hematology/research/clinical-trial-fedratinib-in-myelofibrosis.png"></img>
-              <h2>Clinical trial: Fedratinib in myelofibrosis</h2>
+            <div className="targets-nhl-and-cll-wrapper link-wrapper">
+              <img alt="Targets in NHL and CLL" className="targets-nhl-and-cll-img" src="/img/hematology/research/Targets-in-NHL-and-CLL.png"></img>
+              <h2>Targets in NHL and CLL</h2>
             </div>
 
-            <div className="luspatercept-erythropoiesis-wrapper link-wrapper">
-              <img alt="Clinical trial: Luspatercept in erythropoiesis disorders" className="luspatercept-erythropoiesis-img" src="/img/hematology/research/clinical-trial-luspatercept-in-erythropoiesis-disorders.png"></img>
-              <h2>Clinical trial: Luspatercept in erythropoiesis disorders</h2>
+            <div className="iberdomide-wrapper link-wrapper">
+              <img alt="Clinical trial: Iberdomide in relapsed or refractory lymphomas" className="iberdomide-img" src="/img/hematology/research/Clinical-trial-Iberdomide-in-relapsed-or-refractory-lymphomas.jpg"></img>
+              <h2>Clinical trial: Iberdomide in relapsed or refractory lymphomas</h2>
             </div>
 
-            <div className="luspatercept-mpn-wrapper link-wrapper">
-              <img alt="Clinical trial: Luspatercept in MPN-associated myelofibrosis" className="luspatercept-mpn-img" src="/img/hematology/research/clinical-trial-luspatercept-in-MPN-associated-myelofibrosis.png"></img>
-              <h2>Clinical trial: Luspatercept in MPN-associated myelofibrosis</h2>
+            <div className="CC-99282-wrapper link-wrapper">
+              <img alt="Clinical trial: CC-99282 in relapsed or refractory CLL, SLL, and NHL" className="CC-99282-img" src="/img/hematology/research/Clinical-trial-CC-99282-in-relapsed-or-refractory-CLL-SLL-and-NHL.png"></img>
+              <h2>Clinical trial: CC-99282 in relapsed or refractory CLL, SLL, and NHL</h2>
             </div>
 
 
