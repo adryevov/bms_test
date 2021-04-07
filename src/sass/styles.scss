@@ -35,6 +35,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &:not(:disabled):not(.disabled):focus, &:not(:disabled):not(.disabled):active {
     background-color: $pink-color;
@@ -43,6 +44,39 @@ a:hover {
   &:hover {
     color: #ffffff;
     background-color: $pink-color;
+  }
+
+  .icon-link-click {
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+.gray-download-icon-button {
+  background-color: #EEE7E7;
+  color: #595454;
+  border: 0;
+  border-radius: 23px;
+  height: 45px;
+  min-width: 464px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &:not(:disabled):not(.disabled):focus, &:not(:disabled):not(.disabled):active {
+    background-color: #EEE7E7;
+  }
+
+  &:hover {
+    color: #595454;
+    background-color: #EEE7E7;
+  }
+
+  img {
+    position: absolute;
+    right: 1rem;
   }
 }
 
@@ -1636,7 +1670,7 @@ footer {
   }
 }
 
-.hematology-modal-wrapper {
+.hematology-educational-resources-modal-wrapper {
   .modal-dialog {
     max-width: max-content;
 
@@ -1716,6 +1750,79 @@ footer {
             }
           }
 
+        }
+      }
+    }
+  }
+}
+
+.hematology-medicines-modal-wrapper {
+  .modal-dialog {
+    max-width: max-content;
+    min-width: 500px;
+
+    .modal-content {
+      border-radius: 0.75rem;
+
+      .modal-header {
+        border-bottom: 0;
+        padding: 1.5rem 1.5rem 0;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          color: $pink-color;
+          opacity: 1;
+          padding: 0;
+          margin: 0;
+          height: 14px;
+          width: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.5rem;
+          font-weight: 300;
+        }
+      }
+
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 3rem;
+
+        .general-section-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .button-pink {
+            margin: 1.5rem 0 0.5rem;
+          }
+        }
+
+        .detailed-section-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          padding: 1.5rem 8rem 4rem;
+
+          hr {
+            border-top: 2px solid $pink-color;
+            border-bottom: 2px solid $pink-color;
+            background-color: $pink-color;
+            width: 106px;
+            border-radius: 4px;
+            margin: 2rem 0;
+          }
+
+          p {
+            font-size: 18px;
+          }
         }
       }
     }

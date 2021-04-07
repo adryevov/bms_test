@@ -118,7 +118,7 @@ const OurEducationalResources = () =>
           onHide={ () => setModalName("") }
           backdrop="static"
           centered
-          className="hematology-modal-wrapper"
+          className="hematology-educational-resources-modal-wrapper"
         >
           <Modal.Header closeButton></Modal.Header>
           <Modal.Body>
