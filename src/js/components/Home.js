@@ -48,20 +48,6 @@ const Home = () =>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-approval-oncology.png)" }}>
-            <Container>
-              <Row>
-                <Col md={12} className="home-slide-3-wrapper">
-                  <h2>Learn more about a new approval in Oncology!</h2>
-                  <Button className="button-pink">Click Here</Button>
-                </Col>
-              </Row>
-            </Container>
-            <span className="home-slide-3-not-patient">Not an actual patient</span>
-          </div>
-        </Carousel.Item>
-
-        <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-product-theater.png)" }}>
             <Container>
               <Row>
