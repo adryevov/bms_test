@@ -64,6 +64,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   position: relative;
+  cursor: pointer;
 
   &:not(:disabled):not(.disabled):focus, &:not(:disabled):not(.disabled):active {
     background-color: #EEE7E7;
@@ -1823,9 +1824,22 @@ footer {
           p {
             font-size: 18px;
           }
+
+          .reblozyl-details-link {
+            min-width: 600px;
+            margin-bottom: 1rem;
+          }
         }
       }
     }
+  }
+}
+
+.video-section-wrapper {
+  max-width: 80vw;
+
+  video {
+    width: 100%;
   }
 }
 
