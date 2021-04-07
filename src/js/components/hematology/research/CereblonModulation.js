@@ -10,12 +10,12 @@ const CereblonModulation = () =>
 
   useEffect(() =>
   {
-    updateMetaTitle("Multiple Myeloma");
-    updateMetaDescription("Multiple Myeloma.");
+    updateMetaTitle("Cereblon Modulation");
+    updateMetaDescription("Cereblon Modulation.");
   }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
-    <div className="hematology-our-research-wrapper"  style={{ backgroundImage: "url(/img/hematology/research/background-hematology-research-lymphoma.png)" }}>
+    <div className="hematology-our-research-wrapper"  style={{ backgroundImage: "url(/img/hematology/research/background-hematology-research-celeblon.png)" }}>
       <div className="hematology-our-research-header">
         <Link to="/" className="logo-wrapper"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
       </div>
@@ -25,37 +25,35 @@ const CereblonModulation = () =>
           <div className="main-area-wrapper-inner">
             <h1>Cereblon Modulation</h1>
 
-            <div className="myelofibrosis-mechanism link-wrapper">
-              <img alt="Myelofibrosis mechanism of disease " className="myelofibrosis-mechanism-img" src="/img/hematology/research/myelofibrosis-mechanism-of-disease.png"></img>
-              <h2>Myelofibrosis mechanism of disease (video)</h2>
+            <div className="targeting-protein-cereblon-wrapper link-wrapper">
+              <img alt="Targeting protein degradation through cereblon modulation" className="targeting-protein-cereblon-img" src="/img/hematology/research/Targeting-protein-degradation-through-cereblon-modulation-2.png"></img>
+              <h2>Targeting protein degradation through cereblon modulation</h2>
             </div>
 
-            <div className="additional-clinical-trials-wrapper">
+            <div className="cereblon-modulation-cereblon-wrapper link-wrapper">
+              <img alt="Cereblon modulation in multiple myeloma" className="cereblon-modulation-cereblon-img" src="/img/hematology/research/cereblon-modulation-cereblon.png"></img>
+              <h2>Cereblon modulation in multiple myeloma</h2>
+            </div>
+
+            <div className="celeblon-additional-clinical-trials-wrapper">
               <span>Additional Clinical Trials</span>
               <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
-            <div className="myeloid-scientific-resources-wrapper">
+            <div className="celeblon-scientific-resources-wrapper">
               <span>Scientific Resources</span>
               <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
-            <div className="fedratinib-wrapper link-wrapper">
-              <img alt="Clinical trial: Fedratinib in myelofibrosis" className="fedratinib-img" src="/img/hematology/research/clinical-trial-fedratinib-in-myelofibrosis.png"></img>
-              <h2>Clinical trial: Fedratinib in myelofibrosis</h2>
+            <div className="CC-99282-celeblon-wrapper link-wrapper">
+              <img alt="Clinical trial: CC-99282 in relapsed or refractory CLL, SLL, and NHL" className="CC-99282-celeblon-img" src="/img/hematology/research/CC-99282-celeblon.png"></img>
+              <h2>Clinical trial: CC-99282 in relapsed or refractory CLL, SLL, and NHL</h2>
             </div>
 
-            <div className="luspatercept-erythropoiesis-wrapper link-wrapper">
-              <img alt="Clinical trial: Luspatercept in erythropoiesis disorders" className="luspatercept-erythropoiesis-img" src="/img/hematology/research/clinical-trial-luspatercept-in-erythropoiesis-disorders.png"></img>
-              <h2>Clinical trial: Luspatercept in erythropoiesis disorders</h2>
+            <div className="iberdomide-celeblon-wrapper link-wrapper">
+              <img alt="Clinical trial: Iberdomide in relapsed or refractory lymphomas" className="iberdomide-celeblon-img" src="/img/hematology/research/iberdomide-celeblon.jpg"></img>
+              <h2>Clinical trial: Iberdomide in relapsed or refractory lymphomas</h2>
             </div>
-
-            <div className="luspatercept-mpn-wrapper link-wrapper">
-              <img alt="Clinical trial: Luspatercept in MPN-associated myelofibrosis" className="luspatercept-mpn-img" src="/img/hematology/research/clinical-trial-luspatercept-in-MPN-associated-myelofibrosis.png"></img>
-              <h2>Clinical trial: Luspatercept in MPN-associated myelofibrosis</h2>
-            </div>
-
-
 
             <div className="medical-information-wrapper">
               <span>Medical Information</span>

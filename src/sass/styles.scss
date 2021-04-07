@@ -1441,6 +1441,110 @@ footer {
 
         // Hematology Research - Sub-Pages
 
+        //Cereblon Modulation
+        .targeting-protein-cereblon-wrapper {
+          top: 21.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 36%;
+        }
+
+        .targeting-protein-cereblon-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .cereblon-modulation-cereblon-wrapper {
+          top: 21.5%;
+          left: 24.5%;
+          width: 18%;
+          height: 36%;
+        }
+
+        .cereblon-modulation-cereblon-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .CC-99282-celeblon-wrapper {
+          top: 59.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 36.5%;
+        }
+
+        .CC-99282-celeblon-img
+        {
+          width:100%;
+          margin-top:12%;
+        }
+
+        .iberdomide-celeblon-wrapper {
+          top: 59.5%;
+          left: 24.5%;
+          width: 18%;
+          height: 36.5%;
+        }
+
+        .iberdomide-celeblon-img
+        {
+          width:70%;
+          margin: 8% 17% 0;
+        }
+
+        .celeblon-additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 59%;
+          left: 50%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .celeblon-scientific-resources-wrapper {
+          position: absolute;
+          top: 60%;
+          left: 66.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+
         //Multiple Myeloma
         .targeting-protein-wrapper {
           top: 21.5%;
