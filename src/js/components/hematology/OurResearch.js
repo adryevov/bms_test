@@ -46,22 +46,22 @@ const OurResearch = () =>
               <h2>CAR T Cell Therapy</h2>
             </Link>
 
-            <div className="our-pipeline-wrapper link-wrapper">
+            <a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/" target="_blank" rel="noreferrer" className="our-pipeline-wrapper link-wrapper">
               <h2>Our Pipeline</h2>
-            </div>
+            </a>
 
-            <div className="our-clinical-trials-wrapper link-wrapper">
+            <a href="https://bolderscience.com/bmspipeline/trial-finder/" target="_blank" rel="noreferrer" className="our-clinical-trials-wrapper link-wrapper">
               <h2>Our Clinical Trials</h2>
-            </div>
+            </a>
 
             <div className="scientific-resources-wrapper">
               <span>Scientific Resources</span>
-              <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
             <div className="medical-information-wrapper">
               <span>Medical Information</span>
-              <a href="http://www.globalbmsmedinfo.com" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.globalbmsmedinfo.com/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
           </div>
         </div>
