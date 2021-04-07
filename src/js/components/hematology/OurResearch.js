@@ -25,25 +25,26 @@ const OurResearch = () =>
           <div className="main-area-wrapper-inner">
             <h1>Our Research</h1>
 
-            <div className="myeloid-disease-wrapper link-wrapper">
+            <Link className="myeloid-disease-wrapper link-wrapper" to="/hematology/our-research/myeloid-disease">
               <h2>Myeloid Disease</h2>
-            </div>
+            </Link>
 
-            <div className="lymphoma-wrapper link-wrapper">
+
+            <Link className="lymphoma-wrapper link-wrapper" to="/hematology/our-research/lymphoma">
               <h2>Lymphoma</h2>
-            </div>
+            </Link>
 
-            <div className="multiple-myeloma-wrapper link-wrapper">
+            <Link className="multiple-myeloma-wrapper link-wrapper" to="/hematology/our-research/multiple-myeloma">
               <h2>Multiple Myeloma</h2>
-            </div>
+            </Link>
 
-            <div className="cereblon-modulation-wrapper link-wrapper">
+            <Link className="cereblon-modulation-wrapper link-wrapper" to="/hematology/our-research/cereblon-modulation">
               <h2>Cereblon Modulation</h2>
-            </div>
+            </Link>
 
-            <div className="car-t-cell-therapy-wrapper link-wrapper">
+            <Link className="car-t-cell-therapy-wrapper link-wrapper" to="/hematology/our-research/car-t-cell-therapy">
               <h2>CAR T Cell Therapy</h2>
-            </div>
+            </Link>
 
             <div className="our-pipeline-wrapper link-wrapper">
               <h2>Our Pipeline</h2>

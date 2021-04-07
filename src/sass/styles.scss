@@ -1282,6 +1282,14 @@ footer {
   width: 100%;
   height: calc(100vw / 1.77777778);
 
+  a {
+    color:#595454;
+  }
+
+  a:hover{
+
+  }
+
   .hematology-our-research-header {
     height: 9%;
     width: 100%;
@@ -1441,6 +1449,8 @@ footer {
 
         // Hematology Research - Sub-Pages
 
+
+
         //CAR T CELL
         .targeting-bcma-cart-wrapper {
           top: 21.5%;
@@ -1545,33 +1555,33 @@ footer {
           margin-top:8%;
         }
 
-        .CC-99282-celeblon-wrapper {
+        .CC-99282-cereblon-wrapper {
           top: 59.5%;
           left: 4.5%;
           width: 18%;
           height: 36.5%;
         }
 
-        .CC-99282-celeblon-img
+        .CC-99282-cereblon-img
         {
           width:100%;
           margin-top:12%;
         }
 
-        .iberdomide-celeblon-wrapper {
+        .iberdomide-cereblon-wrapper {
           top: 59.5%;
           left: 24.5%;
           width: 18%;
           height: 36.5%;
         }
 
-        .iberdomide-celeblon-img
+        .iberdomide-cereblon-img
         {
           width:70%;
           margin: 8% 17% 0;
         }
 
-        .celeblon-additional-clinical-trials-wrapper {
+        .cereblon-additional-clinical-trials-wrapper {
           position: absolute;
           top: 59%;
           left: 50%;
@@ -1596,7 +1606,7 @@ footer {
           }
         }
 
-        .celeblon-scientific-resources-wrapper {
+        .cereblon-scientific-resources-wrapper {
           position: absolute;
           top: 60%;
           left: 66.5%;
@@ -1834,6 +1844,9 @@ footer {
         }
 
         //Myeloid Disease Subpage
+
+
+
         .myelofibrosis-mechanism {
           top: 21.5%;
           left: 4.5%;
@@ -2459,4 +2472,15 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.vimeo-wrapper {
+  height:80%;
+  width:80%;
+}
+
+.embed-vimeo-content {
+    width: 100%;
+    height: 100%;
+    border: none;
 }

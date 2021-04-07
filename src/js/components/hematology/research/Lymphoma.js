@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useMetaInfo } from "../../../utils/hooks";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
+import { Modal } from "react-bootstrap";
+
 const Lymphoma = () =>
 {
   const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
+  const [ modalName, setModalName ] = useState("");
 
   useEffect(() =>
   {
@@ -25,10 +28,10 @@ const Lymphoma = () =>
           <div className="main-area-wrapper-inner">
             <h1>Lymphoma</h1>
 
-            <div className="nhl-and-cll-wrapper link-wrapper">
+            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/tct-VV-MED-01741.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="nhl-and-cll-wrapper link-wrapper">
               <img alt="Clinical research in NHL and CLL" className="nhl-and-cll-img" src="/img/hematology/research/Clinical-research-in-NHL-and-CLL.png"></img>
               <h2>Clinical research in NHL and CLL</h2>
-            </div>
+            </a>
 
             <div className="lymphoma-additional-clinical-trials-wrapper">
               <span>Additional Clinical Trials</span>
@@ -40,22 +43,20 @@ const Lymphoma = () =>
               <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
-            <div className="targets-nhl-and-cll-wrapper link-wrapper">
+            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01740.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="targets-nhl-and-cll-wrapper link-wrapper">
               <img alt="Targets in NHL and CLL" className="targets-nhl-and-cll-img" src="/img/hematology/research/Targets-in-NHL-and-CLL.png"></img>
               <h2>Targets in NHL and CLL</h2>
-            </div>
+            </a>
 
-            <div className="iberdomide-wrapper link-wrapper">
+            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01747.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="iberdomide-wrapper link-wrapper">
               <img alt="Clinical trial: Iberdomide in relapsed or refractory lymphomas" className="iberdomide-img" src="/img/hematology/research/Clinical-trial-Iberdomide-in-relapsed-or-refractory-lymphomas.jpg"></img>
               <h2>Clinical trial: Iberdomide in relapsed or refractory lymphomas</h2>
-            </div>
+            </a>
 
-            <div className="CC-99282-wrapper link-wrapper">
+            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01748.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="CC-99282-wrapper link-wrapper">
               <img alt="Clinical trial: CC-99282 in relapsed or refractory CLL, SLL, and NHL" className="CC-99282-img" src="/img/hematology/research/Clinical-trial-CC-99282-in-relapsed-or-refractory-CLL-SLL-and-NHL.png"></img>
               <h2>Clinical trial: CC-99282 in relapsed or refractory CLL, SLL, and NHL</h2>
-            </div>
-
-
+            </a>
 
             <div className="medical-information-wrapper">
               <span>Medical Information</span>
@@ -71,6 +72,29 @@ const Lymphoma = () =>
         <Link to="/hematology/our-research" className="button-pink back-to-home"><img src={ process.env.PUBLIC_URL + "/img/icons/arrow-back.svg" } alt="Arrow Back" /> Back to Our Research</Link>
         <a href="https://www.bms.com/privacy-policy.html" target="_blank" rel="noreferrer" className="button-dark privacy-policy-btn">Privacy Policy</a>
       </div>
+
+      { !!modalName &&
+        <Modal
+          show={ !!modalName }
+          onHide={ () => setModalName("") }
+          backdrop="static"
+          centered
+          className="hematology-medicines-modal-wrapper"
+        >
+          <Modal.Header closeButton></Modal.Header>
+          <Modal.Body>
+            { modalName === "myelofibrosis-mechanism" &&
+              <div className="general-section-wrapper">
+                <div className="vimeo-wrapper">
+                  <iframe id="embed-element" className="embed-vimeo-content" src="https://player.vimeo.com/video/483788660?autoplay=1" allow="autoplay; encrypted-media"></iframe>
+                </div>
+              </div>
+            }
+
+          </Modal.Body>
+        </Modal>
+      }
+
     </div>
   );
 };

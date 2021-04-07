@@ -25,15 +25,15 @@ const CARTCellTherapy= () =>
           <div className="main-area-wrapper-inner">
             <h1>CAR T Cell Therapy</h1>
 
-            <div className="targeting-bcma-cart-wrapper link-wrapper">
+            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01750.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer"  className="targeting-bcma-cart-wrapper link-wrapper">
               <img alt="Targeting BCMA using CAR T" className="targeting-bcma-cart-img" src="/img/hematology/research/Targeting-BCMA-using-CAR-T.png"></img>
               <h2>Targeting BCMA using CAR T</h2>
-            </div>
+            </a>
 
-            <div className="idecabtagene-vicleucel-cart-wrapper link-wrapper">
+            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01749.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer"  className="idecabtagene-vicleucel-cart-wrapper link-wrapper">
               <img alt="Clinical trial: Idecabtagene vicleucel in multiple myeloma" className="idecabtagene-vicleucel-cart-img" src="/img/hematology/research/idecabtagene-vicleucel-cart.jpg"></img>
               <h2>Clinical trial: Idecabtagene vicleucel in multiple myeloma</h2>
-            </div>
+            </a>
 
             <div className="cart-additional-clinical-trials-wrapper">
               <span>Additional Clinical Trials</span>
