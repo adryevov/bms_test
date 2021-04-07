@@ -20,6 +20,10 @@ a:hover {
   padding: 0;
 }
 
+.blurry-background {
+  filter: blur(15px);
+}
+
 .button-pink {
   background-color: $pink-color;
   color: #ffffff;
@@ -1630,6 +1634,92 @@ footer {
   }
 }
 
+.hematology-modal-wrapper {
+  .modal-dialog {
+    max-width: max-content;
+
+    .modal-content {
+      border-radius: 0.75rem;
+
+      .modal-header {
+        border-bottom: 0;
+        padding: 1.5rem;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+          color: $pink-color;
+          opacity: 1;
+          padding: 0;
+          margin: 0;
+          height: 14px;
+          width: 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.5rem;
+          font-weight: 300;
+        }
+      }
+
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 8rem;
+
+        h2.hematology-section-name {
+          font-size: 48px;
+          margin: 0 0 1rem;
+        }
+
+        hr {
+          border-top: 2px solid $pink-color;
+          border-bottom: 2px solid $pink-color;
+          width: 106px;
+          border-radius: 4px;
+        }
+
+        ul.hematology-modal-links {
+          padding: 0;
+          margin: 2rem 0 0;
+
+          li {
+            list-style-type: none;
+
+            &:not(:last-of-type) {
+              margin: 0 0 1rem;
+            }
+
+            a {
+              font-size: 22px;
+              color: #ffffff;
+              font-weight: 700;
+              background: #A59F9F;
+              border-radius: 20px;
+              height: 46px;
+              width: 464px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+              border: none;
+              line-height: 1;
+
+              img {
+                position: absolute;
+                right: 1.25rem;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   .carousel-homepage {
     .carousel-slide {
@@ -1716,7 +1806,7 @@ footer {
 
           .link-wrapper {
             padding: 0.5rem 3rem 0;
-            
+
             h2 {
               font-size: 1.25rem;
             }
