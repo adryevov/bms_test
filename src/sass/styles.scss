@@ -1441,6 +1441,110 @@ footer {
 
         // Hematology Research - Sub-Pages
 
+        //Multiple Myeloma
+        .targeting-protein-wrapper {
+          top: 21.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 36%;
+        }
+
+        .targeting-protein-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .cereblon-modulation-in-multiple-myeloma-wrapper {
+          top: 21.5%;
+          left: 24.5%;
+          width: 18%;
+          height: 36%;
+        }
+
+        .cereblon-modulation-in-multiple-myeloma-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .targeting-BCMA-in-multiple-myeloma-wrapper {
+          top: 21.5%;
+          left: 45.5%;
+          width: 18%;
+          height: 36%;
+        }
+
+        .targeting-BCMA-in-multiple-myeloma-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .clinical-trial-Idecabtagene-vicleucel-in-multiple-myeloma-wrapper {
+          top: 61.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 36%;
+        }
+
+        .clinical-trial-Idecabtagene-vicleucel-in-multiple-myeloma-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .multiple-myeloma-additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 35%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .multiple-myeloma-scientific-resources-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 51.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+
         //Lymphoma
         .nhl-and-cll-wrapper {
           top: 21.5%;
