@@ -1441,6 +1441,83 @@ footer {
 
         // Hematology Research - Sub-Pages
 
+        //CAR T CELL
+        .targeting-bcma-cart-wrapper {
+          top: 21.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 36%;
+        }
+
+        .targeting-bcma-cart-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .idecabtagene-vicleucel-cart-wrapper {
+          top: 21.5%;
+          left: 24.5%;
+          width: 18%;
+          height: 36.5%;
+        }
+
+        .idecabtagene-vicleucel-cart-img
+        {
+          width:70%;
+          margin: 8% 17% 0;
+        }
+
+        .cart-additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 10%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .cart-scientific-resources-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 26.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
         //Cereblon Modulation
         .targeting-protein-cereblon-wrapper {
           top: 21.5%;
