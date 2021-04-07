@@ -19,7 +19,6 @@ function App() {
           <Route exact path="/" component={ Home } />
           <Route exact path="/abstracts" component={ Abstracts } />
           <Route exact path="/product-theater-schedule" component={ TheaterSchedule } />
-          <Route exact path="/oncology/our-medicines" component={ OncologyMedicines } />
           <Route exact path="/oncology/our-research" component={ OncologyResearch } />
           <Route exact path="/hematology/our-medicines" component={ HematologyMedicines } />
           <Route exact path="/hematology/our-research" component={ HematologyResearch } />
