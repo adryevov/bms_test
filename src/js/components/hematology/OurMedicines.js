@@ -6,6 +6,7 @@ import { useMetaInfo } from "../../utils/hooks";
 import { Modal } from "react-bootstrap";
 import GrayDownloadIconButton from "../UI/GrayDownloadIconButton";
 import PinkLinkIconButton from "../UI/PinkLinkIconButton";
+import VideoPlayer from "../UI/VideoPlayer";
 
 const OurMidicines = () =>
 {
@@ -138,9 +139,7 @@ const OurMidicines = () =>
 
             { modalName === "reblozyl-moa-video" &&
               <div className="video-section-wrapper">
-                <video controls poster={ process.env.PUBLIC_URL + "/img/video-banner.png" }>
-                  <source src="https://virtual-video-resources.s3.amazonaws.com/bms/videos/US-RBZ-20-0443+MOA_HCP+GPO+Video+Asset+V2.mp4" type="video/mp4" />
-                </video>
+                <VideoPlayer src="https://virtual-video-resources.s3.amazonaws.com/bms/videos/US-RBZ-20-0443+MOA_HCP+GPO+Video+Asset+V2.mp4" />
               </div>
             }
 

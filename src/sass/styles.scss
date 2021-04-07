@@ -12,6 +12,11 @@ html, body {
   color: #595454;
 }
 
+video {
+  max-width: 100%;
+  cursor: pointer;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -1837,10 +1842,6 @@ footer {
 
 .video-section-wrapper {
   max-width: 80vw;
-
-  video {
-    width: 100%;
-  }
 }
 
 @media (max-width: 1440px) {
