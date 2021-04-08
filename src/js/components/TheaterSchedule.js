@@ -32,7 +32,7 @@ const TheaterSchedule = () =>
           <div className="product-theater-schedule-card">
             <p className="speaker-name">Ritesh Rathore, MD</p>
             <p className="event-name">Dual I-O Treatment Option for 1L NSCLC</p>
-            <p className="date">Date: Saturday April 10<br />Time: 1:00-2:00 pm EST</p>
+            <p className="date">Saturday April 10<br />1:00-2:00 pm EST</p>
             <Link to="#" className="arrow-link-pink">View <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
         </Container>

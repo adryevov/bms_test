@@ -77,8 +77,8 @@ const OurResearch = () =>
                 <h4>Effector cell function<sup>7,8</sup></h4>
                 <p>Various components of the immune system and tumor microenvironment may regulate an effector cell’s ability to eliminate tumors. Modulating pathways involved in the regulation of effector cells may enhance their activity.</p>
                 <p><b>Inhibitory immune checkpoints:</b> PD-1, CTLA-4, LAG-3, TIGIT, TIM-3, NKG2A</p>
-                <p><b>Effector cell activation, proliferation, and cytotoxicity:</b> IL-2, IL-12, 0X40, SLAMF7</p>
-                <p><b>Immunosuppressive metabolic pathways: IDO1, AHR</b></p>
+                <p style={{ whiteSpace: "nowrap" }}><b>Effector cell activation, proliferation, and cytotoxicity:</b> IL-2, IL-12, 0X40, SLAMF7</p>
+                <p><b>Immunosuppressive metabolic pathways:</b> IDO1, AHR</p>
                 <p><b>Tumor antigen to direct T-cell activity:</b> PSCA</p>
               </div>
             </div>
@@ -87,7 +87,7 @@ const OurResearch = () =>
               <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/pathway-category-2.png" } alt="Tumor cell recognition" />
               <div className="text-content-wrapper">
                 <h4>Tumor cell recognition<sup>7,9</sup></h4>
-                <p>Tumors may adapt mechanisms to evade immune detection. Leveraging pathways, including those involved in antigen presentation and phagocytosis, may promote better tumor cell recognition.</p>
+                <p>Tumors may adapt mechanisms to evade immune detection.<br />Leveraging pathways, including those involved in antigen presentation and phagocytosis, may promote better tumor cell recognition.</p>
                 <p><b>Antigen presentation:</b> NLRP3, STING, TLR8</p>
                 <p><b>Phagocytosis of tumor cells:</b> SIRPa</p>
                 <p><b>Antibody-dependent tumor-cell death:</b> FucGM1</p>
@@ -110,7 +110,7 @@ const OurResearch = () =>
               <div className="text-content-wrapper">
                 <h4>Tumor-intrinsic pathways<sup>12,13</sup></h4>
                 <p>Various signaling and metabolic pathways intrinsic to tumor cells may drive oncogenesis and tumor growth. Blocking these pathways may promote tumor cell death.</p>
-                <p><b>Protein degradation pathways:</b> Ubiquitin proteasome pathway, androgen receptor degredation</p>
+                <p><b>Protein degradation pathways:</b> Ubiquitin proteasome pathway,<br />androgen receptor degredation</p>
                 <p><b>Epigenetic drivers of oncogenesis:</b> BET, LSD1</p>
               </div>
             </div>

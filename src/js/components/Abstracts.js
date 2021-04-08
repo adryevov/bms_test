@@ -31,7 +31,7 @@ const Abstracts = () =>
           <div className="abstract-card">
             <div>
               <p className="name">Patrick M. Forde</p>
-              <p className="description">Nivolumab (NIVO) + platinum-doublet chemotherapy (chemo) vs chemo as neoadjuvant treatment (tx) for resectable (IB-IIIA) non-small cell lung cancer (NSCLC) in the phase 3 CheckMate 816 trial</p>
+              <p className="description">Nivolumab (NIVO) + platinumdoublet chemotherapy (chemo) vs chemo as neoadjuvant treatment (tx) for resectable (IB-IIIA) non-small cell lung cancer (NSCLC) in the phase 3 CheckMate 816 trial</p>
             </div>
 
             <div>
@@ -43,7 +43,7 @@ const Abstracts = () =>
           <div className="abstract-card">
             <div>
               <p className="name">Georgina V. Long</p>
-              <p className="description">Adjuvant therapy with nivolumab combined with ipilimumab vs NIVO alone in patients with stage III/IV melanoma (CheckMate 915)</p>
+              <p className="description">Adjuvant therapy with nivolumab (NIVO) combined with ipilimumab (IPI) vs NIVO alone in patients (pts) with resected stage IIIB-D/IV melanoma (CheckMate 915)</p>
             </div>
 
             <div>
@@ -55,7 +55,7 @@ const Abstracts = () =>
           <div className="abstract-card">
             <div>
               <p className="name">Lin Shen</p>
-              <p className="description">First-Line NIVO plus chemo versus chemo in patients with advanced gastric cancer/gastroesophageal junction cancer/esophageal adenocarcinoma (GC/GEJC/EAC): CheckMate 649 Chinese subgroup analysis</p>
+              <p className="description">First-Line (1L) nivolumab (NIVO) plus chemotherapy (chemo) versus chemo in patients (pts) with advanced gastric cancer/ gastroesophageal junction cancer/ esophageal adenocarcinoma (GC/ GEJC/EAC): CheckMate 649 Chinese subgroup analysis</p>
             </div>
 
             <div>
@@ -79,7 +79,7 @@ const Abstracts = () =>
           <div className="abstract-card">
             <div>
               <p className="name">Lloye M. Dillon<br />Bin Li</p>
-              <p className="description">Distribution and prevalence of LAG-3 expression in samples of melanoma and gastric/gastroesophageal junction cancer</p>
+              <p className="description">Distribution and prevalence of LAG-3 expression in samples of melanoma and gastric/ gastroesophageal junction cancer</p>
             </div>
 
             <div>

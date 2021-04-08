@@ -41,8 +41,8 @@ const ContactUsModal = () =>
       <Modal.Header closeButton></Modal.Header>
       <Modal.Body>
         <ul className="homepage-modal-links">
-          <li><a href="https://www.bms.com/about-us/contact-us.html">Contact Us <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-          <li><a href="https://www.bms.com/researchers-and-partners/independent-research.html">Our New Independent Research Process <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+          <li><a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer">Contact Us <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+          <li><a href="https://www.bms.com/researchers-and-partners/independent-research.html" target="_blank" rel="noreferrer">Our New Independent Research Process <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
         </ul>
       </Modal.Body>
     </Modal>

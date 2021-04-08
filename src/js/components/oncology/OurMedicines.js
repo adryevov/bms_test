@@ -57,7 +57,7 @@ const OurMedicines = () =>
 
       <section className="section-medicines-top">
         <Container>
-          <a href="https://www.bmsaccesssupport.bmscustomerconnect.com/" target="_blank" rel="noreferrer" className="arrow-link-pink">BMS Access Support<sup>&reg;</sup> <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
+          <a href="https://www.bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="arrow-link-pink">BMS Access Support<sup>&reg;</sup> <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
         </Container>
       </section>
 

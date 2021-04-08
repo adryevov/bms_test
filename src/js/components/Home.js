@@ -21,7 +21,7 @@ const Home = () =>
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={5000} className="carousel-homepage">
+      <Carousel controls={false} interval={null} className="carousel-homepage">
         <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-welcome.png)" }}>
             <Container>
@@ -123,7 +123,7 @@ const Home = () =>
           </div>
 
           <div className="homepage-bottom-card">
-            <h3>Connect with BMS</h3>
+            <h3>BMS Information</h3>
             <Button onClick={ () => setIsContactDialogOpen(true) } className="button-pink">Contact Us</Button>
           </div>
         </Container>

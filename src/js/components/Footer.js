@@ -32,7 +32,7 @@ const Footer = () =>
                 </Fragment>
               }
 
-              { window.location.pathname === "/oncology/our-research" && <p>ONC-US-2100074 03/21</p> }
+              { window.location.pathname === "/oncology/our-research" && <p>ONC-US-2100053 03/21</p> }
             </Col>
 
             <Col md={4}>
@@ -61,16 +61,6 @@ const Footer = () =>
                   <a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer">Contact Us</a>
                 </li>
               </ul>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-
-      <div className="footer-bottom">
-        <Container>
-          <Row>
-            <Col md={12}>
-              <span className="warning">This site is intended for U.S. Healthcare Professionals only.</span>
             </Col>
           </Row>
         </Container>
