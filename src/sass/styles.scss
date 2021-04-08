@@ -1288,14 +1288,6 @@ footer {
   width: 100%;
   height: calc(100vw / 1.77777778);
 
-  a {
-    color:#595454;
-  }
-
-  a:hover{
-
-  }
-
   .hematology-our-research-header {
     height: 9%;
     width: 100%;
@@ -1401,6 +1393,13 @@ footer {
             bottom: 0;
             width: 100%;
             text-align: center;
+            color: #595454;
+          }
+
+          &:hover {
+            > h2 {
+              color: $pink-color;
+            }
           }
         }
 
@@ -1454,13 +1453,10 @@ footer {
         }
 
         // Hematology Research - Sub-Pages
-
-
-
         //CAR T CELL
 
         .cartc-medinfo {
-          left:58%;
+          left: 58%;
         }
 
         .targeting-bcma-cart-wrapper {
@@ -1468,20 +1464,20 @@ footer {
           left: 4.5%;
           width: 18%;
           height: 35%;
-          h2{
-            font-size:1.1vw !important;
-            margin-bottom:8%;
+
+          h2 {
+            font-size: 1.1vw !important;
+            margin-bottom: 8%;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .targeting-bcma-cart-img
-        {
-          width:100%;
-          margin-top:8%;
+        .targeting-bcma-cart-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
         .idecabtagene-vicleucel-cart-wrapper {
@@ -1489,18 +1485,18 @@ footer {
           left: 24.8%;
           width: 18%;
           height: 35%;
-          h2{
-            font-size:1.1vw !important;
+
+          h2 {
+            font-size: 1.1vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .idecabtagene-vicleucel-cart-img
-        {
-          width:70%;
+        .idecabtagene-vicleucel-cart-img {
+          width: 70%;
           margin: 8% 17% 0;
         }
 
@@ -1560,19 +1556,19 @@ footer {
           left: 4.5%;
           width: 18%;
           height: 35%;
-          h2{
-            font-size:1.1vw !important;
+
+          h2 {
+            font-size: 1.1vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color:$pink-color;
           }
         }
 
-        .targeting-protein-cereblon-img
-        {
+        .targeting-protein-cereblon-img {
           width:70%;
-          margin:8% 15% 0;
+          margin: 8% 15% 0;
         }
 
         .cereblon-modulation-cereblon-wrapper {
@@ -1580,19 +1576,19 @@ footer {
           left: 24.5%;
           width: 18%;
           height: 35%;
-          h2{
-            font-size:1.3vw !important;
+
+          h2 {
+            font-size: 1.3vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .cereblon-modulation-cereblon-img
-        {
-          width:100%;
-          margin-top:8%;
+        .cereblon-modulation-cereblon-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
         .CC-99282-cereblon-wrapper {
@@ -1600,19 +1596,19 @@ footer {
           left: 4.5%;
           width: 18%;
           height: 36.5%;
-          h2{
-            font-size:1vw !important;
+
+          h2 {
+            font-size: 1vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .CC-99282-cereblon-img
-        {
-          width:100%;
-          margin-top:12%;
+        .CC-99282-cereblon-img {
+          width: 100%;
+          margin-top: 12%;
         }
 
         .iberdomide-cereblon-wrapper {
@@ -1620,19 +1616,19 @@ footer {
           left: 24.5%;
           width: 18%;
           height: 36.5%;
-          h2{
-            font-size:.9vw !important;
+
+          h2 {
+            font-size: .9vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .iberdomide-cereblon-img
-        {
-          width:100%;
-          margin: 15% 0% 0;
+        .iberdomide-cereblon-img {
+          width: 100%;
+          margin: 15% 0 0;
         }
 
         .cereblon-additional-clinical-trials-wrapper {
@@ -1692,19 +1688,19 @@ footer {
           left: 4.5%;
           width: 18%;
           height: 35%;
-          h2{
-            font-size:1.1vw !important;
+
+          h2 {
+            font-size: 1.1vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .targeting-protein-img
-        {
-          width:70%;
-          margin:14% 15% 0;
+        .targeting-protein-img {
+          width: 70%;
+          margin: 14% 15% 0;
         }
 
         .cereblon-modulation-in-multiple-myeloma-wrapper {
@@ -1712,19 +1708,19 @@ footer {
           left: 24.5%;
           width: 18%;
           height: 35%;
-          h2{
-            font-size:1.3vw !important;
+
+          h2 {
+            font-size: 1.3vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .cereblon-modulation-in-multiple-myeloma-img
-        {
-          width:100%;
-          margin-top:8%;
+        .cereblon-modulation-in-multiple-myeloma-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
         .targeting-BCMA-in-multiple-myeloma-wrapper {
@@ -1732,19 +1728,19 @@ footer {
           left: 45.3%;
           width: 18%;
           height: 35%;
-          h2{
-            font-size:1.2vw !important;
+
+          h2 {
+            font-size: 1.2vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .targeting-BCMA-in-multiple-myeloma-img
-        {
-          width:100%;
-          margin-top:8%;
+        .targeting-BCMA-in-multiple-myeloma-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
         .clinical-trial-Idecabtagene-vicleucel-in-multiple-myeloma-wrapper {
@@ -1752,19 +1748,19 @@ footer {
           left: 4.5%;
           width: 18%;
           height: 36%;
-          h2{
+
+          h2 {
             font-size:1.1vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .clinical-trial-Idecabtagene-vicleucel-in-multiple-myeloma-img
-        {
-          width:100%;
-          margin-top:8%;
+        .clinical-trial-Idecabtagene-vicleucel-in-multiple-myeloma-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
         .multiple-myeloma-additional-clinical-trials-wrapper {
@@ -1824,86 +1820,82 @@ footer {
           left: 4.5%;
           width: 18%;
           height: 36%;
-          h2{
-            font-size:1.3vw !important;
+
+          h2 {
+            font-size: 1.3vw !important;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .nhl-and-cll-img
-        {
-          width:100%;
-          margin-top:8%;
+        .nhl-and-cll-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
-        .targets-nhl-and-cll-wrapper
-        {
+        .targets-nhl-and-cll-wrapper {
           top: 21%;
           left: 25%;
           width: 18%;
           height: 36%;
-          h2{
-            font-size:1.3vw !important;
-            margin-bottom:8%;
+
+          h2 {
+            font-size: 1.3vw !important;
+            margin-bottom: 8%;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .targets-nhl-and-cll-img
-        {
-          width:100%;
-          margin-top:8%;
+        .targets-nhl-and-cll-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
-
-        .iberdomide-wrapper
-        {
+        .iberdomide-wrapper {
           top: 60%;
           left: 4.5%;
           width: 18%;
           height: 36%;
-          h2{
-            font-size:1vw !important;
-            margin-bottom:6%;
+
+          h2 {
+            font-size: 1vw !important;
+            margin-bottom: 6%;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .iberdomide-img
-        {
-          width:100%;
-          margin-top:8%;
+        .iberdomide-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
-        .CC-99282-wrapper
-        {
+        .CC-99282-wrapper {
           top: 60%;
           left: 24.7%;
           width: 18%;
           height: 36%;
-          h2{
-            font-size:1vw !important;
-            margin-bottom:6%;
+
+          h2 {
+            font-size: 1vw !important;
+            margin-bottom: 6%;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .CC-99282-img
-        {
-          width:100%;
-          margin-top:8%;
+        .CC-99282-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
         .lymphoma-additional-clinical-trials-wrapper {
@@ -1963,19 +1955,19 @@ footer {
           width: 18.2%;
           height: 35%;
 
-          h2{
-            font-size:1.2vw !important;
+          h2 {
+            font-size: 1.2vw !important;
+            margin-bottom: 0.5rem;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .myelofibrosis-mechanism-img
-        {
-          width:100%;
-          margin-top:8%;
+        .myelofibrosis-mechanism-img {
+          width: 100%;
+          margin-top: 8%;
         }
 
         .fedratinib-wrapper {
@@ -1983,19 +1975,20 @@ footer {
           left: 4.5%;
           width: 18%;
           height: 35.5%;
-          h2{
-            font-size:1.2vw !important;
+
+          h2 {
+            font-size: 1.2vw !important;
+            margin-bottom: 0.5rem;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .fedratinib-img
-        {
-          width:100%;
-          margin-top:12%;
+        .fedratinib-img {
+          width: 100%;
+          margin-top: 12%;
         }
 
         .luspatercept-erythropoiesis-wrapper {
@@ -2003,18 +1996,19 @@ footer {
           left: 24.5%;
           width: 18%;
           height: 35.5%;
-          h2{
-            font-size:1.2vw !important;
+
+          h2 {
+            font-size: 1.2vw !important;
+            margin-bottom: 0.5rem;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .luspatercept-erythropoiesis-img
-        {
-          width:70%;
+        .luspatercept-erythropoiesis-img {
+          width: 70%;
           margin: 6% 17% 0;
         }
 
@@ -2023,18 +2017,19 @@ footer {
           left: 45.2%;
           width: 18%;
           height: 35.5%;
-          h2{
-            font-size:1.0vw !important;
+
+          h2 {
+            font-size: 1.1vw !important;
+            margin-bottom: 0.5rem;
           }
-          &:hover
-          {
-            color:#BE2BBB;
+
+          &:hover {
+            color: $pink-color;
           }
         }
 
-        .luspatercept-mpn-img
-        {
-          width:70%;
+        .luspatercept-mpn-img {
+          width: 70%;
           margin: 2% 17% 0;
         }
 
@@ -2087,8 +2082,6 @@ footer {
             right: 0;
           }
         }
-
-
       }
     }
   }
@@ -2521,6 +2514,16 @@ footer {
   }
 }
 
+.vimeo-wrapper {
+  .embed-vimeo-content {
+    width: 80vw;
+    height: calc(80vw / 1.7777778);
+
+    max-width: 100%;
+    border: none;
+  }
+}
+
 @media (max-width: 1440px) {
   .carousel-homepage {
     .carousel-slide {
@@ -2639,13 +2642,4 @@ footer {
   }
 }
 
-.vimeo-wrapper {
-  height:80%;
-  width:80%;
-}
 
-.embed-vimeo-content {
-    width: 100%;
-    height: 100%;
-    border: none;
-}

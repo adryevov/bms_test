@@ -26,12 +26,12 @@ const CARTCellTherapy= () =>
             <h1>CAR T Cell Therapy</h1>
 
             <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01750.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer"  className="targeting-bcma-cart-wrapper link-wrapper">
-              <img alt="Targeting BCMA using CAR T" className="targeting-bcma-cart-img" src="/img/hematology/research/Targeting-BCMA-using-CAR-T.png"></img>
+              <img alt="Targeting BCMA using CAR T" className="targeting-bcma-cart-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/Targeting-BCMA-using-CAR-T.png" } />
               <h2>Targeting BCMA using CAR T</h2>
             </a>
 
             <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01749.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer"  className="idecabtagene-vicleucel-cart-wrapper link-wrapper">
-              <img alt="Clinical trial: Idecabtagene vicleucel in multiple myeloma" className="idecabtagene-vicleucel-cart-img" src="/img/hematology/research/idecabtagene-vicleucel-cart.jpg"></img>
+              <img alt="Clinical trial: Idecabtagene vicleucel in multiple myeloma" className="idecabtagene-vicleucel-cart-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/idecabtagene-vicleucel-cart.jpg" } />
               <h2>Clinical trial: Idecabtagene vicleucel in multiple myeloma</h2>
             </a>
 

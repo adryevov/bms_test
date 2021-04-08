@@ -3,7 +3,6 @@ import { useMetaInfo } from "../../../utils/hooks";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-
 import { Modal } from "react-bootstrap";
 
 const MyeloidDisease = () =>
@@ -29,7 +28,7 @@ const MyeloidDisease = () =>
             <h1>Myeloid Disease</h1>
 
             <div className="myelofibrosis-mechanism link-wrapper" onClick={ () => setModalName("myelofibrosis-mechanism") } >
-              <img alt="Myelofibrosis mechanism of disease " className="myelofibrosis-mechanism-img" src="/img/hematology/research/myelofibrosis-mechanism-of-disease.png"></img>
+              <img alt="Myelofibrosis mechanism of disease " className="myelofibrosis-mechanism-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/myelofibrosis-mechanism-of-disease.png" } />
               <h2>Myelofibrosis mechanism of disease (video)</h2>
             </div>
 
@@ -44,21 +43,19 @@ const MyeloidDisease = () =>
             </div>
 
             <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01765.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="fedratinib-wrapper link-wrapper">
-              <img alt="Clinical trial: Fedratinib in myelofibrosis" className="fedratinib-img" src="/img/hematology/research/clinical-trial-fedratinib-in-myelofibrosis.png"></img>
+              <img alt="Clinical trial: Fedratinib in myelofibrosis" className="fedratinib-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/clinical-trial-fedratinib-in-myelofibrosis.png" } />
               <h2>Clinical trial: Fedratinib in myelofibrosis</h2>
             </a>
 
             <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01738.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="luspatercept-erythropoiesis-wrapper link-wrapper">
-              <img alt="Clinical trial: Luspatercept in erythropoiesis disorders" className="luspatercept-erythropoiesis-img" src="/img/hematology/research/clinical-trial-luspatercept-in-erythropoiesis-disorders.png"></img>
+              <img alt="Clinical trial: Luspatercept in erythropoiesis disorders" className="luspatercept-erythropoiesis-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/clinical-trial-luspatercept-in-erythropoiesis-disorders.png" } />
               <h2>Clinical trial: Luspatercept in erythropoiesis disorders</h2>
             </a>
 
             <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01746.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="luspatercept-mpn-wrapper link-wrapper">
-              <img alt="Clinical trial: Luspatercept in MPN-associated myelofibrosis" className="luspatercept-mpn-img" src="/img/hematology/research/clinical-trial-luspatercept-in-MPN-associated-myelofibrosis.png"></img>
+              <img alt="Clinical trial: Luspatercept in MPN-associated myelofibrosis" className="luspatercept-mpn-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/clinical-trial-luspatercept-in-MPN-associated-myelofibrosis.png" } />
               <h2>Clinical trial: Luspatercept in MPN-associated myelofibrosis</h2>
             </a>
-
-
 
             <div className="medical-information-wrapper">
               <span>Medical Information</span>
@@ -88,11 +85,10 @@ const MyeloidDisease = () =>
             { modalName === "myelofibrosis-mechanism" &&
               <div className="general-section-wrapper">
                 <div className="vimeo-wrapper">
-                  <iframe id="embed-element" className="embed-vimeo-content" src="https://player.vimeo.com/video/483788660?autoplay=1" allow="autoplay; encrypted-media"></iframe>
+                  <iframe id="embed-element" className="embed-vimeo-content" src="https://player.vimeo.com/video/483788660?autoplay=1" allow="autoplay; encrypted-media" allowFullScreen title="Myelofibrosis Mechanism"></iframe>
                 </div>
               </div>
             }
-
           </Modal.Body>
         </Modal>
       }

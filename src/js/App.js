@@ -3,7 +3,6 @@ import { Switch, Route } from "react-router-dom";
 import Abstracts from "./components/Abstracts";
 import Home from "./components/Home";
 import TheaterSchedule from "./components/TheaterSchedule";
-import OncologyMedicines from "./components/oncology/OurMedicines";
 import OncologyResearch from "./components/oncology/OurResearch";
 import HematologyMedicines from "./components/hematology/OurMedicines";
 import HematologyEducationalResources from "./components/hematology/OurEducationalResources";
