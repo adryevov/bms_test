@@ -31,7 +31,7 @@ const Abstracts = () =>
           <div className="abstract-card">
             <div>
               <p className="name">Patrick M. Forde</p>
-              <p className="description">Nivolumab (NIVO) + platinumdoublet chemotherapy (chemo) vs chemo as neoadjuvant treatment (tx) for resectable (IB-IIIA) non-small cell lung cancer (NSCLC) in the phase 3 CheckMate 816 trial</p>
+              <p className="description">Nivolumab (NIVO) + platinum-doublet chemotherapy (chemo) vs chemo as neoadjuvant treatment (tx) for resectable (IB-IIIA) non-small cell lung cancer (NSCLC) in the phase 3 CheckMate 816 trial</p>
             </div>
 
             <div>

@@ -1,8 +1,7 @@
 import React, { Fragment, useEffect } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
-import { Button, Container } from "react-bootstrap";
-import { useModal } from "../UI/ContactUsModal";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { faAngleDown, faFile, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +9,6 @@ import { useMetaInfo } from "../../utils/hooks";
 
 const OurResearch = () =>
 {
-  const { setIsContactDialogOpen } = useModal();
   const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
 
   useEffect(() =>
@@ -42,7 +40,7 @@ const OurResearch = () =>
             <ul className="research-card-links">
               <li><Link to="/abstracts" className="arrow-link-pink">Our AACR Abstracts <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
               <li><a href="https://www.bmsstudyconnect.com/us/en/home.html" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Oncology Clinical Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-1/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
               <li><a href={ process.env.PUBLIC_URL + "/pdf/Oncology-Early-Stage-Disease-Pipeline.pdf?#view=Fit&toolbar=0" } target="_blank" rel="noreferrer" className="arrow-link-pink">Our Early Resectable Disease Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
           </div>
@@ -75,7 +73,7 @@ const OurResearch = () =>
               <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/pathway-category-1.png" } alt="Effector cell function" />
               <div className="text-content-wrapper">
                 <h4>Effector cell function<sup>7,8</sup></h4>
-                <p>Various components of the immune system and tumor microenvironment may regulate an effector cell’s ability to eliminate tumors. Modulating pathways involved in the regulation of effector cells may enhance their activity.</p>
+                <p style={{ maxWidth: "500px" }}>Various components of the immune system and tumor microenvironment may regulate an effector cell’s ability to eliminate tumors. Modulating pathways involved in the regulation of effector cells may enhance their activity.</p>
                 <p><b>Inhibitory immune checkpoints:</b> PD-1, CTLA-4, LAG-3, TIGIT, TIM-3, NKG2A</p>
                 <p style={{ whiteSpace: "nowrap" }}><b>Effector cell activation, proliferation, and cytotoxicity:</b> IL-2, IL-12, 0X40, SLAMF7</p>
                 <p><b>Immunosuppressive metabolic pathways:</b> IDO1, AHR</p>
@@ -87,7 +85,7 @@ const OurResearch = () =>
               <img src={ process.env.PUBLIC_URL + "/img/oncology/our-research/pathway-category-2.png" } alt="Tumor cell recognition" />
               <div className="text-content-wrapper">
                 <h4>Tumor cell recognition<sup>7,9</sup></h4>
-                <p>Tumors may adapt mechanisms to evade immune detection.<br />Leveraging pathways, including those involved in antigen presentation and phagocytosis, may promote better tumor cell recognition.</p>
+                <p style={{ maxWidth: "490px" }}>Tumors may adapt mechanisms to evade immune detection.<br />Leveraging pathways, including those involved in antigen presentation and phagocytosis, may promote better tumor cell recognition.</p>
                 <p><b>Antigen presentation:</b> NLRP3, STING, TLR8</p>
                 <p><b>Phagocytosis of tumor cells:</b> SIRPa</p>
                 <p><b>Antibody-dependent tumor-cell death:</b> FucGM1</p>
@@ -177,7 +175,7 @@ const OurResearch = () =>
         <Container className="section-border-top"></Container>
 
         <Container>
-          <p><b>References:</b> <b>1.</b> Lee SJ et al. J Immunol. 2004;173(5):3002-3012. <b>2.</b> Bryceson YT et al. Immunol Rev. 2006;214:73-91. <b>3.</b> Antonia SJ et al. Clin Cancer Res. 2014;20(24):6258-6268. <b>4.</b> Spranger S et al. Sci Transl Med. 2013;5:200ra116. <b>5.</b> Ahmadzadeh M et al. Blood. 2009;114:1537-1544. <b>6.</b> Harlin H et al. Cancer Res. 2009;69(7):3077-3085. <b>7.</b> Gonzalez H et al. Genes Dev. 2018;32:1267-1284. <b>8.</b> Marin-Acevedo JA et al. J Hematol Oncol. 2018;11:39. <b>9.</b> Disis M. Semin Oncol. 2014;41:S3-S13. <b>10.</b> Shimizu K et al. Inter Immunol. 2018;30(10):445-455. <b>11.</b> Marshall H et al. Front Oncol. 2018;8:315. <b>12.</b> National Cancer Institute. Cancer metabolism. https://ccr.cancer.gov/news/horizons/article/cell-metabolism-and-cancer. Accessed February 3, 2021. <b>13.</b> Spranger S et al. Annu Rev Cancer Biol. 2018;2:213-228.</p>
+          <p><b>References:</b> <b>1.</b> Lee SJ et al. <i>J Immunol</i>. 2004;173(5):3002-3012. <b>2.</b> Bryceson YT et al. <i>Immunol Rev</i>. 2006;214:73-91. <b>3.</b> Antonia SJ et al. <i>Clin Cancer Res</i>. 2014;20(24):6258-6268. <b>4.</b> Spranger S et al. <i>Sci Transl Med</i>. 2013;5:200ra116. <b>5.</b> Ahmadzadeh M et al. <i>Blood</i>. 2009;114:1537-1544. <b>6.</b> Harlin H et al. <i>Cancer Res</i>. 2009;69(7):3077-3085. <b>7.</b> Gonzalez H et al. <i>Genes Dev</i>. 2018;32:1267-1284. <b>8.</b> Marin-Acevedo JA et al. <i>J Hematol Oncol</i>. 2018;11:39. <b>9.</b> Disis M. <i>Semin Oncol</i>. 2014;41:S3-S13. <b>10.</b> Shimizu K et al. <i>Inter Immunol</i>. 2018;30(10):445-455. <b>11.</b> Marshall H et al. <i>Front Oncol</i>. 2018;8:315. <b>12.</b> National Cancer Institute. Cancer metabolism. https://ccr.cancer.gov/news/horizons/article/cell-metabolism-and-cancer. Accessed February 3, 2021. <b>13.</b> Spranger S et al. <i>Annu Rev Cancer Biol</i>. 2018;2:213-228.</p>
         </Container>
       </section>
 
@@ -185,7 +183,7 @@ const OurResearch = () =>
         <Container>
           <div className="content-wrapper">
             <h2>Looking for something specific?</h2>
-            <Button className="button-pink" onClick={ () => setIsContactDialogOpen(true) }>Contact Us</Button>
+            <a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer" className="button-pink">Contact Us</a>
           </div>
         </Container>
       </section>

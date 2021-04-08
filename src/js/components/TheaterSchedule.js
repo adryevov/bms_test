@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Button, Container } from "react-bootstrap";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -31,7 +30,7 @@ const TheaterSchedule = () =>
         <Container>
           <div className="product-theater-schedule-card">
             <p className="speaker-name">Ritesh Rathore, MD</p>
-            <p className="event-name">Dual I-O Treatment Option for 1L NSCLC</p>
+            <p className="event-name">Dual I-O treatment option for 1L NSCLC</p>
             <p className="date">Saturday April 10<br />1:00-2:00 pm EST</p>
             <a href="https://AACR2021.onlineeventpro.freeman.com//sessions/19770240/Bristol-Myers-Squibb-Dual-I-O-Treatment-Option-for-1L-NSCLC" target="_blank" rel="noreferrer" className="arrow-link-pink">View <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
           </div>
