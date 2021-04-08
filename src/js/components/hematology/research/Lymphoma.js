@@ -22,22 +22,22 @@ const Lymphoma = () =>
 
       <section className="main-area">
         <div className="main-area-wrapper">
-          <div className="main-area-wrapper-inner">
+          <div className="main-area-wrapper-inner lymphoma-main-area-wrapper">
             <h1>Lymphoma</h1>
 
-            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/tct-VV-MED-01741.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="nhl-and-cll-wrapper link-wrapper">
+            <a href={ process.env.PUBLIC_URL + "/pdf/VV-MED-1741_AACR_2021_NHL_Interactive_R03_INT.pdf?#view=Fit&toolbar=0" } rel="noreferrer"  target="_blank" className="nhl-and-cll-wrapper link-wrapper">
               <img alt="Clinical research in NHL and CLL" className="nhl-and-cll-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/Clinical-research-in-NHL-and-CLL.png" } />
               <h2>Clinical research in NHL and CLL</h2>
             </a>
 
             <div className="lymphoma-additional-clinical-trials-wrapper">
               <span>Additional Clinical Trials</span>
-              <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.bolderscience.com/bmspipeline/trial-finder/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
             <div className="lymphoma-scientific-resources-wrapper">
               <span>Scientific Resources</span>
-              <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
             <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01740.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="targets-nhl-and-cll-wrapper link-wrapper">
@@ -45,7 +45,7 @@ const Lymphoma = () =>
               <h2>Targets in NHL and CLL</h2>
             </a>
 
-            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01747.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="iberdomide-wrapper link-wrapper">
+            <a href={ process.env.PUBLIC_URL + "/pdf/VV-MED-01747_AACR_2021_CC-220_Panel_R14_CF.pdf?#view=Fit&toolbar=0" } rel="noreferrer"  target="_blank" className="iberdomide-wrapper link-wrapper">
               <img alt="Clinical trial: Iberdomide in relapsed or refractory lymphomas" className="iberdomide-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/Clinical-trial-Iberdomide-in-relapsed-or-refractory-lymphomas.jpg" } />
               <h2>Clinical trial: Iberdomide in relapsed or refractory lymphomas</h2>
             </a>

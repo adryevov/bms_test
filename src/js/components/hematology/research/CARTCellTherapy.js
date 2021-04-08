@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
-const CARTCellTherapy= () =>
+const CARTCellTherapy = () =>
 {
   const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
 
@@ -22,10 +22,10 @@ const CARTCellTherapy= () =>
 
       <section className="main-area">
         <div className="main-area-wrapper">
-          <div className="main-area-wrapper-inner">
+          <div className="main-area-wrapper-inner car-t-main-area-wrapper">
             <h1>CAR T Cell Therapy</h1>
 
-            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01750.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer"  className="targeting-bcma-cart-wrapper link-wrapper">
+            <a href={ process.env.PUBLIC_URL + "/pdf/VV-MED-1750_AACR_2021_BCMA_Kiosk_Truncated_L05_INT.pdf?#view=Fit&toolbar=0" } target="_blank" rel="noreferrer"  className="targeting-bcma-cart-wrapper link-wrapper">
               <img alt="Targeting BCMA using CAR T" className="targeting-bcma-cart-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/Targeting-BCMA-using-CAR-T.png" } />
               <h2>Targeting BCMA using CAR T</h2>
             </a>
@@ -37,12 +37,12 @@ const CARTCellTherapy= () =>
 
             <div className="cart-additional-clinical-trials-wrapper">
               <span>Additional Clinical Trials</span>
-              <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.bolderscience.com/bmspipeline/trial-finder/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
             <div className="cart-scientific-resources-wrapper">
               <span>Scientific Resources</span>
-              <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
             <div className="medical-information-wrapper cartc-medinfo">

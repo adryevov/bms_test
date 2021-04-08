@@ -24,7 +24,7 @@ const MyeloidDisease = () =>
 
       <section className="main-area">
         <div className="main-area-wrapper">
-          <div className="main-area-wrapper-inner">
+          <div className="main-area-wrapper-inner myeloid-disease-main-area-wrapper">
             <h1>Myeloid Disease</h1>
 
             <div className="myelofibrosis-mechanism link-wrapper" onClick={ () => setModalName("myelofibrosis-mechanism") } >
@@ -34,15 +34,15 @@ const MyeloidDisease = () =>
 
             <div className="additional-clinical-trials-wrapper">
               <span>Additional Clinical Trials</span>
-              <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.bolderscience.com/bmspipeline/trial-finder/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
             <div className="myeloid-scientific-resources-wrapper">
               <span>Scientific Resources</span>
-              <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              <a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
-            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01765.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="fedratinib-wrapper link-wrapper">
+            <a href={ process.env.PUBLIC_URL + "/pdf/VV-MED-01765_AACR_2021_Freedom_Panels_R02_CF.pdf?#view=Fit&toolbar=0" } rel="noreferrer" target="_blank" className="fedratinib-wrapper link-wrapper">
               <img alt="Clinical trial: Fedratinib in myelofibrosis" className="fedratinib-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/clinical-trial-fedratinib-in-myelofibrosis.png" } />
               <h2>Clinical trial: Fedratinib in myelofibrosis</h2>
             </a>
@@ -52,7 +52,7 @@ const MyeloidDisease = () =>
               <h2>Clinical trial: Luspatercept in erythropoiesis disorders</h2>
             </a>
 
-            <a href="https://gc-static-content.s3.amazonaws.com/bms/ash/VVMED/VV-MED-01746.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="luspatercept-mpn-wrapper link-wrapper">
+            <a href={ process.env.PUBLIC_URL + "/pdf/VV-MED-01746_16374-21XBMSIMO_AACR_2021_Ind_Pnl_R13_CF.pdf?#view=Fit&toolbar=0" } rel="noreferrer"  target="_blank" className="luspatercept-mpn-wrapper link-wrapper">
               <img alt="Clinical trial: Luspatercept in MPN-associated myelofibrosis" className="luspatercept-mpn-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/clinical-trial-luspatercept-in-MPN-associated-myelofibrosis.png" } />
               <h2>Clinical trial: Luspatercept in MPN-associated myelofibrosis</h2>
             </a>

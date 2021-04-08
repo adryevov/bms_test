@@ -2083,6 +2083,42 @@ footer {
           }
         }
       }
+
+      .myeloid-disease-main-area-wrapper, .multiple-myeloma-main-area-wrapper, .lymphoma-main-area-wrapper, .cereblon-modulation-main-area-wrapper, .car-t-main-area-wrapper {
+        h1 {
+          left: 4.5%;
+          top: 7%;
+          width: 59%;
+          height: 11%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .myeloid-disease-main-area-wrapper {
+        .medical-information-wrapper {
+          left: 61.5%;
+        }
+      }
+
+      .lymphoma-main-area-wrapper {
+        .medical-information-wrapper {
+          left: 60.75%;
+        }
+      }
+
+      .multiple-myeloma-main-area-wrapper {
+        .medical-information-wrapper {
+          left: 60%;
+        }
+      }
+
+      .cereblon-modulation-main-area-wrapper {
+        .medical-information-wrapper {
+          left: 60.5%;
+        }
+      }
     }
   }
 
