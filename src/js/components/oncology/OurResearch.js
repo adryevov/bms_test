@@ -135,7 +135,7 @@ const OurResearch = () =>
               <div className="text-content-wrapper">
                 <h4>Understanding the science behind Immuno-Oncology</h4>
                 <p>An overview of cancer, immune system pathways, and the potential of I-O research.</p>
-                <Link to="#" className="arrow-link-pink">Download <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+                <Link to="/pdf/Understanding_the_science_behind_Immuno-Oncology.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="arrow-link-pink">Download <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ const OurResearch = () =>
               <div className="text-content-wrapper">
                 <h4>Looking deeper into the science of Immuno-Oncology</h4>
                 <p>Learn more about I-O research, from revealing the power of the immune system in cancer to realizing its broad potential.</p>
-                <Link to="#" className="arrow-link-pink">Download <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
+                <Link to="/pdf/Looking_deeper_into-the_science_of_Immuno-Oncology.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="arrow-link-pink">Download <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
               </div>
             </div>
 
