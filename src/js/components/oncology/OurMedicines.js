@@ -33,7 +33,7 @@ const OurMedicines = () =>
               <Row>
                 <Col md={12}>
                   <h2 className="our-medinices-slide-2-h2">Experience the OPDIVO + YERVOY Interactive Brick Builder Activity</h2>
-                  <a href="https://bms-celgene-1610-git-legogame-globacore.vercel.app/" target="_blank" rel="noreferrer" className="button-pink">Play Now</a>
+                  <a href="https://bms-celgene-1610-git-legogame-globacore.vercel.app/" target="_blank" rel="noreferrer" className="button-pink">Play Now!</a>
                 </Col>
               </Row>
             </Container>
@@ -93,7 +93,7 @@ const OurMedicines = () =>
           <div className="medicines-card">
             <div className="medicines-inner">
               <a href="https://www.abraxanepro.com/" target="_blank" rel="noreferrer">
-                <img src={ process.env.PUBLIC_URL + "/img/icons/abraxane.svg" } alt="Abraxane" />
+                <img className="medicines-inner-abrax" src={ process.env.PUBLIC_URL + "/img/icons/ABRAXANE_logo.jpg" } alt="Abraxane" />
               </a>
             </div>
             <h3>Abraxane<sup>&reg;</sup></h3>
