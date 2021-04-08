@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
@@ -11,8 +11,8 @@ const Footer = () =>
       <div className="footer-top">
         <Container>
           <Row>
-            <Col md={6} className="footer-top-left">
-              <img src="/img/logo.png" alt="BMS logo" className="logo" />
+            <Col md={8} className="footer-top-left">
+              <img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" className="logo" />
               <p>&copy; 2021 Bristol-Myers Squibb Company. All rights reserved.</p>
 
               { window.location.pathname === "/" &&
@@ -35,7 +35,7 @@ const Footer = () =>
               { window.location.pathname === "/oncology/our-research" && <p>ONC-US-2100074 03/21</p> }
             </Col>
 
-            <Col md={6}>
+            <Col md={4}>
               <div className="footer-top-right">
                 <p>Follow Us</p>
                 <div className="social-icons-wrapper">
