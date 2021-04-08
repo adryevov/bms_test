@@ -67,7 +67,7 @@ const Home = () =>
             <h3>Oncology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/oncology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
-              <li><a href="https://bms-celgene-1610-git-oncoourmedstandalone-globacore.vercel.app/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="/oncology/our-medicines" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
               <li><Link to="/oncology/our-research" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
