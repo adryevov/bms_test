@@ -43,6 +43,7 @@ const OurResearch = () =>
               <li><Link to="/abstracts" className="arrow-link-pink">Our AACR Abstracts <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
               <li><a href="https://www.bmsstudyconnect.com/us/en/home.html" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Oncology Clinical Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
               <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-1/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="/pdf/Oncology-Early-Stage-Disease-Pipeline.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Early Resectable Disease Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
           </div>
         </Container>
