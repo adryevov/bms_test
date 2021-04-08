@@ -45,7 +45,7 @@ const CARTCellTherapy= () =>
               <a href="https://www.bolderscience.com/bmspipeline/solidtumorhematology/resources/event-3/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
 
-            <div className="medical-information-wrapper">
+            <div className="medical-information-wrapper cartc-medinfo">
               <span>Medical Information</span>
               <a href="http://www.globalbmsmedinfo.com" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
             </div>
