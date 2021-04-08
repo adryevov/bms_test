@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -18,6 +18,21 @@ const OurMidicines = () =>
     updateMetaTitle("Our Medicines");
     updateMetaDescription("Our Medicines.");
   }, [ updateMetaTitle, updateMetaDescription ]);
+
+  const _closeDialog = useCallback(() =>
+  {
+    if ([ "reblozyl-moa-video", "reblozyl-first-indication-bosing-and-administration-video", "reblozyl-second-indication-bosing-and-administration-video" ].includes(modalName)) {
+      setModalName("reblozyl-detailed");
+    }
+    else if (modalName === "r2-video")
+    {
+      setModalName("r2-detailed");
+    }
+    else
+    {
+      setModalName("");
+    }
+  }, [ modalName ]);
 
   return (
     <div className={ "hematology-our-medicines-wrapper" + (!!modalName ? " blurry-background" : "") }  style={{ backgroundImage: "url(/img/hematology/background-hematology-medicines.png)" }}>
@@ -67,7 +82,7 @@ const OurMidicines = () =>
       { !!modalName &&
         <Modal
           show={ !!modalName }
-          onHide={ () => setModalName("") }
+          onHide={ _closeDialog }
           backdrop="static"
           centered
           className="hematology-medicines-modal-wrapper"
@@ -214,7 +229,7 @@ const OurMidicines = () =>
                 <PinkLinkIconButton name="POMALYST Website" link="https://pomalysthcp.com/" blank={ true } />
                 <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
                 <GrayDownloadIconButton name="POMALYST Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_pomalyst.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="Pomalyst Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/US-POM-20-0434 POMALYST Leave-Behind-Digital (Dara Update).pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="POMALYST Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/US-POM-20-0434 POMALYST Leave-Behind-Digital (Dara Update).pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="POMALYST Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/ash/pomylast/US-POM-20-0172.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="New Patient App for Completing REMS Patient Surveys" link="https://gc-static-content.s3.amazonaws.com/bms/ash/revlimid/US-REMS-GEN200027%20REV%20printer%20PDF%2010.15%20AA.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>

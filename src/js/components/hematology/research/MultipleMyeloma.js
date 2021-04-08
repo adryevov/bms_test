@@ -41,7 +41,7 @@ const MultipleMyeloma = () =>
             </div>
 
             <a href="/img/hematology/research/VV-MED-1745_AACRA_2021_Celmod_Interactive_L15.pdf?#view=Fit&toolbar=0" rel="noreferrer"  target="_blank" className="cereblon-modulation-in-multiple-myeloma-wrapper link-wrapper">
-              <img alt="Cereblon modulation in multiple myeloma" className="cereblon-modulation-in-multiple-myeloma-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/Cereblon-modulation-in multiple-myeloma.png" } />
+              <img alt="Cereblon modulation in multiple myeloma" className="cereblon-modulation-in-multiple-myeloma-img" src={ process.env.PUBLIC_URL + "/img/hematology/research/Cereblon-modulation-in-multiple-myeloma.png" } />
               <h2>Cereblon modulation in multiple myeloma</h2>
             </a>
 
