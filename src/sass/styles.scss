@@ -2217,18 +2217,22 @@ footer {
 
         .clinical-nurse-connections-wrapper {
           position: absolute;
-          top: 57%;
+          top: 38%;
           left: 7.75%;
           width: 13%;
-          height: 25%;
+          height: 56%;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          justify-content: center;
+
+          .coming-soon {
+            color: $pink-color;
+          }
 
           h2 {
             font-size: 2.5rem;
             line-height: 1.25;
+            margin: 60% 0 0.5rem;
           }
 
           p {

@@ -35,7 +35,7 @@ const OurEducationalResources = () =>
     acuteMyeloidLeukemia: {
       name: "Acute Myeloid Leukemia (AML)",
       links: {
-        "What is AML": "https://www.centerfornurses.com/mds/what-is-mds/",
+        "What is AML": "https://www.centerfornurses.com/aml/what-is-aml/",
         "General Resources": "https://www.centerfornurses.com/general-resources/",
       },
     },
@@ -68,6 +68,7 @@ const OurEducationalResources = () =>
             <h1>Our Educational Resources</h1>
 
             <div className="clinical-nurse-connections-wrapper">
+              <p className="coming-soon">Coming Soon</p>
               <h2>Clinical Nurse Connections</h2>
               <p>A convenient new tool for scheduling virtual and in-person education with your BMS Clinical Nurse Consultant</p>
             </div>
