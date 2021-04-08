@@ -1156,6 +1156,7 @@ footer {
 
           &:hover {
             border: 5px solid $pink-color;
+            color:$pink-color;
           }
         }
 
@@ -1286,6 +1287,14 @@ footer {
   background-repeat: no-repeat;
   width: 100%;
   height: calc(100vw / 1.77777778);
+
+  a {
+    color:#595454;
+  }
+
+  a:hover{
+
+  }
 
   .hematology-our-research-header {
     height: 9%;
@@ -1443,6 +1452,643 @@ footer {
           width: 21.5%;
           height: 28.5%;
         }
+
+        // Hematology Research - Sub-Pages
+
+
+
+        //CAR T CELL
+
+        .cartc-medinfo {
+          left:58%;
+        }
+
+        .targeting-bcma-cart-wrapper {
+          top: 21.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 35%;
+          h2{
+            font-size:1.1vw !important;
+            margin-bottom:8%;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .targeting-bcma-cart-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .idecabtagene-vicleucel-cart-wrapper {
+          top: 21.5%;
+          left: 24.8%;
+          width: 18%;
+          height: 35%;
+          h2{
+            font-size:1.1vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .idecabtagene-vicleucel-cart-img
+        {
+          width:70%;
+          margin: 8% 17% 0;
+        }
+
+        .cart-additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 10%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .cart-scientific-resources-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 26.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        //Cereblon Modulation
+        .targeting-protein-cereblon-wrapper {
+          top: 21.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 35%;
+          h2{
+            font-size:1.1vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .targeting-protein-cereblon-img
+        {
+          width:70%;
+          margin:8% 15% 0;
+        }
+
+        .cereblon-modulation-cereblon-wrapper {
+          top: 21.5%;
+          left: 24.5%;
+          width: 18%;
+          height: 35%;
+          h2{
+            font-size:1.3vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .cereblon-modulation-cereblon-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .CC-99282-cereblon-wrapper {
+          top: 59.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 36.5%;
+          h2{
+            font-size:1vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .CC-99282-cereblon-img
+        {
+          width:100%;
+          margin-top:12%;
+        }
+
+        .iberdomide-cereblon-wrapper {
+          top: 59.5%;
+          left: 24.5%;
+          width: 18%;
+          height: 36.5%;
+          h2{
+            font-size:.9vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .iberdomide-cereblon-img
+        {
+          width:100%;
+          margin: 15% 0% 0;
+        }
+
+        .cereblon-additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 59%;
+          left: 50%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .cereblon-scientific-resources-wrapper {
+          position: absolute;
+          top: 60%;
+          left: 66.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+
+        //Multiple Myeloma
+        .targeting-protein-wrapper {
+          top: 21.5%;
+          left: 4.5%;
+          width: 18%;
+          height: 35%;
+          h2{
+            font-size:1.1vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .targeting-protein-img
+        {
+          width:70%;
+          margin:14% 15% 0;
+        }
+
+        .cereblon-modulation-in-multiple-myeloma-wrapper {
+          top: 21.5%;
+          left: 24.5%;
+          width: 18%;
+          height: 35%;
+          h2{
+            font-size:1.3vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .cereblon-modulation-in-multiple-myeloma-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .targeting-BCMA-in-multiple-myeloma-wrapper {
+          top: 21.5%;
+          left: 45.3%;
+          width: 18%;
+          height: 35%;
+          h2{
+            font-size:1.2vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .targeting-BCMA-in-multiple-myeloma-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .clinical-trial-Idecabtagene-vicleucel-in-multiple-myeloma-wrapper {
+          top: 60%;
+          left: 4.5%;
+          width: 18%;
+          height: 36%;
+          h2{
+            font-size:1.1vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .clinical-trial-Idecabtagene-vicleucel-in-multiple-myeloma-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .multiple-myeloma-additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 35%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .multiple-myeloma-scientific-resources-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 51.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+
+        //Lymphoma
+        .nhl-and-cll-wrapper {
+          top: 21%;
+          left: 4.5%;
+          width: 18%;
+          height: 36%;
+          h2{
+            font-size:1.3vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .nhl-and-cll-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .targets-nhl-and-cll-wrapper
+        {
+          top: 21%;
+          left: 25%;
+          width: 18%;
+          height: 36%;
+          h2{
+            font-size:1.3vw !important;
+            margin-bottom:8%;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .targets-nhl-and-cll-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+
+        .iberdomide-wrapper
+        {
+          top: 60%;
+          left: 4.5%;
+          width: 18%;
+          height: 36%;
+          h2{
+            font-size:1vw !important;
+            margin-bottom:6%;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .iberdomide-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .CC-99282-wrapper
+        {
+          top: 60%;
+          left: 24.7%;
+          width: 18%;
+          height: 36%;
+          h2{
+            font-size:1vw !important;
+            margin-bottom:6%;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .CC-99282-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .lymphoma-additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 50%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .lymphoma-scientific-resources-wrapper {
+          position: absolute;
+          top: 61%;
+          left: 66.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        //Myeloid Disease Subpage
+        .myelofibrosis-mechanism {
+          top: 21.6%;
+          left: 4.2%;
+          width: 18.2%;
+          height: 35%;
+
+          h2{
+            font-size:1.2vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .myelofibrosis-mechanism-img
+        {
+          width:100%;
+          margin-top:8%;
+        }
+
+        .fedratinib-wrapper {
+          top: 60.2%;
+          left: 4.5%;
+          width: 18%;
+          height: 35.5%;
+          h2{
+            font-size:1.2vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .fedratinib-img
+        {
+          width:100%;
+          margin-top:12%;
+        }
+
+        .luspatercept-erythropoiesis-wrapper {
+          top: 60.2%;
+          left: 24.5%;
+          width: 18%;
+          height: 35.5%;
+          h2{
+            font-size:1.2vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .luspatercept-erythropoiesis-img
+        {
+          width:70%;
+          margin: 6% 17% 0;
+        }
+
+        .luspatercept-mpn-wrapper {
+          top: 60.2%;
+          left: 45.2%;
+          width: 18%;
+          height: 35.5%;
+          h2{
+            font-size:1.0vw !important;
+          }
+          &:hover
+          {
+            color:#BE2BBB;
+          }
+        }
+
+        .luspatercept-mpn-img
+        {
+          width:70%;
+          margin: 2% 17% 0;
+        }
+
+        .additional-clinical-trials-wrapper {
+          position: absolute;
+          top: 28%;
+          left: 32%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .myeloid-scientific-resources-wrapper {
+          position: absolute;
+          top: 28%;
+          left: 48.5%;
+          width: 11.5%;
+          height: 24%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: center;
+            line-height: 1.25;
+          }
+
+          .pink-circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+
       }
     }
   }
@@ -1991,4 +2637,15 @@ footer {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
+
+.vimeo-wrapper {
+  height:80%;
+  width:80%;
+}
+
+.embed-vimeo-content {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
