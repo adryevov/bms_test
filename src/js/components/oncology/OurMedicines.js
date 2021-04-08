@@ -18,7 +18,7 @@ const OurMedicines = () =>
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={null} className="carousel-our-medicines">
+      <Carousel controls={false} interval={5000} className="carousel-our-medicines">
         <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-oncology-medicines.png)" }}>
             <Container>
