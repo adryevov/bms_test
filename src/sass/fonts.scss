@@ -61,4 +61,18 @@
   src: url('../fonts/BMSHumanity/BMSHumanity-ExtraBold.ttf') format("opentype");
 }
 
+@font-face {
+  font-family: 'Klavika';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/Klavika/KlavikaBasic-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Klavika';
+  font-weight: 400;
+  font-style: normal;
+  src: local('BMS Humanity'), url('../fonts/Klavika/KlavikaBasic-Medium.otf') format('truetype');
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
