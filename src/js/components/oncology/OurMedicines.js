@@ -33,7 +33,7 @@ const OurMedicines = () =>
               <Row>
                 <Col md={12}>
                   <h2 className="our-medinices-slide-2-h2">Experience the OPDIVO + YERVOY Interactive Brick Builder Activity</h2>
-                  <a href="https://bms-celgene-1610-git-legogame-globacore.vercel.app/" target="_blank" rel="noreferrer" className="button-pink">Play Now!</a>
+                  <a href="https://bms-celgene-1610-git-brickbuilder-globacore.vercel.app/" target="_blank" rel="noreferrer" className="button-pink">Play Now!</a>
                 </Col>
               </Row>
             </Container>
