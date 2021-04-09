@@ -575,7 +575,7 @@ footer {
       justify-content: space-between;
       background-color: #F5F0F0;
       padding: 2.5rem;
-      font-family: OpenSans;
+      font-family: 'Open Sans', sans-serif;
 
       .name, .type, .number {
         font-weight: 800;
@@ -665,13 +665,14 @@ footer {
     }
 
     .speaker-name {
-      font-weight: 800;
+      font-weight: 700;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .event-name {
       font-size: 28px;
-      font-weight: 300;
       min-height: 9rem;
+      font-family: 'Open Sans', sans-serif;
     }
 
     .date {
