@@ -12,7 +12,9 @@ const Footer = () =>
         <Container>
           <Row>
             <Col md={8} className="footer-top-left">
-              <img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" className="logo" />
+              <div className="logo">
+                <img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" />
+              </div>
               <p>&copy; 2021 Bristol-Myers Squibb Company. All rights reserved.</p>
 
               { window.location.pathname === "/" && <p>Access Support<sup>&reg;</sup> is a registered trademark of Bristol-Myers Squibb Company</p> }

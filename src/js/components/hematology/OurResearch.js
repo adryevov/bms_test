@@ -17,7 +17,7 @@ const OurResearch = () =>
   return (
     <div className="hematology-our-research-wrapper"  style={{ backgroundImage: "url(/img/hematology/background-hematology-research.png)" }}>
       <div className="hematology-our-research-header">
-        <Link to="/" className="logo-wrapper"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
+        <Link to="/" className="logo"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
       </div>
 
       <section className="main-area">

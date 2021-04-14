@@ -59,7 +59,7 @@ const OurEducationalResources = () =>
   return (
     <div className={ "hematology-our-educational-resources-wrapper" + (!!modalName ? " blurry-background" : "") } style={{ backgroundImage: "url(/img/hematology/background-hematology-educational-resources.png)" }}>
       <div className="hematology-our-educational-resources-header">
-        <Link to="/" className="logo-wrapper"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
+        <Link to="/" className="logo"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
       </div>
 
       <section className="main-area">

@@ -171,6 +171,18 @@ header {
           font-size: 24px;
           margin: 0.5rem 0 0 3rem;
         }
+
+        .logo {
+          width: 260px;
+          height: 75px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          img {
+            max-width: 100%;
+          }
+        }
       }
 
       .nav-link {
@@ -409,6 +421,18 @@ footer {
     .footer-top-left {
       p {
         margin: 0;
+      }
+
+      .logo {
+        width: 260px;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+          max-width: 100%;
+        }
       }
     }
 
@@ -1064,13 +1088,17 @@ footer {
     justify-content: center;
     align-items: center;
 
-    .logo-wrapper {
+    .logo {
+      width: 260px;
+      height: 75px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
       left: 2%;
-      max-height: 100%;
 
       img {
-        height: 100%;
+        max-width: 100%;
       }
     }
 
@@ -1302,13 +1330,17 @@ footer {
     justify-content: center;
     align-items: center;
 
-    .logo-wrapper {
+    .logo {
+      width: 260px;
+      height: 75px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
       left: 2%;
-      max-height: 100%;
 
       img {
-        height: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -2178,13 +2210,17 @@ footer {
     justify-content: center;
     align-items: center;
 
-    .logo-wrapper {
+    .logo {
+      width: 260px;
+      height: 75px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       position: absolute;
       left: 2%;
-      max-height: 100%;
 
       img {
-        height: 100%;
+        max-width: 100%;
       }
     }
   }
@@ -2568,6 +2604,42 @@ footer {
 
     max-width: 100%;
     border: none;
+  }
+}
+
+.mobile-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  img {
+    width: 260px;
+    padding: 2rem 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .text-content-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .mobile-large-font {
+      font-weight: 300;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      padding: 0 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .mobile-small-font {
+      font-size: 1.35rem;
+      padding: 0 2rem;
+      font-weight: 300;
+      line-height: 1.1;
+    }
   }
 }
 

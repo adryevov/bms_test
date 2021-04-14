@@ -37,7 +37,7 @@ const OurMidicines = () =>
   return (
     <div className={ "hematology-our-medicines-wrapper" + (!!modalName ? " blurry-background" : "") }  style={{ backgroundImage: "url(/img/hematology/background-hematology-medicines.png)" }}>
       <div className="hematology-our-medicines-header">
-        <Link to="/" className="logo-wrapper"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
+        <Link to="/" className="logo"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
         <span>This Information is intended for US Healthcare Professionals only.</span>
       </div>
 
