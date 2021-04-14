@@ -16,11 +16,9 @@ import CARTCellTherapy from "./components/hematology/research/CARTCellTherapy";
 import PageNotFound from "./components/404";
 import { ModalProvider } from "./components/UI/ContactUsModal";
 import { useIsMobile } from "./utils/hooks";
-import { Nav } from "react-bootstrap";
 
 function App() {
   const isMobile = useIsMobile();
-  console.log('isMobile', isMobile);
 
   return (
     <div className="App">
