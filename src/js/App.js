@@ -17,7 +17,7 @@ import PageNotFound from "./components/404";
 import { ModalProvider } from "./components/UI/ContactUsModal";
 import { useIsMobile } from "./utils/hooks";
 
-function App() {
+const App = () => {
   const isMobile = useIsMobile();
 
   return (
@@ -55,6 +55,6 @@ function App() {
       }
     </div>
   );
-}
+};
 
 export default App;
