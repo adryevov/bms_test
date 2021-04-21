@@ -236,7 +236,7 @@ header {
       position: absolute;
       bottom: 0.5rem;
       right: 5%;
-      font-size: 20px;
+      font-size: 1.05vw;
     }
 
     .home-slide-3-wrapper {
@@ -250,7 +250,7 @@ header {
       position: absolute;
       bottom: 0.5rem;
       left: 2%;
-      font-size: 20px;
+      font-size: 1.05vw;
     }
 
     .home-slide-4-h2 {
@@ -2644,20 +2644,6 @@ footer {
 }
 
 @media (max-width: 1440px) {
-  .carousel-homepage {
-    .carousel-slide {
-      .home-slide-2-not-patient {
-        right: 2%;
-        font-size: 16px;
-      }
-
-      .home-slide-3-not-patient {
-        right: 1%;
-        font-size: 16px;
-      }
-    }
-  }
-
   .hematology-our-medicines-wrapper {
     .main-area {
       .main-area-wrapper {
@@ -2746,19 +2732,7 @@ footer {
   }
 }
 
-@media (max-width: 1024px) {
-  .carousel-homepage {
-    .carousel-slide {
-      .home-slide-2-not-patient {
-        font-size: 12px;
-      }
-
-      .home-slide-3-not-patient {
-        font-size: 12px;
-      }
-    }
-  }
-}
+@media (max-width: 1024px) {}
 
 @media (max-width: 767px) {
   .container {
