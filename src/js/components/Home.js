@@ -1,21 +1,13 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { Button, Col, Carousel, Container, Row } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 import useModal from "./UI/ContactUsModal";
-import { useMetaInfo } from "../utils/hooks";
 
 const Home = () =>
 {
   const { setIsContactDialogOpen } = useModal();
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Home");
-    updateMetaDescription("Homepage.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
     <Fragment>

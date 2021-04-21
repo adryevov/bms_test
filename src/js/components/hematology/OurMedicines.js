@@ -1,8 +1,7 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMetaInfo } from "../../utils/hooks";
 import { Modal } from "react-bootstrap";
 import GrayDownloadIconButton from "../UI/GrayDownloadIconButton";
 import PinkLinkIconButton from "../UI/PinkLinkIconButton";
@@ -11,13 +10,6 @@ import VideoPlayer from "../UI/VideoPlayer";
 const OurMidicines = () =>
 {
   const [ modalName, setModalName ] = useState("");
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Our Medicines");
-    updateMetaDescription("Our Medicines.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
 
   const _closeDialog = useCallback(() =>
   {

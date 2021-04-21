@@ -1,20 +1,12 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import { Button, Container } from "react-bootstrap";
 import Footer from "./Footer";
 import Header from "./Header";
 import { useModal } from "./UI/ContactUsModal";
-import { useMetaInfo } from "../utils/hooks";
 
 const TheaterSchedule = () =>
 {
   const { setIsContactDialogOpen } = useModal();
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Product Theater Schedule");
-    updateMetaDescription("Product Theater Schedule.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
     <Fragment>

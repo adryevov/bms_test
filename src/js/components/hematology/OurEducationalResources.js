@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useMetaInfo } from "../../utils/hooks";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -8,13 +7,6 @@ import { Modal } from "react-bootstrap";
 const OurEducationalResources = () =>
 {
   const [ modalName, setModalName ] = useState("");
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Our Educational Resources");
-    updateMetaDescription("Our Educational Resources.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
 
   const linksData = {
     multipleMueloma: {

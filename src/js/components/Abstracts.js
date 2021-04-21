@@ -1,20 +1,12 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import { Button, Container } from "react-bootstrap";
 import { useModal } from "./UI/ContactUsModal";
-import { useMetaInfo } from "../utils/hooks";
 
 const Abstracts = () =>
 {
   const { setIsContactDialogOpen } = useModal();
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Abstracts");
-    updateMetaDescription("Abstracts.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
     <Fragment>

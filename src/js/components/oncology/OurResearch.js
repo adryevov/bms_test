@@ -1,22 +1,13 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { faAngleDown, faFile, faVideo } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useMetaInfo } from "../../utils/hooks";
 
 const OurResearch = () =>
 {
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Our Research");
-    updateMetaDescription("Our Research.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
-
   return (
     <Fragment>
       <Header />

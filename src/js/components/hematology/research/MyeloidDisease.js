@@ -1,5 +1,4 @@
-import React, { useEffect, useState} from "react";
-import { useMetaInfo } from "../../../utils/hooks";
+import React, { useState} from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
@@ -7,14 +6,7 @@ import { Modal } from "react-bootstrap";
 
 const MyeloidDisease = () =>
 {
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
   const [ modalName, setModalName ] = useState("");
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Myeloid Disease");
-    updateMetaDescription("Myeloid Disease.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
 
   return (
     <div className="hematology-our-research-wrapper"  style={{ backgroundImage: "url(/img/hematology/research/background-hematology-research-myeloid-disease.png)" }}>

@@ -1,19 +1,10 @@
-import React, { useEffect } from "react";
-import { useMetaInfo } from "../../utils/hooks";
+import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 const OurResearch = () =>
 {
-  const { updateMetaTitle, updateMetaDescription } = useMetaInfo();
-
-  useEffect(() =>
-  {
-    updateMetaTitle("Our Research");
-    updateMetaDescription("Our Research.");
-  }, [ updateMetaTitle, updateMetaDescription ]);
-
   return (
     <div className="hematology-our-research-wrapper"  style={{ backgroundImage: "url(/img/hematology/background-hematology-research.png)" }}>
       <div className="hematology-our-research-header">
