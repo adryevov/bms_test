@@ -16,21 +16,8 @@ const Footer = () =>
                 <img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" />
               </div>
               <p>&copy; 2021 Bristol-Myers Squibb Company. All rights reserved.</p>
-
-              { window.location.pathname === "/" && <p>Access Support<sup>&reg;</sup> is a registered trademark of Bristol-Myers Squibb Company</p> }
-
-              { window.location.pathname === "/oncology/our-medicines" &&
-                <Fragment>
-                  <p>OPDIVO<sup>&reg;</sup>, YERVOY<sup>&reg;</sup>, Access Support<sup>&reg;</sup>, and the related logos are registered trademarks of Bristol-Myers Squibb Company.</p>
-                  <p>CABOMETYX<sup>&reg;</sup> and logo are registered trademarks of Exelixis, Inc.</p>
-                  <p>ABRAXANE<sup>&reg;</sup> is a registered trademark of Abraxis BioScience, LLC.</p>
-                  <p style={{ marginBottom: "0.5rem" }}>Abraxis BioScience, LLC, is a wholly owned subsidiary of Bristol-Myers Squibb Company. All rights reserved.</p>
-                  <p>466-US-2100003 03/21</p>
-                </Fragment>
-              }
-
-              { window.location.pathname === "/oncology/our-research" && <p>ONC-US-2100053 03/21</p> }
-              { [ "/", "/abstracts", "/product-theater-schedule"].includes(window.location.pathname) && <p>ONC-US-2100074 03/21</p> }
+              <p>Access Support<sup>&reg;</sup> is a registered trademark of Bristol-Myers Squibb Company</p>
+              <p>466-US-2100030 04/21</p>
             </Col>
 
             <Col md={4}>

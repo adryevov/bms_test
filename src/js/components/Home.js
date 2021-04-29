@@ -15,12 +15,9 @@ const Home = () =>
 
       <Carousel controls={false} interval={5000} className="carousel-homepage">
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-welcome.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-dude.png)" }}>
             <Container>
-              <p className="home-slide-1-welcome">Welcome to Bristol myers Squibb</p>
-              <h2 className="home-slide-1-h2">at AACR 2021</h2>
-              <p className="home-slide-1-latest">The latest data presentations, product theaters, research, resources and information from BMS</p>
-              <Link to="/abstracts" className="button-pink">Explore Abstracts</Link>
+              <p className="home-slide-1-welcome">Welcome to the BMS Virtual Exhibit</p>
             </Container>
           </div>
         </Carousel.Item>
@@ -44,8 +41,10 @@ const Home = () =>
             <Container>
               <Row>
                 <Col md={12} className="home-slide-3-wrapper">
-                  <h2>Learn more about a new approval in Oncology!</h2>
-                  <Link to="/oncology/our-medicines" className="button-pink">Click Here</Link>
+                  <div className="home-slide-3-wrapper-inner">
+                    <h2>Learn about a new approval in Oncology!</h2>
+                    <a href="https://www.opdivogastroeso.com/metastatic-GCGEJC-EAC" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
+                  </div>
                 </Col>
               </Row>
             </Container>
@@ -54,12 +53,25 @@ const Home = () =>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-product-theater.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-ladies.png)" }}>
+            <Container>
+              <Row>
+                <Col md={12} className="home-slide-4-wrapper">
+                  <h2>Need help explaining Immuno-Oncology?</h2>
+                  <a href="https://o.explorebmsvirtual.com/" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-patient.png)" }}>
             <Container>
               <Row>
                 <Col md={12}>
-                  <h2 className="home-slide-4-h2">Join Us for Our Product Theater</h2>
-                  <Link to="/product-theater-schedule" className="button-pink">View the Schedule</Link>
+                  <h2 className="home-slide-5-h2">Explore Our Access Support Initiatives</h2>
+                  <a href="https://bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
                 </Col>
               </Row>
             </Container>
@@ -73,17 +85,17 @@ const Home = () =>
             <h3>Oncology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/oncology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
-              <li><Link to="/oncology/our-medicines" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/oncology/our-research" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><a href="https://o.explorebmsvirtual.com/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><a href="https://o.explorebmsvirtual.com/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Educational Resources <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
           </div>
 
           <div className="homepage-card">
             <h3>Hematology</h3>
-            <img src={ process.env.PUBLIC_URL + "/img/icons/hematology.svg" } alt="Oncology" />
+            <img src={ process.env.PUBLIC_URL + "/img/icons/hematology.svg" } alt="Hematology" />
             <ul className="homepage-card-links">
               <li><Link to="/hematology/our-medicines" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
-              <li><Link to="/hematology/our-research" className="arrow-link-pink">Our Research <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/hematology/our-educational-resources" className="arrow-link-pink">Our Educational Resources <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
 
@@ -95,28 +107,6 @@ const Home = () =>
               <li><a href="https://www.bolderscience.com/bmspipeline/trial-finder/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Hematology Trials <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
               <li><a href="https://www.bolderscience.com/bmspipeline/solidtumor-hematology/event-3/" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Pipeline <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
             </ul>
-          </div>
-        </Container>
-      </section>
-
-      <section className="homepage-cards-middle-wrapper">
-        <Container>
-          <div className="homepage-middle-card">
-            <h3>Our Product Theater</h3>
-            <span className="homepage-middle-card-line"></span>
-            <Link to="/product-theater-schedule" className="arrow-link-pink">View Schedule <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
-          </div>
-
-          <div className="homepage-middle-card">
-            <h3>Our Abstracts</h3>
-            <span className="homepage-middle-card-line"></span>
-            <Link to="/abstracts" className="arrow-link-pink">View List <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
-          </div>
-
-          <div className="homepage-middle-card">
-            <h3>Our Educational Resources</h3>
-            <span className="homepage-middle-card-line"></span>
-            <Link to="/hematology/our-educational-resources" className="arrow-link-pink">Explore Hematology <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link>
           </div>
         </Container>
       </section>
