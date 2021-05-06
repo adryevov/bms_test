@@ -43,7 +43,7 @@ const Home = () =>
                 <Col md={12} className="home-slide-3-wrapper">
                   <div className="home-slide-3-wrapper-inner">
                     <h2>Learn about a new approval in Oncology!</h2>
-                    <a href="https://www.opdivogastroeso.com/metastatic-GCGEJC-EAC" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
+                    <a href="https://www.opdivogastroeso.com/metastatic-GC-GEJC-EAC" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
                   </div>
                 </Col>
               </Row>
