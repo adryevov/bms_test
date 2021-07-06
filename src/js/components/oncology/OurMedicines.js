@@ -1,30 +1,41 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";
 import { Carousel, Col, Container, Row } from "react-bootstrap";
+import { useIsMobile } from "../../utils/hooks";
 
 const OurMedicines = () =>
 {
+  const isMobile = useIsMobile();
+
   return (
     <Fragment>
       <Header />
 
       <Carousel controls={false} interval={5000} className="carousel-our-medicines">
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-oncology-medicines.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-oncology-medicines" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
-              <h2 className="our-medinices-slide-1-h2">Our Medicines</h2>
+              <h2 className="our-medicines-slide-1-h2">Our Medicines</h2>
             </Container>
           </div>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-lego.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-explore-the-potential" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
                 <Col md={12}>
-                  <h2 className="our-medinices-slide-2-h2">Experience the OPDIVO + YERVOY Interactive Brick Builder Activity</h2>
-                  <a href="https://bms-celgene-1610-git-brickbuilder-globacore.vercel.app/" target="_blank" rel="noreferrer" className="button-pink">Play Now!</a>
+                  <div className="our-medicines-slide-2-content-wrapper">
+                    <div>
+                      <p className="our-medicines-slide-2-p1">Explore</p>
+                      <p className="our-medicines-slide-2-p2">The potential Of</p>
+                    </div>
+                    <div>
+                      <a href="https://www.opdivocombotherapy.com/" target="_blank" rel="noreferrer" className="button-orange">Learn More</a>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>
@@ -32,44 +43,60 @@ const OurMedicines = () =>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide banner-io-teach-gradient" style={{ backgroundImage: "url(/img/banners/banner-io-teach-gradient.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-camera-small" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
-                <Col md={12} className="home-slide-3-wrapper">
-                  <h2 className="our-medinices-slide-3-h2">Starting therapy can feel overwhelming</h2>
-                  <p className="our-medinices-slide-3-p">Bristol Myers Squibb has developed resources to help your patients adjust to and understand their treatment</p>
-                  <a href="https://www.opdivo.bmscustomerconnect.com/immuno-oncologyteach?cid=v_291" target="_blank" rel="noreferrer" className="our-medinices-slide-3-button">Visit our online classroom</a>
+                <Col md={12} className="our-medicines-slide-3-wrapper">
+                  <p>Explore the OPDIVO + YERVOY data in an interactive activity</p>
+                  <a href="/data-discovery" target="_blank" rel="noreferrer" className="button-orange">Start Now!</a>
                 </Col>
               </Row>
             </Container>
           </div>
         </Carousel.Item>
-      </Carousel>
 
-      <section className="section-medicines-top">
-        <Container>
-          <a href="https://www.bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="arrow-link-pink">BMS Access Support<sup>&reg;</sup> <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a>
-        </Container>
-      </section>
+        <Carousel.Item>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-smiling-lady-small" + (isMobile ? "-mobile" : "") + ".png)" }}>
+            <Container>
+              <Row>
+                <Col md={12} className="our-medicines-slide-4-wrapper">
+                  <h2>Learn more about a new approval!</h2>
+                  <a href="https://www.opdivogastroeso.com/" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
+                </Col>
+              </Row>
+            </Container>
+            <span className="our-medicines-slide-4-not-patient">Not an actual patient</span>
+          </div>
+        </Carousel.Item>
+      </Carousel>
 
       <section className="section-medicines-cards">
         <Container>
           <div className="medicines-card card-fullwidth">
             <div className="medicines-inner">
-              <a href="https://www.opdivocombotherapy.com/" target="_blank" rel="noreferrer">
-                <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-yervoy.svg" } alt="Opdivo + Yervoy" />
-              </a>
+              <Link to="/oncology/our-medicines/opdivo-yervoy">
+                <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-yervoy" + (isMobile ? "-mobile" : "") + ".svg" } alt="Opdivo + Yervoy" />
+              </Link>
             </div>
             <h3>Opdivo<sup>&reg;</sup> + Yervoy<sup>&reg;</sup></h3>
           </div>
 
           <div className="medicines-card">
             <div className="medicines-inner">
-              <a href="https://www.opdivoclinicaldata.com/advanced-rcc-opdivo-cabometyx" target="_blank" rel="noreferrer">
-                <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-cabometyx.svg" } alt="Opdivo + Cabomeryx" />
+              <a href="/oncology/our-medicines/opdivo-cabometyx">
+                <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-cabometyx" + (isMobile ? "-mobile" : "") + ".svg" } alt="Opdivo + Cabomeryx" />
               </a>
             </div>
             <h3>Opdivo<sup>&reg;</sup> + Cabometyx<sup>&reg;</sup></h3>
+          </div>
+
+          <div className="medicines-card">
+            <div className="medicines-inner">
+              <a href="/oncology/our-medicines/opdivo-folfox">
+                <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-folfox.svg" } alt="Opdivo + Folfox or CapeOX" />
+              </a>
+            </div>
+            <h3>Opdivo<sup>&reg;</sup> + FOLFOX or CapeOX</h3>
           </div>
 
           <div className="medicines-card">
@@ -84,7 +111,7 @@ const OurMedicines = () =>
           <div className="medicines-card">
             <div className="medicines-inner">
               <a href="https://www.abraxanepro.com/" target="_blank" rel="noreferrer">
-                <img className="medicines-inner-abrax" src={ process.env.PUBLIC_URL + "/img/icons/ABRAXANE_logo.jpg" } alt="Abraxane" />
+                <img className="medicines-inner-abrax" src={ process.env.PUBLIC_URL + "/img/icons/abraxane.jpg" } alt="Abraxane" />
               </a>
             </div>
             <h3>Abraxane<sup>&reg;</sup></h3>
@@ -92,7 +119,21 @@ const OurMedicines = () =>
         </Container>
       </section>
 
-      <section className="smiling-guy-wrapper" style={{ backgroundImage: "url(/img/banners/banner-smiling-guy.png)" }}>
+      <Container>
+        <p className="please-see-paragraph">Please see Full Prescribing Information, including <span className="boxed">BOXED WARNING</span> for <a href="https://packageinserts.bms.com/pi/pi_abraxane.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="abraxane">Abraxane</a>.</p>
+      </Container>
+
+      <section className="our-medicines-bottom-wrapper">
+        <Container>
+          <div className="our-medicines-bottom-card">
+            <h3>BMS Access Support<sup>&reg;</sup></h3>
+            <p>Get enrollment forms, billing codes, and other access and reimbursement information.</p>
+            <a href="https://www.bmsaccesssupport.bmscustomerconnect.com/" target="_blank" rel="noreferrer" className="button-pink">Learn More</a>
+          </div>
+        </Container>
+      </section>
+
+      <section className="smiling-guy-wrapper" style={{ backgroundImage: "url(/img/banners/banner-smiling-guy" + (isMobile ? "-mobile" : "") + ".png)" }}>
         <Container>
           <div className="medicines-smiling-guy-content-wrapper">
             <p>For questions about BMS medicines during this time, please call 1-800-721-8909.</p>

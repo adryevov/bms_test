@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Modal } from "react-bootstrap";
+import { useIsMobile } from "../../utils/hooks";
 
 const OurEducationalResources = () =>
 {
   const [ modalName, setModalName ] = useState("");
+  const isMobile = useIsMobile();
 
   const linksData = {
     multipleMueloma: {
@@ -65,35 +67,101 @@ const OurEducationalResources = () =>
               <p>A convenient new tool for scheduling virtual and in-person education with your BMS Clinical Nurse Consultant</p>
             </div>
 
-            <div className="contact-us-wrapper">
-              <span>Contact Us</span>
-              <a href="https://www.centerfornurses.com/request-a-cnc/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
-            </div>
+            { !isMobile &&
+              <div className="contact-us-wrapper">
+                <span>Contact Us</span>
+                <a href="https://www.centerfornurses.com/request-a-cnc/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              </div>
+            }
 
-            <div className="multiple-myeloma-wrapper link-wrapper">
-              <h2>Multiple Myeloma (MM)</h2>
-              <Link to="#" onClick={ () => setModalName("multipleMueloma") } className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></Link>
-            </div>
+            { isMobile &&
+              <div className="contact-us-wrapper">
+                <a href="https://www.centerfornurses.com/request-a-cnc/" target="_blank" rel="noreferrer" className="contact-us-wrapper-inner">
+                  <span>Contact Us</span>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></div>
+                </a>
+              </div>
+            }
 
-            <div className="myelodysplastic-syndromes-wrapper link-wrapper">
-              <h2>Myelodysplastic Syndromes (MDS)</h2>
-              <Link to="#" onClick={ () => setModalName("myelodysplasticSyndromes") } className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></Link>
-            </div>
+            { !isMobile &&
+              <div className="multiple-myeloma-wrapper link-wrapper">
+                <h2>Multiple Myeloma (MM)</h2>
+                <Link to="#" onClick={ () => setModalName("multipleMueloma") } className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></Link>
+              </div>
+            }
 
-            <div className="acute-myeloid-leukemia-wrapper link-wrapper">
-              <h2>Acute Myeloid Leukemia (AML)</h2>
-              <Link to="#" onClick={ () => setModalName("acuteMyeloidLeukemia") } className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></Link>
-            </div>
+            { isMobile &&
+              <div className="multiple-myeloma-wrapper link-wrapper">
+                <Link to="#" onClick={ () => setModalName("multipleMueloma") } className="link-wrapper-inner">
+                  <h2>Multiple Myeloma (MM)</h2>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></div>
+                </Link>
+              </div>
+            }
 
-            <div className="car-t-wrapper link-wrapper">
-              <h2>CAR T</h2>
-              <Link to="#" onClick={ () => setModalName("carT") } className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></Link>
-            </div>
+            { !isMobile &&
+              <div className="myelodysplastic-syndromes-wrapper link-wrapper">
+                <h2>Myelodysplastic Syndromes (MDS)</h2>
+                <Link to="#" onClick={ () => setModalName("myelodysplasticSyndromes") } className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></Link>
+              </div>
+            }
 
-            <div className="lymphoma-wrapper link-wrapper">
-              <h2>Lymphoma</h2>
-              <Link to="#" onClick={ () => setModalName("lymphoma") } className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></Link>
-            </div>
+            { isMobile &&
+              <div className="myelodysplastic-syndromes-wrapper link-wrapper">
+                <Link to="#" onClick={ () => setModalName("myelodysplasticSyndromes") } className="link-wrapper-inner">
+                  <h2>Myelodysplastic Syndromes (MDS)</h2>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></div>
+                </Link>
+              </div>
+            }
+
+            { !isMobile &&
+              <div className="acute-myeloid-leukemia-wrapper link-wrapper">
+                <h2>Acute Myeloid Leukemia (AML)</h2>
+                <Link to="#" onClick={ () => setModalName("acuteMyeloidLeukemia") } className="pink-circle"><FontAwesomeIcon icon={ faPlus }/></Link>
+              </div>
+            }
+
+            { isMobile &&
+              <div className="acute-myeloid-leukemia-wrapper link-wrapper">
+                <Link to="#" onClick={ () => setModalName("acuteMyeloidLeukemia") } className="link-wrapper-inner">
+                  <h2>Acute Myeloid Leukemia (AML)</h2>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus }/></div>
+                </Link>
+              </div>
+            }
+
+            { !isMobile &&
+              <div className="car-t-wrapper link-wrapper">
+                <h2>CAR T</h2>
+                <Link to="#" onClick={ () => setModalName("carT") } className="pink-circle"><FontAwesomeIcon icon={ faPlus }/></Link>
+              </div>
+            }
+
+            { isMobile &&
+              <div className="car-t-wrapper link-wrapper">
+                <Link to="#" onClick={ () => setModalName("carT") } className="link-wrapper-inner">
+                  <h2>CAR T</h2>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus }/></div>
+                </Link>
+              </div>
+            }
+
+            { !isMobile &&
+              <div className="lymphoma-wrapper link-wrapper">
+                <h2>Lymphoma</h2>
+                <Link to="#" onClick={ () => setModalName("lymphoma") } className="pink-circle"><FontAwesomeIcon icon={ faPlus }/></Link>
+              </div>
+            }
+
+            { isMobile &&
+              <div className="lymphoma-wrapper link-wrapper">
+                <Link to="#" onClick={ () => setModalName("lymphoma") } className="link-wrapper-inner">
+                  <h2>Lymphoma</h2>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus }/></div>
+                </Link>
+              </div>
+            }
           </div>
         </div>
       </section>

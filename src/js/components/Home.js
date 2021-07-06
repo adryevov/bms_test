@@ -43,7 +43,7 @@ const Home = () =>
                 <Col md={12} className="home-slide-3-wrapper">
                   <div className="home-slide-3-wrapper-inner">
                     <h2>Learn about a new approval in Oncology!</h2>
-                    <a href="https://www.opdivogastroeso.com" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
+                    <Link to="/oncology/our-medicines" className="button-pink">Click Here</Link>
                   </div>
                 </Col>
               </Row>
@@ -58,7 +58,7 @@ const Home = () =>
               <Row>
                 <Col md={12} className="home-slide-4-wrapper">
                   <h2>Need help explaining Immuno-Oncology?</h2>
-                  <a href="https://ourdisoq1.explorebmsvirtual.com/?utm_source=HO&utm_medium=DR_Oncology" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
+                  <Link to="/oncology/our-educational-resources" className="button-pink">Click Here</Link>
                 </Col>
               </Row>
             </Container>
@@ -85,8 +85,8 @@ const Home = () =>
             <h3>Oncology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/oncology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
-              <li><a href="https://ourmedoq1.explorebmsvirtual.com/?utm_source=HO&utm_medium=OurMed_Oncology" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
-              <li><a href="https://ourdisoq1.explorebmsvirtual.com/?utm_source=HO&utm_medium=Disease_Oncology" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Educational Resources <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
+              <li><Link to="/oncology/our-medicines" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><Link to="/oncology/our-educational-resources" className="arrow-link-pink">Our Educational Resources <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
 

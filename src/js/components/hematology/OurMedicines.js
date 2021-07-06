@@ -6,10 +6,12 @@ import { Modal } from "react-bootstrap";
 import GrayDownloadIconButton from "../UI/GrayDownloadIconButton";
 import PinkLinkIconButton from "../UI/PinkLinkIconButton";
 import VideoPlayer from "../UI/VideoPlayer";
+import { useIsMobile } from "../../utils/hooks";
 
 const OurMidicines = () =>
 {
   const [ modalName, setModalName ] = useState("");
+  const isMobile = useIsMobile();
 
   const _closeDialog = useCallback(() =>
   {
@@ -38,15 +40,37 @@ const OurMidicines = () =>
           <div className="main-area-wrapper-inner">
             <h1>Our Medicines</h1>
 
-            <div className="bms-access-support-wrapper">
-              <span>BMS Access Support</span>
-              <a href="https://bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
-            </div>
+            { !isMobile &&
+              <div className="bms-access-support-wrapper">
+                <span>BMS Access Support</span>
+                <a href="https://bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              </div>
+            }
 
-            <div className="contact-us-wrapper">
-              <span>Contact Us</span>
-              <a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
-            </div>
+            { isMobile &&
+              <div className="bms-access-support-wrapper">
+                <a href="https://bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="bms-access-support-wrapper-inner">
+                  <span>BMS Access Support</span>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></div>
+                </a>
+              </div>
+            }
+
+            { !isMobile &&
+              <div className="contact-us-wrapper">
+                <span>Contact Us</span>
+                <a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer" className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></a>
+              </div>
+            }
+
+            { isMobile &&
+              <div className="contact-us-wrapper">
+                <a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer" className="contact-us-wrapper-inner">
+                  <span>Contact Us</span>
+                  <div className="pink-circle"><FontAwesomeIcon icon={ faPlus } /></div>
+                </a>
+              </div>
+            }
 
             <div className="abecma-wrapper link-wrapper" onClick={ () => setModalName("abecma-general") }></div>
             <div className="breyanzi-wrapper link-wrapper" onClick={ () => setModalName("breyanzi-general") }></div>
@@ -92,9 +116,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/abecma-details-page.png" } alt="Abecma" />
                 <hr />
-                <p style={{ maxWidth: "500px", marginBottom: "3rem" }}>Please see U.S Full Prescribing Information, including <b>Boxed WARNINGS</b>, available at the link below.</p>
+                <p className="p-please-see">Please see U.S Full Prescribing Information, including <b>Boxed WARNINGS</b>, available at the link below.</p>
                 <PinkLinkIconButton name="Visit AbecmaHCP.com" link="https://www.abecmahcp.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Click a button below to learn more about ABECMA</p>
+                <p className="click-a-button-below">Click a button below to learn more about ABECMA</p>
                 <GrayDownloadIconButton name="ABECMA Prescribing Information" link="https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0" blank={ true } />
               </div>
             }
@@ -110,10 +134,14 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/breyanzi-details-page.png" } alt="Breyanzi" />
                 <hr />
-                <p style={{ maxWidth: "500px", marginBottom: "3rem" }}>Please see FULL PRESCRIBING INFORMATION, including <b>Boxed WARNINGS</b>, available in the link below</p>
+                <p className="p-please-see">Please see FULL PRESCRIBING INFORMATION, including <b>Boxed WARNINGS</b>, available in the link below</p>
                 <PinkLinkIconButton name="BREYANZI Website" link="https://www.breyanzihcp.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
-                <GrayDownloadIconButton name="BREYANZI Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_breyanzi.pdf?#view=Fit&toolbar=0" blank={ true } />
+                <p className="click-a-button-below">Explore Additional Information:</p>
+                <GrayDownloadIconButton name="BREYANZI Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_breyanzi.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-product-brochure.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Patient Profiles" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-patient-profiles.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Logistics and Sequencing" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-logistics-and-sequencing.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Clinician Guide" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-clinician-guide.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
               </div>
             }
 
@@ -128,9 +156,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/reblozyl-details-page.png" } alt="Reblozyl" />
                 <hr />
-                <p style={{ maxWidth: "500px", marginBottom: "3rem" }}>Please see U.S. Full Prescribing information for REBLOZYL<sup>&reg;</sup> (luspatercept-aamt) available in the link below.</p>
+                <p className="p-please-see">Please see U.S. Full Prescribing information for REBLOZYL<sup>&reg;</sup> (luspatercept-aamt) available in the link below.</p>
                 <PinkLinkIconButton name="REBLOZYL Website" link="https://www.reblozylpro.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="REBLOZYL Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_reblozyl.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="REBLOZYL Second Indication Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/2007-US-2100054_cellus_mds_hcp_bro_update.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="REBLOZYL First Indication Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/2007-US-2100003 Beta Thal Shortened Brochure_DIGITAL.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
@@ -175,9 +203,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/onureg-details-page.png" } alt="Onureg" />
                 <hr style={{ marginTop: "0" }} />
-                <p style={{ maxWidth: "500px", marginBottom: "3rem" }}>Please see full Prescribing Information for ONUREG<sup>&reg;</sup> (azacitidine) tablets available in the link below</p>
+                <p className="p-please-see">Please see full Prescribing Information for ONUREG<sup>&reg;</sup> (azacitidine) tablets available in the link below</p>
                 <PinkLinkIconButton name="ONUREG Website" link="https://www.onuregpro.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name={[ <span key="ONUREG">ONUREG</span>, <sup key="reg">&reg;</sup>, <span style={{ margin: "0.25rem" }} key="Full Prescribing Information">Full Prescribing Information</span> ]} link="https://packageinserts.bms.com/pi/pi_onureg.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name={[ <span key="ONUREG">ONUREG</span>, <sup key="reg">&reg;</sup>, <span style={{ margin: "0.25rem" }} key="Dosing Guide">Dosing Guide</span> ]}  link={ process.env.PUBLIC_URL + "/pdf/US-ONU-21-0026 ONUREG Dosing Guide (Digital) - Update v3_AFD.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
                 <GrayDownloadIconButton name={[ <span key="How to order ONUREG">How to order ONUREG</span>, <sup key="reg">&reg;</sup> ]} link={ process.env.PUBLIC_URL + "/pdf/US-ONU-21-0066_BMS ONUREG How to Order and Access_DIGITAL_FINAL Approved.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
@@ -196,9 +224,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/revlimid-details-page.png" } alt="Revlimid" />
                 <hr />
-                <p style={{ maxWidth: "550px", marginBottom: "3rem" }}>Please see Full Prescribing Information for REVLIMID<sup>&reg;</sup> (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID is only available through REVLIMID REMS<sup>&reg;</sup> at <a href="https://www.celgeneriskmanagement.com/" target="_blank" rel="noreferrer">www.CelgeneRiskManagement.com</a></p>
+                <p className="p-please-see" style={{ maxWidth: "550px" }}>Please see Full Prescribing Information for REVLIMID<sup>&reg;</sup> (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID is only available through REVLIMID REMS<sup>&reg;</sup> at <a href="https://www.celgeneriskmanagement.com/" target="_blank" rel="noreferrer">www.CelgeneRiskManagement.com</a></p>
                 <PinkLinkIconButton name="REVLIMID Website" link="https://revlimidhcp.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="REVLIMID Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_revlimid.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="REVLIMID Product Brochure #1" link={ process.env.PUBLIC_URL + "/pdf/US-REV-20-0635NDMM Leave Behind Digital Version-v27.1_.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="REVLIMID Product Brochure #2" link={ process.env.PUBLIC_URL + "/pdf/US-REV-21-0021 REVLIMID Maintenance Leave Behind Digital Update_v27.1.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
@@ -217,9 +245,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/pomalyst-details-page.png" } alt="Pomalyst" />
                 <hr />
-                <p style={{ maxWidth: "560px", marginBottom: "3rem" }}>Please see full Prescribing Information for POMALYST<sup>&reg;</sup>, including Boxed WARNINGS for Embryo-Fetal Toxicity, and Venous and Arterial Thromboembolism, available in the link below. POMALYST is only available through POMALYST REMS<sup>&reg;</sup> at <a href="https://www.celgeneriskmanagement.com/" target="_blank" rel="noreferrer">www.CelgeneRiskManagement.com</a></p>
+                <p className="p-please-see" style={{ maxWidth: "560px" }}>Please see full Prescribing Information for POMALYST<sup>&reg;</sup>, including Boxed WARNINGS for Embryo-Fetal Toxicity, and Venous and Arterial Thromboembolism, available in the link below. POMALYST is only available through POMALYST REMS<sup>&reg;</sup> at <a href="https://www.celgeneriskmanagement.com/" target="_blank" rel="noreferrer">www.CelgeneRiskManagement.com</a></p>
                 <PinkLinkIconButton name="POMALYST Website" link="https://pomalysthcp.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="POMALYST Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_pomalyst.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="POMALYST Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/US-POM-20-0434 POMALYST Leave-Behind-Digital (Dara Update).pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="POMALYST Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/ash/pomylast/US-POM-20-0172.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
@@ -238,9 +266,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/empliciti-details-page.png" } alt="Empliciti" />
                 <hr />
-                <p style={{ maxWidth: "500px", marginBottom: "3rem" }}>Please see Full Prescribing Information for EMPLICITI<sup>&reg;</sup> (elotuzumab) available in the link below.</p>
+                <p className="p-please-see">Please see Full Prescribing Information for EMPLICITI<sup>&reg;</sup> (elotuzumab) available in the link below.</p>
                 <PinkLinkIconButton name="EMPLICITI Website" link="https://www.emplicitihcp.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="EMPLICITI Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_empliciti.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="EMPLICITI Dosing Guide" link={ process.env.PUBLIC_URL + "/pdf/US-EMP-21-0012 EMPLICITI HCP Dosing Guide Update.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
               </div>
@@ -257,9 +285,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/r2-details-page.png" } alt="R2" style={{ width: 160 }}/>
                 <hr />
-                <p style={{ maxWidth: "590px", marginBottom: "3rem" }}>Please see Full Prescribing Information for REVLIMID<sup>&reg;</sup> (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID is only available through REVLIMID REMS<sup>&reg;</sup> at <a href="https://www.celgeneriskmanagement.com/" target="_blank" rel="noreferrer">www.CelgeneRiskManagement.com.</a> Please see the rituximab full Prescribing Information for Important Safety Information at <a href="https://www.rituxan.com/" target="_blank" rel="noreferrer">www.rituxan.com</a>.</p>
+                <p className="p-please-see" style={{ maxWidth: "590px" }}>Please see Full Prescribing Information for REVLIMID<sup>&reg;</sup> (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID is only available through REVLIMID REMS<sup>&reg;</sup> at <a href="https://www.celgeneriskmanagement.com/" target="_blank" rel="noreferrer">www.CelgeneRiskManagement.com.</a> Please see the rituximab full Prescribing Information for Important Safety Information at <a href="https://www.rituxan.com/" target="_blank" rel="noreferrer">www.rituxan.com</a>.</p>
                 <PinkLinkIconButton name="REVLIMID Website" link="https://revlimidhcp.com/rrfl/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="REVLIMID Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_revlimid.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Product Brochure" style={{ marginLeft: "0.25rem" }}>Product Brochure</span> ]} link="https://gc-static-content.s3.amazonaws.com/bms/ash/r2/US-REV-20-0677%20R%5E2%20Efficacy%20Leave%20Behind%20-%20Phase%202%20Messaging%20Update.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Virtual Assistant" style={{ marginLeft: "0.25rem" }}>Virtual Assistant</span> ]} link="https://r2virtualrep.com/sign-in" blank={ true } className="details-link" />
@@ -286,9 +314,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/inrebic-details-page.png" } alt="Inrebic" style={{ maxWidth: "250px" }} />
                 <hr />
-                <p style={{ maxWidth: "500px", marginBottom: "3rem" }}>Please see Full Prescribing Information for INREBIC<sup>&reg;</sup> (fedratinib), including Boxed WARNING for Encephalopathy, including Wernicke's, available in the link below.</p>
+                <p className="p-please-see">Please see Full Prescribing Information for INREBIC<sup>&reg;</sup> (fedratinib), including Boxed WARNING for Encephalopathy, including Wernicke's, available in the link below.</p>
                 <PinkLinkIconButton name="INREBIC Website" link="https://www.inrebicpro.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="INREBIC Full Prescribing Information" link="https://media2.celgene.com/content/uploads/inrebic-pi.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="INREBIC Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/2010-US-2100018_INREBIC_Branded Leave Behind_Digital V13.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="INREBIC Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/ash/inrebic/Virtual%20PDF
@@ -307,9 +335,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/sprycel-details-page.png" } alt="Sprycel" style={{ maxWidth: "250px" }} />
                 <hr />
-                <p style={{ maxWidth: "400px", marginBottom: "3rem" }}>Please see full prescribing information for SPRYCEL<sup>&reg;</sup> (dasatinib) available in the link below.</p>
+                <p className="p-please-see" style={{ maxWidth: "400px" }}>Please see full prescribing information for SPRYCEL<sup>&reg;</sup> (dasatinib) available in the link below.</p>
                 <PinkLinkIconButton name="SPRYCEL Website" link="https://www.sprycel-hcp.com/" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="SPRYCEL Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_sprycel.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="SPRYCEL Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/ash/sprycel/729US1903380-05-01_SPRY_CORE_IVA_LB_IPDF_08_20_172018361_vfinal.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
@@ -326,9 +354,9 @@ const OurMidicines = () =>
               <div className="detailed-section-wrapper">
                 <img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/idhifa-details-page.png" } alt="Idhifa" style={{ maxWidth: "250px" }} />
                 <hr />
-                <p style={{ maxWidth: "510px", marginBottom: "3rem" }}>Please see Important Safety Information and full Prescribing Information, including Boxed WARNING available in the link below.</p>
+                <p className="p-please-see" style={{ maxWidth: "510px" }}>Please see Important Safety Information and full Prescribing Information, including Boxed WARNING available in the link below.</p>
                 <PinkLinkIconButton name={[ <span key="IDHIFA">IDHIFA</span>, <sup key="reg">&reg;</sup>, <span style={{ marginLeft: "0.25rem" }} key="Website">Website</span> ]} link="https://www.idhifapro.com/2018-US-2000008" blank={ true } />
-                <p style={{ margin: "3rem 0 0.5rem 0", fontWeight: "700" }}>Explore Additional Information:</p>
+                <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name={[ <span key="IDHIFA">IDHIFA</span>, <sup key="reg">&reg;</sup>, <span style={{ marginLeft: "0.25rem" }} key="Full Prescribing Information">Full Prescribing Information</span> ]} link="https://media2.celgene.com/content/uploads/idhifa-pi.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name={[ <span key="IDHIFA">IDHIFA</span>, <sup key="reg">&reg;</sup>, <span style={{ marginLeft: "0.25rem" }} key="Product Brochure">Product Brochure</span> ]} link={ process.env.PUBLIC_URL + "/pdf/IDHIFA Trifold (PDF) - 2020 Label Update_FINAL.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
               </div>
