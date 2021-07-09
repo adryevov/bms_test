@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 import Abstracts from "./components/Abstracts";
 import Home from "./components/Home";
 import TheaterSchedule from "./components/TheaterSchedule";
@@ -19,10 +19,11 @@ import { useIsMobile } from "./utils/hooks";
 
 const App = () => {
   const isMobile = useIsMobile();
+  const location = useLocation();
 
   return (
     <div className="App">
-      { !isMobile &&
+      { (!isMobile || location.pathname.startsWith("/hematology")) &&
         <ModalProvider>
           <Switch>
             <Route exact path="/" component={ Home } />
@@ -43,7 +44,7 @@ const App = () => {
         </ModalProvider>
       }
 
-      { isMobile &&
+      { isMobile && !location.pathname.startsWith("/hematology") &&
         <div className="mobile-view">
           <img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" />
 
