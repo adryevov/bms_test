@@ -15,7 +15,7 @@ const Home = () =>
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={null} className="carousel-homepage">
+      <Carousel controls={false} interval={5000} className="carousel-homepage">
         <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-dude.png)" }}>
             <Container className="home-slide-1-wrapper">
