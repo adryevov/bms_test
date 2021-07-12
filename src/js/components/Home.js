@@ -4,29 +4,31 @@ import { Button, Col, Carousel, Container, Row } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 import useModal from "./UI/ContactUsModal";
+import { useIsMobile } from "../utils/hooks";
 
 const Home = () =>
 {
   const { setIsContactDialogOpen } = useModal();
+  const isMobile = useIsMobile();
 
   return (
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={5000} className="carousel-homepage">
+      <Carousel controls={false} interval={null} className="carousel-homepage">
         <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-dude.png)" }}>
-            <Container>
+            <Container className="home-slide-1-wrapper">
               <p className="home-slide-1-welcome">Welcome to the BMS Virtual Exhibit</p>
             </Container>
           </div>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-approval-hematology.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-approval-hematology" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
-                <Col md={12}>
+                <Col md={12} className="home-slide-2-wrapper">
                   <h2>Learn more about an approval in Hematology!</h2>
                   <Link to="/hematology/our-medicines" className="button-pink">Click Here</Link>
                 </Col>
@@ -37,14 +39,12 @@ const Home = () =>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-smiling-lady.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-smiling-lady" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
                 <Col md={12} className="home-slide-3-wrapper">
-                  <div className="home-slide-3-wrapper-inner">
-                    <h2>Learn about a new approval in Oncology!</h2>
-                    <Link to="/oncology/our-medicines" className="button-pink">Click Here</Link>
-                  </div>
+                  <h2>Learn about a new approval in Oncology!</h2>
+                  <Link to="/oncology/our-medicines" className="button-pink">Click Here</Link>
                 </Col>
               </Row>
             </Container>
@@ -69,7 +69,7 @@ const Home = () =>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-patient.png)" }}>
             <Container>
               <Row>
-                <Col md={12}>
+                <Col md={12} className="home-slide-5-wrapper">
                   <h2 className="home-slide-5-h2">Explore Our Access Support Initiatives</h2>
                   <a href="https://bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
                 </Col>
@@ -125,7 +125,7 @@ const Home = () =>
         </Container>
       </section>
 
-      <section className="handholding-section" style={{ backgroundImage: "url(/img/banners/banner-handholding.png)" }}>
+      <section className="handholding-section" style={{ backgroundImage: "url(/img/banners/banner-handholding" + (isMobile ? "-mobile" : "") + ".png)" }}>
         <Container>
           <h2>Transforming patients&apos; lives through science<sup className="trade-icon">&trade;</sup></h2>
         </Container>
