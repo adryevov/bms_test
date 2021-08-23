@@ -15,11 +15,15 @@ const Home = () =>
     <Fragment>
       <Header />
 
-      <Carousel controls={false} interval={5000} className="carousel-homepage">
+      <Carousel controls={false} interval={null} className="carousel-homepage">
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-dude.png)" }}>
-            <Container className="home-slide-1-wrapper">
-              <p className="home-slide-1-welcome">Welcome to the BMS Virtual Exhibit</p>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-dude" + (isMobile ? "-mobile" : "") + ".png)" }}>
+            <Container>
+              <Row style={{ height: "100%" }}>
+                <Col className="home-slide-1-wrapper">
+                  <p className="home-slide-1-welcome">Welcome to the BMS Virtual Exhibit</p>
+                </Col>
+              </Row>
             </Container>
           </div>
         </Carousel.Item>
@@ -39,7 +43,7 @@ const Home = () =>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-smiling-lady" + (isMobile ? "-mobile" : "") + ".png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-smiling-lady" + (isMobile ? "-small-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
                 <Col md={12} className="home-slide-3-wrapper">
@@ -53,20 +57,21 @@ const Home = () =>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-ladies.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-ladies" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
                 <Col md={12} className="home-slide-4-wrapper">
-                  <h2>Need help explaining Immuno-Oncology?</h2>
+                  <h2>Need help in explaining Immuno-Oncology?</h2>
                   <Link to="/oncology/our-educational-resources" className="button-pink">Click Here</Link>
                 </Col>
               </Row>
             </Container>
+            <span className="home-slide-4-not-patient">Not an actual patient</span>
           </div>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-patient.png)" }}>
+          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-doctor-patient" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
                 <Col md={12} className="home-slide-5-wrapper">
@@ -75,6 +80,7 @@ const Home = () =>
                 </Col>
               </Row>
             </Container>
+            <span className="home-slide-5-not-patient">Not an actual patient</span>
           </div>
         </Carousel.Item>
       </Carousel>

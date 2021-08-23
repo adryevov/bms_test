@@ -3,9 +3,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import ScrollToTopButton from "./UI/ScrollToTopButton";
+import { useIsMobile } from "../utils/hooks";
 
 const Footer = () =>
 {
+  const isMobile = useIsMobile();
+
   return (
     <footer>
       <div className="footer-top">
@@ -20,18 +23,25 @@ const Footer = () =>
               <p>466-US-2100030 04/21</p>
             </Col>
 
-            <Col md={4}>
-              <div className="footer-top-right">
-                <p>Follow Us</p>
-                <div className="social-icons-wrapper">
-                  <a href="https://www.facebook.com/BristolMyersSquibb" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faFacebookSquare } /></a>
-                  <a href="https://www.instagram.com/bristolmyerssquibb/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faInstagram } /></a>
-                  <a href="https://www.linkedin.com/company/bristol-myers-squibb/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faLinkedin } /></a>
-                  <a href="https://twitter.com/BMSNEWS" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faTwitter } /></a>
-                  <a href="https://www.youtube.com/bristolmyerssquibb" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faYoutube } /></a>
+            { !isMobile &&
+              <Col md={4}>
+                <div className="footer-top-right">
+                  <p>Follow Us</p>
+                  <div className="social-icons-wrapper">
+                    <a href="https://www.facebook.com/BristolMyersSquibb" target="_blank"
+                       rel="noreferrer"><FontAwesomeIcon icon={faFacebookSquare}/></a>
+                    <a href="https://www.instagram.com/bristolmyerssquibb/" target="_blank"
+                       rel="noreferrer"><FontAwesomeIcon icon={faInstagram}/></a>
+                    <a href="https://www.linkedin.com/company/bristol-myers-squibb/" target="_blank"
+                       rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+                    <a href="https://twitter.com/BMSNEWS" target="_blank" rel="noreferrer"><FontAwesomeIcon
+                      icon={faTwitter}/></a>
+                    <a href="https://www.youtube.com/bristolmyerssquibb" target="_blank" rel="noreferrer"><FontAwesomeIcon
+                      icon={faYoutube}/></a>
+                  </div>
                 </div>
-              </div>
-            </Col>
+              </Col>
+            }
           </Row>
           <Row>
             <Col md={12} className="footer-top-links-wrapper">
