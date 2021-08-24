@@ -7,8 +7,9 @@ import GrayDownloadIconButton from "../UI/GrayDownloadIconButton";
 import PinkLinkIconButton from "../UI/PinkLinkIconButton";
 import VideoPlayer from "../UI/VideoPlayer";
 import { useIsMobile } from "../../utils/hooks";
+import OurMedicinesMobile from "./OurMedicinesMobile";
 
-const OurMidicines = () =>
+const OurMedicines = () =>
 {
   const [ modalName, setModalName ] = useState("");
   const isMobile = useIsMobile();
@@ -27,6 +28,10 @@ const OurMidicines = () =>
       setModalName("");
     }
   }, [ modalName ]);
+
+  if (isMobile) {
+    return <OurMedicinesMobile />;
+  }
 
   return (
     <div className={ "hematology-our-medicines-wrapper" + (!!modalName ? " blurry-background" : "") }  style={{ backgroundImage: "url(/img/hematology/background-hematology-medicines.png)" }}>
@@ -369,4 +374,4 @@ const OurMidicines = () =>
   );
 };
 
-export default React.memo(OurMidicines);
+export default React.memo(OurMedicines);

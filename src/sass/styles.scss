@@ -6478,4 +6478,80 @@ footer {
       }
     }
   }
+
+  .mobile-section-name-wrapper {
+    background-color: #ede7e7;
+    padding: 3rem 0 2rem;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .mobile-medicines-names-wrapper {
+    padding: 2rem 0;
+
+    .medicine-name {
+      border-top: 3px solid #EEE7E7;
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      span {
+        line-height: 1;
+      }
+
+      svg {
+        color: $pink-color;
+      }
+
+      &.medicine-name:last-of-type {
+        border-bottom: 3px solid #EEE7E7;
+      }
+    }
+  }
+
+  .mobile-link-section-wrapper {
+    margin-bottom: 1rem;
+
+    .mobile-link-section-wrapper-inner {
+      padding: 1.9rem;
+      font-size: 18px;
+      line-height: 1;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        filter: invert(83%) sepia(33%) saturate(0) hue-rotate(347deg) brightness(99%) contrast(99%);
+      }
+    }
+  }
+
+  .mobile-hematology-footer {
+    background-color: #ede7e7;
+    padding: 2rem 0;
+
+    .mobile-hematology-footer-top {
+      margin-bottom: 3rem;
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .mobile-hematology-footer-bottom {
+      a {
+        color: $gray-color;
+        font-size: 16px;
+        margin-bottom: 1rem;
+        display: block;
+      }
+
+      p {
+        font-size: 13px;
+        margin: 0;
+      }
+    }
+  }
 }
