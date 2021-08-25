@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState  } from "react";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Header from "../Header";
 import Footer from "./Footer";
@@ -7,6 +7,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const OurMedicinesMobile = () =>
 {
+  const [ activeMedicine, setActiveMedicine ] = useState(null);
+
+  console.log('activeMedicine', activeMedicine);
+
   return (
     <Fragment>
       <Header />
@@ -26,47 +30,47 @@ const OurMedicinesMobile = () =>
         <Container>
           <Row>
             <Col md={12}>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("abecma") }>
                 <span>ABECMA <sup>&reg;</sup> (idecabtagene vicleucel)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("breyanzi") }>
                 <span>BREYANZI <sup>&reg;</sup> (lisocabtagene maraleucel)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("reblozyl") }>
                 <span>REBLOZYL <sup>&reg;</sup> (luspatercept-aamt)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("onureg") }>
                 <span>ONUREG <sup>&reg;</sup> (azacitidine tablets)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("revlimid") }>
                 <span>REVLIMID <sup>&reg;</sup> (lenalidomide)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("pomalyst") }>
                 <span>POMALYST <sup>&reg;</sup> (pomalidomide)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("empliciti") }>
                 <span>EMPLICITI <sup>&reg;</sup> (elotuzumab)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("r2") }>
                 <span>R<sup>2</sup> REVLIMID RITUXIMAB</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("inrebic") }>
                 <span>INREBIC <sup>&reg;</sup> (fedratinib capsules)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("sprycel") }>
                 <span>SPRYCEL <sup>&reg;</sup> (dasatinib)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>
-              <div className="medicine-name">
+              <div className="medicine-name" onClick={ () => setActiveMedicine("idhifa") }>
                 <span>IDHIFA <sup>&reg;</sup> (enasidenib)</span>
                 <FontAwesomeIcon icon={ faChevronRight } />
               </div>

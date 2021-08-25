@@ -20,7 +20,7 @@ const Footer = () =>
               </div>
               <p>&copy; 2021 Bristol-Myers Squibb Company. All rights reserved.</p>
               <p>Access Support<sup>&reg;</sup> is a registered trademark of Bristol-Myers Squibb Company</p>
-              <p>466-US-2100030 04/21</p>
+              <p>466-US-2100064 05/21</p>
             </Col>
 
             { !isMobile &&

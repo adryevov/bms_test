@@ -8,9 +8,7 @@ import { linksData } from "./OurEducationalResources";
 
 const OuEducationalResourcesMobile = () =>
 {
-  const [ activeTab, setActiveTab ] = useState("");
-
-  console.log('activeTab', activeTab);
+  const [ activeTab, setActiveTab ] = useState(null);
 
   const CustomToggle = ({ children, eventKey }) => {
     const customOnClick = useAccordionToggle(eventKey, () => {
@@ -47,7 +45,7 @@ const OuEducationalResourcesMobile = () =>
 
               <Accordion className="medicines-accordion">
                 { Object.keys(linksData).map(name =>
-                  <Card>
+                  <Card key={ name }>
                     <CustomToggle eventKey={ name }>{ linksData[name].name }</CustomToggle>
                     <Accordion.Collapse eventKey={ name }>
                       <Card.Body>
