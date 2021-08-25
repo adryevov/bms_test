@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useState } from "react";
+import React, { Fragment } from "react";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Header from "../Header";
 import Footer from "./Footer";
@@ -79,10 +79,10 @@ const OurMedicinesMobile = () =>
         <Container>
           <Row>
             <Col md={12}>
-              <div className="mobile-link-section-wrapper-inner" style={{ backgroundColor: "#FEDCCA" }}>
+              <a href="https://www.bms.com/about-us/contact-us.html" target="_blank" rel="noreferrer" className="mobile-link-section-wrapper-inner" style={{ backgroundColor: "#FEDCCA" }}>
                 <span>Contact Us</span>
                 <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-forward.svg" } alt="Arrow Right" />
-              </div>
+              </a>
             </Col>
           </Row>
         </Container>
@@ -92,10 +92,10 @@ const OurMedicinesMobile = () =>
         <Container>
           <Row>
             <Col md={12}>
-              <div className="mobile-link-section-wrapper-inner" style={{ backgroundColor: "#FFECCD" }}>
+              <a href="https://bmsaccesssupportvirtual.com/" target="_blank" rel="noreferrer" className="mobile-link-section-wrapper-inner" style={{ backgroundColor: "#FFECCD" }}>
                 <span>BMS Access Support</span>
                 <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-forward.svg" } alt="Arrow Right" />
-              </div>
+              </a>
             </Col>
           </Row>
         </Container>

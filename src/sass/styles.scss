@@ -212,7 +212,7 @@ header {
 
   .header-bottom {
     .navbar {
-      padding: 0 1rem;
+      padding: 1rem 25px;
 
       .navbar-brand {
         padding: 0 0 0 2rem;
@@ -280,7 +280,7 @@ header {
         .navbar-collapse {
           .nav-link {
             padding: 1.25rem 0;
-            font-size: 14px;
+            font-size: 16px;
             position: relative;
             line-height: 1;
 
@@ -2378,9 +2378,7 @@ footer {
 
           img {
             height: 28%;
-            filter: invert(90%) sepia(13%) saturate(7%) hue-rotate(
-                318deg
-            ) brightness(92%) contrast(86%);
+            filter: invert(90%) sepia(13%) saturate(7%) hue-rotate(318deg) brightness(92%) contrast(86%);
             margin-top: 1%;
           }
         }
@@ -4457,7 +4455,7 @@ footer {
   }
 
   .menu-section-name {
-    font-size: 1.75rem;
+    font-size: 24px;
     font-weight: 300;
     border-bottom: 2px solid #eee7e7;
     padding: 0.5rem 0;
@@ -4488,6 +4486,7 @@ footer {
       display: flex;
       justify-content: space-between;
       color: $gray-color;
+      font-size: 18px;
 
       img {
         filter: invert(80%) sepia(33%) saturate(27%) hue-rotate(314deg) brightness(96%) contrast(98%);
@@ -4500,6 +4499,7 @@ footer {
 
     p {
       margin-bottom: 0.5rem;
+      font-size: 16px;
     }
 
     .social-icons-wrapper {
@@ -6485,6 +6485,11 @@ footer {
 
     p {
       margin: 0;
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 36px;
     }
   }
 
@@ -6497,6 +6502,7 @@ footer {
       display: flex;
       justify-content: space-between;
       cursor: pointer;
+      font-size: 18px;
 
       span {
         line-height: 1;
@@ -6521,6 +6527,7 @@ footer {
       line-height: 1;
       display: flex;
       justify-content: space-between;
+      color: $gray-color;
 
       img {
         filter: invert(83%) sepia(33%) saturate(0) hue-rotate(347deg) brightness(99%) contrast(99%);
@@ -6551,6 +6558,70 @@ footer {
       p {
         font-size: 13px;
         margin: 0;
+      }
+    }
+  }
+
+  .mobile-educational-resources-names-wrapper {
+    padding: 2rem 0;
+
+    h3 {
+      font-size: 30px;
+      margin: 1rem 0 1.5rem;
+    }
+
+    .medicines-accordion {
+      .card {
+        border-left: none;
+        border-right: none;
+        border-top: 3px solid #EEE7E7;
+        border-bottom: none;
+
+        .card-header {
+          background-color: #fff;
+          padding: 2rem 0;
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          font-size: 18px;
+          line-height: 1;
+
+          svg {
+            color: $pink-color;
+          }
+        }
+
+        &.card:last-of-type {
+          border-bottom: 3px solid #EEE7E7;
+        }
+
+        .card-body {
+          padding: 2rem 0 2rem 1.5rem;
+
+          .accordion-links {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+
+            li {
+              a {
+                color: $gray-color;
+                font-size: 18px;
+                line-height: 20px;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                  filter: invert(48%) sepia(72%) saturate(6981%) hue-rotate(283deg) brightness(81%) contrast(96%);
+                }
+              }
+
+              &:not(:last-of-type) {
+                margin-bottom: 1.5rem;
+              }
+            }
+          }
+        }
       }
     }
   }

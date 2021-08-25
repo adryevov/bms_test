@@ -4,51 +4,56 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Modal } from "react-bootstrap";
 import { useIsMobile } from "../../utils/hooks";
+import OurEducationalResourcesMobile from "./OurEducationalResourcesMobile";
+
+export const linksData = {
+  multipleMueloma: {
+    name: "Multiple Myeloma (MM)",
+    links: {
+      "MM Center for Nurses": "https://www.mmcenterfornurses.com/",
+      "MM Resources": "https://www.mmcenterfornurses.com/resources/",
+      "Educational Videos": "https://www.mmcenterfornurses.com/educational-videos/",
+    },
+  },
+  myelodysplasticSyndromes: {
+    name: "Myelodysplastic Syndromes (MDS)",
+    links: {
+      "What is MDS": "https://www.centerfornurses.com/mds/what-is-mds/",
+      "General Resources": "https://www.centerfornurses.com/general-resources/",
+    },
+  },
+  acuteMyeloidLeukemia: {
+    name: "Acute Myeloid Leukemia (AML)",
+    links: {
+      "What is AML": "https://www.centerfornurses.com/aml/what-is-aml/",
+      "General Resources": "https://www.centerfornurses.com/general-resources/",
+    },
+  },
+  carT: {
+    name: "CAR T",
+    links: {
+      "Understanding CAR T": "https://www.cartcellscience.com/",
+      "Learn Aboout CAR T - For Patients": "https://www.explorecarttherapy.com/",
+    },
+  },
+  lymphoma: {
+    name: "Lymphoma",
+    links: {
+      "What is FL": "https://www.centerfornurses.com/lymphoma/follicular-lymphoma-fl/about-fl/",
+      "What is MZL": "https://www.centerfornurses.com/lymphoma/marginal-zone-lymphoma-mzl/what-is-mzl/",
+      "General Resources": "https://www.centerfornurses.com/general-resources/",
+    }
+  }
+};
 
 const OurEducationalResources = () =>
 {
   const [ modalName, setModalName ] = useState("");
   const isMobile = useIsMobile();
 
-  const linksData = {
-    multipleMueloma: {
-      name: "Multiple Myeloma (MM)",
-      links: {
-        "MM Center for Nurses": "https://www.mmcenterfornurses.com/",
-        "MM Resources": "https://www.mmcenterfornurses.com/resources/",
-        "Educational Videos": "https://www.mmcenterfornurses.com/educational-videos/",
-      },
-    },
-    myelodysplasticSyndromes: {
-      name: "Myelodysplastic Syndromes (MDS)",
-      links: {
-        "What is MDS": "https://www.centerfornurses.com/mds/what-is-mds/",
-        "General Resources": "https://www.centerfornurses.com/general-resources/",
-      },
-    },
-    acuteMyeloidLeukemia: {
-      name: "Acute Myeloid Leukemia (AML)",
-      links: {
-        "What is AML": "https://www.centerfornurses.com/aml/what-is-aml/",
-        "General Resources": "https://www.centerfornurses.com/general-resources/",
-      },
-    },
-    carT: {
-      name: "CAR T",
-      links: {
-        "Understanding CAR T": "https://www.cartcellscience.com/",
-        "Learn Aboout CAR T - For Patients": "https://www.explorecarttherapy.com/",
-      },
-    },
-    lymphoma: {
-      name: "Lymphoma",
-      links: {
-        "What is FL": "https://www.centerfornurses.com/lymphoma/follicular-lymphoma-fl/about-fl/",
-        "What is MZL": "https://www.centerfornurses.com/lymphoma/marginal-zone-lymphoma-mzl/what-is-mzl/",
-        "General Resources": "https://www.centerfornurses.com/general-resources/",
-      }
-    }
-  };
+  if (isMobile) {
+    return <OurEducationalResourcesMobile />;
+  }
 
   return (
     <div className={ "hematology-our-educational-resources-wrapper" + (!!modalName ? " blurry-background" : "") } style={{ backgroundImage: "url(/img/hematology/background-hematology-educational-resources.png)" }}>
