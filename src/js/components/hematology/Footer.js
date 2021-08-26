@@ -2,12 +2,12 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
 
-const Footer = () => {
+const Footer = ({ extended = false }) => {
   const location = useLocation();
 
   return (
     <div className="mobile-hematology-footer">
-      { location.pathname.startsWith("/hematology/our-medicines") &&
+      { extended &&
         <Container className="mobile-hematology-footer-top">
           <Row>
             <Col md={12}>

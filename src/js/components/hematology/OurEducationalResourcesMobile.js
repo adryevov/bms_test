@@ -21,7 +21,7 @@ const OuEducationalResourcesMobile = () =>
         { eventKey === activeTab ? <FontAwesomeIcon icon={ faMinus } /> : <FontAwesomeIcon icon={ faPlus } /> }
       </Accordion.Toggle>
     )
-  }
+  };
 
   return (
     <Fragment>

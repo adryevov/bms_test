@@ -6625,4 +6625,59 @@ footer {
       }
     }
   }
+
+  .mobile-medicine-image {
+    width: 100%;
+  }
+
+  .mobile-medicine-description {
+    width: 100%;
+    background-color: #EEE7E7;
+    padding: 2rem;
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: $gray-color;
+      text-align: center;
+    }
+  }
+
+  .mobile-medicine-assets-wrapper {
+    padding: 2rem 0;
+
+    .medicine-name {
+      border-top: 3px solid #EEE7E7;
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 18px;
+      color: $gray-color;
+
+      span {
+        line-height: 1;
+      }
+
+      img {
+        filter: invert(48%) sepia(72%) saturate(6981%) hue-rotate(283deg) brightness(81%) contrast(96%);
+      }
+
+      &.medicine-name:last-of-type {
+        border-bottom: 3px solid #EEE7E7;
+      }
+    }
+  }
+
+  .mobile-medicine-back-to-home {
+    padding-bottom: 2rem;
+
+    .button-pink {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 204px;
+    }
+  }
 }
