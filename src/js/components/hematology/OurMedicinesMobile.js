@@ -108,12 +108,12 @@ const linksData = {
         type: "video",
       },
       {
-        name: "REBLOZYL First Indication Dosing & Administration Video ",
+        name: "REBLOZYL Dosing & Administration Video #1",
         url: "https://vimeo.com/587929261/071ecdfb60",
         type: "video",
       },
       {
-        name: "REBLOZYL Second Indication Dosing & Administration Video",
+        name: "REBLOZYL Dosing & Administration Video #2",
         url: "https://vimeo.com/587929700/be27de9a90",
         type: "video",
       },
@@ -195,12 +195,12 @@ const linksData = {
       },
       {
         name: "POMALYST Product Brochure",
-        url: "#",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%202204-US-2100092.pdf",
         type: "doc",
       },
       {
         name: "POMALYST Dosing Guide",
-        url: "#",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%20Dosing%20Guide2204-US-2100087.pdf",
         type: "doc",
       },
       {

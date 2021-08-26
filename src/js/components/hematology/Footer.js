@@ -23,7 +23,7 @@ const Footer = ({ extended = false }) => {
           <Col md={12}>
             <Link to="/privacy-policy">Privacy Policy</Link>
             <p>&copy;2021 Bristol-Myers Squibb. All rights reserved.<br />
-              { location.pathname.startsWith("/hematology/our-medicines") && <span>08/21 466-US-2100087</span> }
+              { location.pathname.startsWith("/hematology/our-medicines") && <span>466-US-2100111 08/21</span> }
               { location.pathname.startsWith("/hematology/our-educational-resources") && <span>06/21 HE-US-2100320</span> }
             </p>
           </Col>

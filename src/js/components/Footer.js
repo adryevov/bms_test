@@ -20,7 +20,7 @@ const Footer = () =>
               </div>
               <p>&copy; 2021 Bristol-Myers Squibb Company. All rights reserved.</p>
               <p>Access Support<sup>&reg;</sup> is a registered trademark of Bristol-Myers Squibb Company</p>
-              <p>466-US-2100064 05/21</p>
+              <p>NO-US-2100751 08/21</p>
             </Col>
 
             { !isMobile &&
@@ -29,15 +29,15 @@ const Footer = () =>
                   <p>Follow Us</p>
                   <div className="social-icons-wrapper">
                     <a href="https://www.facebook.com/BristolMyersSquibb" target="_blank"
-                       rel="noreferrer"><FontAwesomeIcon icon={faFacebookSquare}/></a>
+                       rel="noreferrer"><FontAwesomeIcon icon={ faFacebookSquare } /></a>
                     <a href="https://www.instagram.com/bristolmyerssquibb/" target="_blank"
-                       rel="noreferrer"><FontAwesomeIcon icon={faInstagram}/></a>
+                       rel="noreferrer"><FontAwesomeIcon icon={ faInstagram } /></a>
                     <a href="https://www.linkedin.com/company/bristol-myers-squibb/" target="_blank"
-                       rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/></a>
+                       rel="noreferrer"><FontAwesomeIcon icon={ faLinkedin } /></a>
                     <a href="https://twitter.com/BMSNEWS" target="_blank" rel="noreferrer"><FontAwesomeIcon
-                      icon={faTwitter}/></a>
+                      icon={ faTwitter } /></a>
                     <a href="https://www.youtube.com/bristolmyerssquibb" target="_blank" rel="noreferrer"><FontAwesomeIcon
-                      icon={faYoutube}/></a>
+                      icon={ faYoutube } /></a>
                   </div>
                 </div>
               </Col>
