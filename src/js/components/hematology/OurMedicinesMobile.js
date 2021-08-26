@@ -347,7 +347,10 @@ const OurMedicinesMobile = () =>
   const [ activeMedicine, setActiveMedicine ] = useState(null);
   const [ modalVideoUrl, setModalVideoUrl ] = useState(null);
 
-  console.log('modalVideoUrl', modalVideoUrl);
+  const _goBack = () => {
+    setActiveMedicine(null);
+    window.scrollTo({ top: 0 });
+  };
 
   return (
     <Fragment>
@@ -483,7 +486,7 @@ const OurMedicinesMobile = () =>
           <Container className="mobile-medicine-back-to-home">
             <Row>
               <Col>
-                <Button onClick={ () => setActiveMedicine(null) } className="button-pink"><img src={ process.env.PUBLIC_URL + "/img/icons/arrow-back.svg" } alt="Arrow Back" /> Back to Home Page</Button>
+                <Button onClick={ () => _goBack() } className="button-pink"><img src={ process.env.PUBLIC_URL + "/img/icons/arrow-back.svg" } alt="Arrow Back" /> Back to Home Page</Button>
               </Col>
             </Row>
           </Container>
