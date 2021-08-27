@@ -1,5 +1,6 @@
 import React  from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import ScrollToTopButton from "./UI/ScrollToTopButton";
@@ -8,6 +9,7 @@ import { useIsMobile } from "../utils/hooks";
 const Footer = () =>
 {
   const isMobile = useIsMobile();
+  const location = useLocation();
 
   return (
     <footer>
@@ -20,7 +22,8 @@ const Footer = () =>
               </div>
               <p>&copy; 2021 Bristol-Myers Squibb Company. All rights reserved.</p>
               <p>Access Support<sup>&reg;</sup> is a registered trademark of Bristol-Myers Squibb Company</p>
-              <p>NO-US-2100751 08/21</p>
+              { location.pathname === "/immuno-oncology" && <p>ONC-US-2100598 08/21</p> }
+              { location.pathname !== "/immuno-oncology" && <p>NO-US-2100751 08/21</p> }
             </Col>
 
             { !isMobile &&
