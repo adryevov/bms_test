@@ -91,7 +91,7 @@ const Home = () =>
             <h3>Oncology</h3>
             <img src={ process.env.PUBLIC_URL + "/img/icons/oncology.svg" } alt="Oncology" />
             <ul className="homepage-card-links">
-              <li><Link to="/oncology/our-medicines" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
+              <li><a href="https://ourmedoq1.explorebmsvirtual.com/?utm_source=O&utm_medium=OurMed_Oncology" target="_blank" rel="noreferrer" className="arrow-link-pink">Our Medicines <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></a></li>
               <li><Link to="/oncology/our-educational-resources" className="arrow-link-pink">Our Educational Resources <img src={ process.env.PUBLIC_URL + "/img/icons/arrow-right.svg" } alt="Arrow Right" /></Link></li>
             </ul>
           </div>
