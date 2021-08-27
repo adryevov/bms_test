@@ -20,7 +20,7 @@ const linksData = {
       },
       {
         name: "ABECMA Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_abecma.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -42,22 +42,22 @@ const linksData = {
       },
       {
         name: "BREYANZI Product Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/02%20BREYANZI%20Product%20Brochure%20US-LIS-21-0042.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/02%20BREYANZI%20Product%20Brochure%20US-LIS-21-0042.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "BREYANZI Patient Profiles",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/03%20BREYANZI%20Patient%20Profiles%20US-LIS-20-0126.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/03%20BREYANZI%20Patient%20Profiles%20US-LIS-20-0126.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "BREYANZI Logistics and Sequencing",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/04%20BREYANZI%20Logistics%20and%20Sequencing%20US-LIS-20-0128.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/04%20BREYANZI%20Logistics%20and%20Sequencing%20US-LIS-20-0128.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "BREYANZI Clinician Guide",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/05%20BREYANZI%20Clinician%20Guide%20US-LIS-20-0161.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/05%20BREYANZI%20Clinician%20Guide%20US-LIS-20-0161.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -74,32 +74,32 @@ const linksData = {
       },
       {
         name: "REBLOZYL Full Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_reblozyl.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_reblozyl.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "REBLOZYL Second Indication Product Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/02%20REBLOZYL%20Product%20Brochure1_2007-US-2100054.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/02%20REBLOZYL%20Product%20Brochure1_2007-US-2100054.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "REBLOZYL First Indication Product Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/03%20REBLOZYL%20Product%20Brochure%202_2007-US-2100003.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/03%20REBLOZYL%20Product%20Brochure%202_2007-US-2100003.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "REBLOZYL Dosing & Reconstitution Guide",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/04%20REBLOZYL%20Dosing%20%26%20Reconstitution%20Guide%20US-RBZ-20-0290_2007-US-2100264.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/04%20REBLOZYL%20Dosing%20%26%20Reconstitution%20Guide%20US-RBZ-20-0290_2007-US-2100264.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
-        name: "REBLOZYL First Indication Patient Brochure \n",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/05%20REBLOZYL%20Patient%20Brochure1_US-RBZ-20-0303_2001-US-2100206.pdf",
+        name: "REBLOZYL First Indication Patient Brochure",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/05%20REBLOZYL%20Patient%20Brochure1_US-RBZ-20-0303_2001-US-2100206.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
-        name: "REBLOZYL Second Indication Patient Brochure\n",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/06%20REBLOZYL%20Patient%20Brochure2_US-RBZ-19-0021_2007-US-2100263.pdf",
+        name: "REBLOZYL Second Indication Patient Brochure",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/06%20REBLOZYL%20Patient%20Brochure2_US-RBZ-19-0021_2007-US-2100263.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
@@ -131,17 +131,17 @@ const linksData = {
       },
       {
         name: "ONUREG Full Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_onureg.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_onureg.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "ONUREG Dosing Guide",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/04%20Onureg/02%20ONUREG%20Dosing%20Guide%20US-ONU-21-0026.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/04%20Onureg/02%20ONUREG%20Dosing%20Guide%20US-ONU-21-0026.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "How to order ONUREG",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/04%20Onureg/03%20How%20to%20order%20ONUREG%20US-ONU-21-0066.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/04%20Onureg/03%20How%20to%20order%20ONUREG%20US-ONU-21-0066.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -158,22 +158,22 @@ const linksData = {
       },
       {
         name: "REVLIMID Full Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_revlimid.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_revlimid.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "REVLIMID Product Brochure #1",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/02%20REVLIMID%20Product%20Brochure1_US-REV-20-0635.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/02%20REVLIMID%20Product%20Brochure1_US-REV-20-0635.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "REVLIMID Product Brochure #2",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/03%20Revlimid%20Product%20Brochure%202_US-REV-21-0021.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/03%20Revlimid%20Product%20Brochure%202_US-REV-21-0021.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "New Patient App for Completing REMS Patient Surveys",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/04%20New%20Patient%20App%20for%20Completing%20REMS%20Patient%20Surveys%20US-REMS-GEN200027.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/04%20New%20Patient%20App%20for%20Completing%20REMS%20Patient%20Surveys%20US-REMS-GEN200027.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -190,22 +190,22 @@ const linksData = {
       },
       {
         name: "POMALYST Full Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_pomalyst.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_pomalyst.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "POMALYST Product Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%202204-US-2100092.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%202204-US-2100092.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "POMALYST Dosing Guide",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%20Dosing%20Guide2204-US-2100087.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%20Dosing%20Guide2204-US-2100087.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "New Patient App for Completing REMS Patient Surveys",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/04%20New%20Patient%20App%20for%20Completing%20REMS%20Patient%20Surveys%20US-REMS-GEN200027.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/04%20New%20Patient%20App%20for%20Completing%20REMS%20Patient%20Surveys%20US-REMS-GEN200027.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -222,12 +222,12 @@ const linksData = {
       },
       {
         name: "EMPLICITI Full Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_empliciti.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_empliciti.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "EMPLICITI Dosing Guide",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/07%20Empliciti/02%20EMPLICITI-Dosing-Guide-US-EMP-21-0012.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/07%20Empliciti/02%20EMPLICITI-Dosing-Guide-US-EMP-21-0012.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -244,12 +244,12 @@ const linksData = {
       },
       {
         name: "REVLIMID Full Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_revlimid.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_revlimid.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "R2 Product Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/02%20R2%20Product%20Brochure%20US-REV-20-0677.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/02%20R2%20Product%20Brochure%20US-REV-20-0677.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
@@ -264,7 +264,7 @@ const linksData = {
       },
       {
         name: "R2 Dose Modification Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/05%20R2%20Dose%20Modification%20Brochure%20US-REV-20-0337.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/05%20R2%20Dose%20Modification%20Brochure%20US-REV-20-0337.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -276,22 +276,22 @@ const linksData = {
     assets: [
       {
         name: "INREBIC Website",
-        url: "www.inrebicpro.com",
+        url: "https://www.inrebicpro.com/",
         type: "link",
       },
       {
         name: "INREBIC Full Prescribing Information",
-        url: "https://media2.celgene.com/content/uploads/inrebic-pi.pdf",
+        url: "https://media2.celgene.com/content/uploads/inrebic-pi.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "INREBIC Product Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/09%20Inrebic/02%20INREBIC%20Product%20Brochure%202010-US-2100018.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/09%20Inrebic/02%20INREBIC%20Product%20Brochure%202010-US-2100018.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "INREBIC Dosing Guide",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/09%20Inrebic/03%20INREBIC%20Dosing%20Guide%20US-INR-20-0156.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/09%20Inrebic/03%20INREBIC%20Dosing%20Guide%20US-INR-20-0156.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]
@@ -308,14 +308,9 @@ const linksData = {
       },
       {
         name: "SPRYCEL Full Prescribing Information",
-        url: "https://packageinserts.bms.com/pi/pi_sprycel.pdf",
+        url: "https://packageinserts.bms.com/pi/pi_sprycel.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
-      // {
-      //   name: "SPRYCEL Product Brochure",
-      //   url: "#",
-      //   type: "doc",
-      // },
     ]
   },
   idhifa: {
@@ -330,12 +325,12 @@ const linksData = {
       },
       {
         name: "IDHIFA Full Prescribing Information",
-        url: "https://media2.celgene.com/content/uploads/idhifa-pi.pdf",
+        url: "https://media2.celgene.com/content/uploads/idhifa-pi.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
         name: "IDHIFA Product Brochure",
-        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/11%20Idhifa/02%20IDHIFA%20Product%20Brochure%202018-US-2000011.pdf",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/11%20Idhifa/02%20IDHIFA%20Product%20Brochure%202018-US-2000011.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
     ]

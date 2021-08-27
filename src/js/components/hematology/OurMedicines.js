@@ -143,10 +143,10 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="BREYANZI Website" link="https://www.breyanzihcp.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="BREYANZI Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_breyanzi.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="BREYANZI Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-product-brochure.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="BREYANZI Patient Profiles" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-patient-profiles.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="BREYANZI Logistics and Sequencing" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-logistics-and-sequencing.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="BREYANZI Clinician Guide" link={ process.env.PUBLIC_URL + "/pdf/breyanzi-clinician-guide.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/02%20BREYANZI%20Product%20Brochure%20US-LIS-21-0042.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Patient Profiles" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/03%20BREYANZI%20Patient%20Profiles%20US-LIS-20-0126.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Logistics and Sequencing" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/04%20BREYANZI%20Logistics%20and%20Sequencing%20US-LIS-20-0128.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="BREYANZI Clinician Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/02%20Breyanzi/05%20BREYANZI%20Clinician%20Guide%20US-LIS-20-0161.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
@@ -165,11 +165,11 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="REBLOZYL Website" link="https://www.reblozylpro.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="REBLOZYL Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_reblozyl.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="REBLOZYL Second Indication Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/2007-US-2100054_cellus_mds_hcp_bro_update.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="REBLOZYL First Indication Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/2007-US-2100003 Beta Thal Shortened Brochure_DIGITAL.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="REBLOZYL Dosing & Reconstitution Guide" link="https://gc-static-content.s3.amazonaws.com/bms/ash/reblozyl/US-RBZ-20-0290%20Dual%20Indication%20Dosing%20Guide%20%28Downloadable%29_Clickable_7.16.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="REBLOZYL First Indication Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/ash/reblozyl/US-RBZ-20-0303%20First%20Indication_BT_Patient%20Brochure%20V2%20Digital.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="REBLOZYL Second Indication Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/ash/reblozyl/US-RBZ-20-0232%2BMDS%2BPatient%2BBrochure%2B%28Digital%29_FinalClickable6.26.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="REBLOZYL Second Indication Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/02%20REBLOZYL%20Product%20Brochure1_2007-US-2100054.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="REBLOZYL First Indication Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/03%20REBLOZYL%20Product%20Brochure%202_2007-US-2100003.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="REBLOZYL Dosing & Reconstitution Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/04%20REBLOZYL%20Dosing%20%26%20Reconstitution%20Guide%20US-RBZ-20-0290_2007-US-2100264.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="REBLOZYL First Indication Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/05%20REBLOZYL%20Patient%20Brochure1_US-RBZ-20-0303_2001-US-2100206.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="REBLOZYL Second Indication Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/06%20REBLOZYL%20Patient%20Brochure2_US-RBZ-19-0021_2007-US-2100263.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="REBLOZYL MOA Video" onClick={ () => setModalName("reblozyl-moa-video") } className="details-link" />
                 <GrayDownloadIconButton name="REBLOZYL Dosing & Administration Video #1" onClick={ () => setModalName("reblozyl-first-indication-bosing-and-administration-video") } className="details-link" />
                 <GrayDownloadIconButton name="REBLOZYL Dosing & Administration Video #2" onClick={ () => setModalName("reblozyl-second-indication-bosing-and-administration-video") } className="details-link" />
@@ -178,21 +178,21 @@ const OurMedicines = () =>
 
             { modalName === "reblozyl-moa-video" &&
               <div className="video-section-wrapper">
-                <VideoPlayer src="https://virtual-video-resources.s3.amazonaws.com/bms/videos/US-RBZ-20-0443+MOA_HCP+GPO+Video+Asset+V2.mp4" />
+                <VideoPlayer src="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/07%20REBLOZYL%20MOA%20Video%20US-RBZ-20-0443.mp4" />
                 <a href="https://packageinserts.bms.com/pi/pi_reblozyl.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="video-link-bottom">Please see Full Prescribing Information for REBLOZYL&reg; (luspatercept-aamt).</a>
               </div>
             }
 
             { modalName === "reblozyl-first-indication-bosing-and-administration-video" &&
               <div className="video-section-wrapper">
-                <VideoPlayer src="https://virtual-video-resources.s3.amazonaws.com/bms/videos/US-RBZ-20-0256_First+Indication_BT+Dosing+Video_Edit11.mp4" />
+                <VideoPlayer src="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/08%20REBLOZYL%20Dosing%20%26%20Administration%20Video1_US-RBZ-20-0256_2007-US-2100241.mp4" />
                 <a href="https://packageinserts.bms.com/pi/pi_reblozyl.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="video-link-bottom">Please see Full Prescribing Information for REBLOZYL&reg; (luspatercept-aamt).</a>
               </div>
             }
 
             { modalName === "reblozyl-second-indication-bosing-and-administration-video" &&
               <div className="video-section-wrapper">
-                <VideoPlayer src="https://virtual-video-resources.s3.amazonaws.com/bms/videos/US-RBZ-20-0030_Second+Indication_+MDS+Dosing+Video_Edit11.mp4" />
+                <VideoPlayer src="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/09%20REBLOZYL%20Dosing%20%26%20Administration%20Video2_US-RBZ-20-0030_2007-US-2100234.mp4" />
                 <a href="https://packageinserts.bms.com/pi/pi_reblozyl.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="video-link-bottom">Please see Full Prescribing Information for REBLOZYL&reg; (luspatercept-aamt).</a>
               </div>
             }
@@ -212,8 +212,8 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="ONUREG Website" link="https://www.onuregpro.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name={[ <span key="ONUREG">ONUREG</span>, <sup key="reg">&reg;</sup>, <span style={{ margin: "0.25rem" }} key="Full Prescribing Information">Full Prescribing Information</span> ]} link="https://packageinserts.bms.com/pi/pi_onureg.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name={[ <span key="ONUREG">ONUREG</span>, <sup key="reg">&reg;</sup>, <span style={{ margin: "0.25rem" }} key="Dosing Guide">Dosing Guide</span> ]}  link={ process.env.PUBLIC_URL + "/pdf/US-ONU-21-0026 ONUREG Dosing Guide (Digital) - Update v3_AFD.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name={[ <span key="How to order ONUREG">How to order ONUREG</span>, <sup key="reg">&reg;</sup> ]} link={ process.env.PUBLIC_URL + "/pdf/US-ONU-21-0066_BMS ONUREG How to Order and Access_DIGITAL_FINAL Approved.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name={[ <span key="ONUREG">ONUREG</span>, <sup key="reg">&reg;</sup>, <span style={{ margin: "0.25rem" }} key="Dosing Guide">Dosing Guide</span> ]}  link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/04%20Onureg/02%20ONUREG%20Dosing%20Guide%20US-ONU-21-0026.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name={[ <span key="How to order ONUREG">How to order ONUREG</span>, <sup key="reg">&reg;</sup> ]} link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/04%20Onureg/03%20How%20to%20order%20ONUREG%20US-ONU-21-0066.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
@@ -233,9 +233,9 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="REVLIMID Website" link="https://revlimidhcp.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="REVLIMID Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_revlimid.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="REVLIMID Product Brochure #1" link={ process.env.PUBLIC_URL + "/pdf/US-REV-20-0635NDMM Leave Behind Digital Version-v27.1_.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="REVLIMID Product Brochure #2" link={ process.env.PUBLIC_URL + "/pdf/US-REV-21-0021 REVLIMID Maintenance Leave Behind Digital Update_v27.1.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="New Patient App for Completing REMS Patient Surveys" link="https://gc-static-content.s3.amazonaws.com/bms/ash/revlimid/US-REMS-GEN200027%20REV%20printer%20PDF%2010.15%20AA.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="REVLIMID Product Brochure #1" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/02%20REVLIMID%20Product%20Brochure1_US-REV-20-0635.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="REVLIMID Product Brochure #2" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/03%20Revlimid%20Product%20Brochure%202_US-REV-21-0021.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="New Patient App for Completing REMS Patient Surveys" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/04%20New%20Patient%20App%20for%20Completing%20REMS%20Patient%20Surveys%20US-REMS-GEN200027.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
@@ -254,9 +254,9 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="POMALYST Website" link="https://pomalysthcp.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="POMALYST Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_pomalyst.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="POMALYST Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%202204-US-2100092.pdf" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="POMALYST Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%20Dosing%20Guide2204-US-2100087.pdf" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="New Patient App for Completing REMS Patient Surveys" link="https://gc-static-content.s3.amazonaws.com/bms/ash/revlimid/US-REMS-GEN200027%20REV%20printer%20PDF%2010.15%20AA.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="POMALYST Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%202204-US-2100092.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="POMALYST Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/POMALYST%20Dosing%20Guide2204-US-2100087.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="New Patient App for Completing REMS Patient Surveys" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/04%20New%20Patient%20App%20for%20Completing%20REMS%20Patient%20Surveys%20US-REMS-GEN200027.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
@@ -275,7 +275,7 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="EMPLICITI Website" link="https://www.emplicitihcp.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="EMPLICITI Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_empliciti.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="EMPLICITI Dosing Guide" link={ process.env.PUBLIC_URL + "/pdf/US-EMP-21-0012 EMPLICITI HCP Dosing Guide Update.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="EMPLICITI Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/07%20Empliciti/02%20EMPLICITI-Dosing-Guide-US-EMP-21-0012.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
@@ -294,16 +294,16 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="REVLIMID Website" link="https://revlimidhcp.com/rrfl/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="REVLIMID Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_revlimid.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Product Brochure" style={{ marginLeft: "0.25rem" }}>Product Brochure</span> ]} link="https://gc-static-content.s3.amazonaws.com/bms/ash/r2/US-REV-20-0677%20R%5E2%20Efficacy%20Leave%20Behind%20-%20Phase%202%20Messaging%20Update.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Virtual Assistant" style={{ marginLeft: "0.25rem" }}>Virtual Assistant</span> ]} link="https://r2virtualrep.com/sign-in" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Product Brochure" style={{ marginLeft: "0.25rem" }}>Product Brochure</span> ]} link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/02%20R2%20Product%20Brochure%20US-REV-20-0677.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Virtual Assistant" style={{ marginLeft: "0.25rem" }}>Virtual Assistant</span> ]} link="https://r2virtualrep.com" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Combined KOL Video" style={{ marginLeft: "0.25rem" }}>Combined KOL Video</span> ]} onClick={ () => setModalName("r2-video") } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Dose Modification Brochure" style={{ marginLeft: "0.25rem" }}>Dose Modification Brochure</span> ]} link="https://media.revlimidhcp.com/wp-content/uploads/2020/12/R%5e2-Dose-Modification-Brochure_Digital_US-REV-20-0337-4.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name={[ <span key="R">R</span>, <sup key="sup">2</sup>, <span key="Dose Modification Brochure" style={{ marginLeft: "0.25rem" }}>Dose Modification Brochure</span> ]} link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/05%20R2%20Dose%20Modification%20Brochure%20US-REV-20-0337.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
             { modalName === "r2-video" &&
               <div className="video-section-wrapper">
-                <VideoPlayer src="https://virtual-video-resources.s3.amazonaws.com/bms/videos/US-REV-21-0088_R2ComboKOLVideo+(1)_1.mp4" />
+                <VideoPlayer src="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/04%20R2%20Combined%20KOL%20Video%20US-REV-21-0088.mp4" />
                 <p>Please see Full Prescribing Information for REVLIMID<sup>&reg;</sup> (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID is only available through REVLIMID REMS<sup>&reg;</sup> at <a href="https://www.celgeneriskmanagement.com/" target="_blank" rel="noreferrer">www.CelgeneRiskManagement.com.</a><br /> Please see the rituximab full Prescribing Information for Important Safety Information at <a href="https://www.rituxan.com/" target="_blank" rel="noreferrer">www.rituxan.com</a>.</p>
               </div>
             }
@@ -323,9 +323,8 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="INREBIC Website" link="https://www.inrebicpro.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="INREBIC Full Prescribing Information" link="https://media2.celgene.com/content/uploads/inrebic-pi.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="INREBIC Product Brochure" link={ process.env.PUBLIC_URL + "/pdf/2010-US-2100018_INREBIC_Branded Leave Behind_Digital V13.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="INREBIC Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/ash/inrebic/Virtual%20PDF
-%20Dosing%20Guide%20%20US-INR-20-0156.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="INREBIC Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/09%20Inrebic/02%20INREBIC%20Product%20Brochure%202010-US-2100018.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="INREBIC Dosing Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/09%20Inrebic/03%20INREBIC%20Dosing%20Guide%20US-INR-20-0156.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
@@ -344,7 +343,6 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="SPRYCEL Website" link="https://www.sprycel-hcp.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name="SPRYCEL Full Prescribing Information" link="https://packageinserts.bms.com/pi/pi_sprycel.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="SPRYCEL Product Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/ash/sprycel/729US1903380-05-01_SPRY_CORE_IVA_LB_IPDF_08_20_172018361_vfinal.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
@@ -363,7 +361,7 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name={[ <span key="IDHIFA">IDHIFA</span>, <sup key="reg">&reg;</sup>, <span style={{ marginLeft: "0.25rem" }} key="Website">Website</span> ]} link="https://www.idhifapro.com/" blank={ true } />
                 <p className="click-a-button-below">Explore Additional Information:</p>
                 <GrayDownloadIconButton name={[ <span key="IDHIFA">IDHIFA</span>, <sup key="reg">&reg;</sup>, <span style={{ marginLeft: "0.25rem" }} key="Full Prescribing Information">Full Prescribing Information</span> ]} link="https://media2.celgene.com/content/uploads/idhifa-pi.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name={[ <span key="IDHIFA">IDHIFA</span>, <sup key="reg">&reg;</sup>, <span style={{ marginLeft: "0.25rem" }} key="Product Brochure">Product Brochure</span> ]} link={ process.env.PUBLIC_URL + "/pdf/IDHIFA Trifold (PDF) - 2020 Label Update_FINAL.pdf?#view=Fit&toolbar=0" } blank={ true } className="details-link" />
+                <GrayDownloadIconButton name={[ <span key="IDHIFA">IDHIFA</span>, <sup key="reg">&reg;</sup>, <span style={{ marginLeft: "0.25rem" }} key="Product Brochure">Product Brochure</span> ]} link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/11%20Idhifa/02%20IDHIFA%20Product%20Brochure%202018-US-2000011.pdf?#view=Fit&toolbar=0" blank={ true } className="details-link" />
               </div>
             }
 
