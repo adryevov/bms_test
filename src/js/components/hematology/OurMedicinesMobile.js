@@ -103,18 +103,18 @@ const linksData = {
         type: "doc",
       },
       {
-        name: "REBLOZYL MOA Video ",
-        url: "https://vimeo.com/587929043/0979354d99",
+        name: "REBLOZYL MOA Video",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/07%20REBLOZYL%20MOA%20Video%20US-RBZ-20-0443.mp4",
         type: "video",
       },
       {
         name: "REBLOZYL Dosing & Administration Video #1",
-        url: "https://vimeo.com/587929261/071ecdfb60",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/08%20REBLOZYL%20Dosing%20%26%20Administration%20Video1_US-RBZ-20-0256_2007-US-2100241.mp4",
         type: "video",
       },
       {
         name: "REBLOZYL Dosing & Administration Video #2",
-        url: "https://vimeo.com/587929700/be27de9a90",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/09%20REBLOZYL%20Dosing%20%26%20Administration%20Video2_US-RBZ-20-0030_2007-US-2100234.mp4",
         type: "video",
       },
     ]
@@ -259,7 +259,7 @@ const linksData = {
       },
       {
         name: "R2 Combined KOL Video",
-        url: "https://vimeo.com/587930107/3b5d6a3bd0",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/04%20R2%20Combined%20KOL%20Video%20US-REV-21-0088.mp4",
         type: "video",
       },
       {
