@@ -311,11 +311,11 @@ const linksData = {
         url: "https://packageinserts.bms.com/pi/pi_sprycel.pdf",
         type: "doc",
       },
-      {
-        name: "SPRYCEL Product Brochure",
-        url: "#",
-        type: "doc",
-      },
+      // {
+      //   name: "SPRYCEL Product Brochure",
+      //   url: "#",
+      //   type: "doc",
+      // },
     ]
   },
   idhifa: {
