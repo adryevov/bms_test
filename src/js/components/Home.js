@@ -47,8 +47,8 @@ const Home = () =>
             <Container>
               <Row>
                 <Col md={12} className="home-slide-3-wrapper">
-                  <h2>Learn about a new approval in Oncology!</h2>
-                  <a href="https://www.opdivogastroeso.com/" className="button-pink" target="_blank" rel="noreferrer">Click Here</a>
+                  <h2>Learn about an approval in Oncology!</h2>
+                  <a href="https://www.opdivorx.com/uc" className="button-pink" target="_blank" rel="noreferrer">Click Here</a>
                 </Col>
               </Row>
             </Container>
