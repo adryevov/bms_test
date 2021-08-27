@@ -10,6 +10,7 @@ import OpdivoFolfox from "./components/oncology/OpdivoFolfox";
 import OncologyEducationalResources from "./components/oncology/OurEducationalResources";
 import HematologyMedicines from "./components/hematology/OurMedicines";
 import HematologyEducationalResources from "./components/hematology/OurEducationalResources";
+import ImmunoOncology from "./components/oncology/ImmunoOncology";
 import DataDiscovery from "./components/DataDiscovery";
 import IoPotential from "./components/IoPotential";
 import BrickBuilder from "./components/BrickBuilder";
@@ -24,6 +25,7 @@ const App = () => {
           <Route exact path="/" component={ Home } />
           <Route exact path="/abstracts" component={ Abstracts } />
           <Route exact path="/product-theater-schedule" component={ TheaterSchedule } />
+          <Route exact path="/immuno-oncology" component={ ImmunoOncology } />
           <Route exact path="/oncology/our-medicines" component={ OncologyMedicines } />
           <Route exact path="/oncology/our-medicines/opdivo-yervoy" component={ OpdivoYervoy } />
           <Route exact path="/oncology/our-medicines/opdivo-cabometyx" component={ OpdivoCabometyx } />
