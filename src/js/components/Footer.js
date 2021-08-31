@@ -22,8 +22,8 @@ const Footer = () =>
               </div>
               <p>&copy; 2021 Bristol-Myers Squibb Company. All rights reserved.</p>
               <p>Access Support<sup>&reg;</sup> is a registered trademark of Bristol-Myers Squibb Company</p>
-              { location.pathname === "/immuno-oncology" && <p>ONC-US-2100598 08/21</p> }
-              { location.pathname !== "/immuno-oncology" && <p>NO-US-2100751 08/21</p> }
+              { location.pathname === "/oncology/our-educational-resources" && <p>ONC-US-2100598 08/21</p> }
+              { location.pathname !== "/oncology/our-educational-resources" && <p>NO-US-2100751 08/21</p> }
             </Col>
 
             { !isMobile &&
