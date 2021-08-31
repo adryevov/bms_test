@@ -30,7 +30,7 @@ const App = () => {
           <Route exact path="/oncology/our-medicines/opdivo-yervoy" component={ OpdivoYervoy } />
           <Route exact path="/oncology/our-medicines/opdivo-cabometyx" component={ OpdivoCabometyx } />
           <Route exact path="/oncology/our-medicines/opdivo-folfox" component={ OpdivoFolfox } />
-          <Route exact path="/oncology/our-educational-resources" component={ OncologyEducationalResources } />
+          <Route exact path="/oncology/our-educational-resources" component={ ImmunoOncology } />
           <Route exact path="/hematology/our-medicines" component={ HematologyMedicines } />
           <Route exact path="/hematology/our-educational-resources" component={ HematologyEducationalResources } />
           <Route exact path="/data-discovery" component={ DataDiscovery } />
