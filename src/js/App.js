@@ -7,7 +7,6 @@ import OncologyMedicines from "./components/oncology/OurMedicines";
 import OpdivoYervoy from "./components/oncology/OpdivoYervoy";
 import OpdivoCabometyx from "./components/oncology/OpdivoCabometyx";
 import OpdivoFolfox from "./components/oncology/OpdivoFolfox";
-import OncologyEducationalResources from "./components/oncology/OurEducationalResources";
 import HematologyMedicines from "./components/hematology/OurMedicines";
 import HematologyEducationalResources from "./components/hematology/OurEducationalResources";
 import ImmunoOncology from "./components/oncology/ImmunoOncology";
