@@ -62,7 +62,7 @@ const Home = () =>
               <Row>
                 <Col md={12} className="home-slide-4-wrapper">
                   <h2>Need help in explaining Immuno-Oncology?</h2>
-                  <Link to="/immuno-oncology" className="button-pink">Click Here</Link>
+                  <Link to="/oncology/our-educational-resources" className="button-pink">Click Here</Link>
                 </Col>
               </Row>
             </Container>

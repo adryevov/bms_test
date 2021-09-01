@@ -24,7 +24,6 @@ const App = () => {
           <Route exact path="/" component={ Home } />
           <Route exact path="/abstracts" component={ Abstracts } />
           <Route exact path="/product-theater-schedule" component={ TheaterSchedule } />
-          <Route exact path="/immuno-oncology" component={ ImmunoOncology } />
           <Route exact path="/oncology/our-medicines" component={ OncologyMedicines } />
           <Route exact path="/oncology/our-medicines/opdivo-yervoy" component={ OpdivoYervoy } />
           <Route exact path="/oncology/our-medicines/opdivo-cabometyx" component={ OpdivoCabometyx } />
