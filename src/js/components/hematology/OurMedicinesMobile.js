@@ -148,7 +148,7 @@ const linksData = {
   },
   revlimid: {
     name: "Revlimid",
-    heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/",
+    heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/Revlimid%202003-US-2100035.png",
     description: "Please see full Prescribing Information for ONUREG (azacitidine) tablets available in the link below",
     assets: [
       {
