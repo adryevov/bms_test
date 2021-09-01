@@ -78,12 +78,12 @@ const linksData = {
         type: "doc",
       },
       {
-        name: "REBLOZYL Second Indication Product Brochure",
+        name: "REBLOZYL Product Brochure #2",
         url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/02%20REBLOZYL%20Product%20Brochure1_2007-US-2100054.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
-        name: "REBLOZYL First Indication Product Brochure",
+        name: "REBLOZYL Product Brochure #1",
         url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/03%20REBLOZYL%20Product%20Brochure%202_2007-US-2100003.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
@@ -93,12 +93,12 @@ const linksData = {
         type: "doc",
       },
       {
-        name: "REBLOZYL First Indication Patient Brochure",
+        name: "REBLOZYL Patient Brochure #1",
         url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/05%20REBLOZYL%20Patient%20Brochure1_US-RBZ-20-0303_2001-US-2100206.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
       {
-        name: "REBLOZYL Second Indication Patient Brochure",
+        name: "REBLOZYL Patient Brochure #2",
         url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/06%20REBLOZYL%20Patient%20Brochure2_US-RBZ-19-0021_2007-US-2100263.pdf?#view=Fit&toolbar=0",
         type: "doc",
       },
