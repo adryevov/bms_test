@@ -65,7 +65,7 @@ const linksData = {
   reblozyl: {
     name: "Reblozyl",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/03%20Reblozyl/Reblozyl%202007-US-2100089.png",
-    description: "Please see U.S. Full Prescribing information for REBLOZYL   (luspatercept-aamt) available in the link below.\n",
+    description: "Please see U.S. Full Prescribing information for REBLOZYL® (luspatercept-aamt) available in the link below.\n",
     assets: [
       {
         name: "REBLOZYL Website",
@@ -122,7 +122,7 @@ const linksData = {
   onureg: {
     name: "Onureg",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/04%20Onureg/Onureg%20US-ONU-21-0113.png",
-    description: "Please see full Prescribing Information for ONUREG (azacitidine) tablets available in the link below",
+    description: "Please see full Prescribing Information for ONUREG® (azacitidine) tablets available in the link below",
     assets: [
       {
         name: "ONUREG Website",
@@ -149,7 +149,7 @@ const linksData = {
   revlimid: {
     name: "Revlimid",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/05%20Revlimid/Revlimid%202003-US-2100035.png",
-    description: "Please see full Prescribing Information for ONUREG (azacitidine) tablets available in the link below",
+    description: "Please see Full Prescribing Information for REVLIMID® (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID is only available through REVLIMID REMS® at www.CelgeneRiskManagement.com",
     assets: [
       {
         name: "REVLIMID Website",
@@ -181,7 +181,7 @@ const linksData = {
   pomalyst: {
     name: "Pomalyst",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/06%20Pomalyst/Pomalyst%202204-US-2100018.png",
-    description: "Please see full Prescribing Information for POMALYST, including Boxed WARNINGS for Embryo-Fetal Toxicity, and Venous and Arterial Thromboembolism, available in the link below. POMALYST is only available through POMALYST REMS at www.CelgeneRiskManagement.com",
+    description: "Please see full Prescribing Information for POMALYST®, including Boxed WARNINGS for Embryo-Fetal Toxicity, and Venous and Arterial Thromboembolism, available in the link below. POMALYST® is only available through POMALYST REMS® at www.CelgeneRiskManagement.com",
     assets: [
       {
         name: "POMALYST Website",
@@ -213,7 +213,7 @@ const linksData = {
   empliciti: {
     name: "Empliciti",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/07%20Empliciti/Empliciti%20689-US-2100010.png",
-    description: "Please see Full Prescribing Information for EMPLICITI (elotuzumab) available in the link below.",
+    description: "Please see Full Prescribing Information for EMPLICITI® (elotuzumab) available in the link below.",
     assets: [
       {
         name: "EMPLICITI Website",
@@ -235,7 +235,7 @@ const linksData = {
   r2: {
     name: "R2",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/08%20R2/R2%20US-REV-21-0111.png",
-    description: "Please see Full Prescribing Information for REVLIMID (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID is only available through REVLIMID REMS at www.CelgeneRiskManagement.com. Please see the rituximab full Prescribing Information for Important Safety Information at www.rituxan.com.",
+    description: "Please see Full Prescribing Information for REVLIMID® (lenalidomide) including Boxed WARNINGS for Embryo-Fetal Toxicity, Hematologic Toxicity, and Venous and Arterial Thromboembolism, available in the link below. REVLIMID® is only available through REVLIMID REMS® at www.CelgeneRiskManagement.com. Please see the rituximab full Prescribing Information for Important Safety Information at www.rituxan.com.",
     assets: [
       {
         name: "REVLIMID Website",
@@ -272,7 +272,7 @@ const linksData = {
   inrebic: {
     name: "Inrebic",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/09%20Inrebic/Inrebic%202010-US-2100028.png",
-    description: "Please see Full Prescribing Information for INREBIC (fedratinib), including Boxed WARNING for Encephalopathy, including Wernicke's, available in the link below.",
+    description: "Please see Full Prescribing Information for INREBIC® (fedratinib), including Boxed WARNING for Encephalopathy, including Wernicke's, available in the link below.",
     assets: [
       {
         name: "INREBIC Website",
@@ -299,7 +299,7 @@ const linksData = {
   sprycel: {
     name: "Sprycel",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/10%20Sprycel/Sprycel%20792US2003894-01-01.png",
-    description: "Please see Important Safety Information and full Prescribing Information, including Boxed WARNING available in the link below.",
+    description: "Please see full prescribing information for SPRYCEL® (dasatinib) available in the link below.",
     assets: [
       {
         name: "SPRYCEL Website",
