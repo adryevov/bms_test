@@ -125,9 +125,9 @@ const OurMedicines = () =>
                 <PinkLinkIconButton name="Visit AbecmaHCP.com" link="https://www.abecmahcp.com/" blank={ true } />
                 <p className="click-a-button-below">Click a button below to learn more about ABECMA</p>
                 <GrayDownloadIconButton name="ABECMA Prescribing Information" link="https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0" blank={ true }  className="details-link"/>
-                <GrayDownloadIconButton name="ABECMA HCP Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-20-0165.pdf" blank={ true }  className="details-link"/>
-                <GrayDownloadIconButton name="ABECMA Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-21-0051.pdf" blank={ true } className="details-link" />
-                <GrayDownloadIconButton name="ABECMA Clinical Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/2012-US-2100041_US-IDE-21-0208.pdf" blank={ true }  className="details-link"/>
+                <GrayDownloadIconButton name="ABECMA HCP Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-20-0165.pdf#view=Fit&toolbar=0" blank={ true }  className="details-link"/>
+                <GrayDownloadIconButton name="ABECMA Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-21-0051.pdf#view=Fit&toolbar=0" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="ABECMA Clinical Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/2012-US-2100041_US-IDE-21-0208.pdf#view=Fit&toolbar=0" blank={ true }  className="details-link"/>
                 <GrayDownloadIconButton name="ABECMA MOA Video" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/%20US-IDE-20-0041.mp4" blank={ true }  className="details-link"/>
               </div>
             }
