@@ -43,19 +43,6 @@ const OurMedicines = () =>
         </Carousel.Item>
 
         <Carousel.Item>
-          <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-camera-small" + (isMobile ? "-mobile" : "") + ".png)" }}>
-            <Container>
-              <Row>
-                <Col md={12} className="our-medicines-slide-3-wrapper">
-                  <p>Explore the OPDIVO + YERVOY data in an interactive activity</p>
-                  <a href="/data-discovery" target="_blank" rel="noreferrer" className="button-orange">Start Now!</a>
-                </Col>
-              </Row>
-            </Container>
-          </div>
-        </Carousel.Item>
-
-        <Carousel.Item>
           <div className="carousel-slide" style={{ backgroundImage: "url(/img/banners/banner-smiling-lady-small" + (isMobile ? "-mobile" : "") + ".png)" }}>
             <Container>
               <Row>
@@ -66,6 +53,20 @@ const OurMedicines = () =>
               </Row>
             </Container>
             <span className="our-medicines-slide-4-not-patient">Not an actual patient</span>
+          </div>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <div className="carousel-slide" style={{background: "rgb(0,50,122)" ,background: "linear-gradient(90deg, rgba(0,50,122,1) 0%, rgba(44,118,194,1) 50%, rgba(0,50,122,1) 100%)" }}>
+            <Container>
+              <Row>
+                <Col md={12} className="our-medicines-slide-5-wrapper">
+                  <p>Starting therapy can feel overwhelming</p>
+                  <p className="slide_5_data">Bristol Myers Squibb has developed resources to help your patients adjust to and understand their treatment</p>
+                  <a href="https://www.opdivo.bmscustomerconnect.com/immuno-oncologyteach?cid=v_291" target="_blank" rel="noreferrer" className="button-orange">Visit our online classroom</a>
+                </Col>
+              </Row>
+            </Container>
           </div>
         </Carousel.Item>
       </Carousel>
