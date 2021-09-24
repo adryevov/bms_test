@@ -10,7 +10,7 @@ import VideoPlayer from "../UI/VideoPlayer";
 const linksData = {
   abecma: {
     name: "Abecma",
-    heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/Abecma%20US-IDE-21-0061.png",
+    heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/Abecma%20US-IDE-21-0062.png",
     description: "This Information is intended for US Healthcare Professionals only. Please see FULL PRESCRIBING INFORMATION, including Boxed WARNINGS, available in the link below.",
     assets: [
       {
@@ -22,6 +22,26 @@ const linksData = {
         name: "ABECMA Prescribing Information",
         url: "https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0",
         type: "doc",
+      },
+      {
+        name: "ABECMA HCP Brochure",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-20-0165.pdf",
+        type: "doc",
+      },
+      {
+        name: "ABECMA Patient Brochure",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-21-0051.pdf",
+        type: "doc",
+      },
+      {
+        name: "ABECMA Clinical Guide",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/2012-US-2100041_US-IDE-21-0208.pdf",
+        type: "doc",
+      },
+      {
+        name: "ABECMA MOA Video",
+        url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/%20US-IDE-20-0041.mp4",
+        type: "video",
       },
     ]
   },

@@ -34,7 +34,7 @@ const OurMedicines = () =>
   }
 
   return (
-    <div className={ "hematology-our-medicines-wrapper" + (!!modalName ? " blurry-background" : "") }  style={{ backgroundImage: "url(/img/hematology/background-hematology-medicines.png)" }}>
+    <div className={ "hematology-our-medicines-wrapper" + (!!modalName ? " blurry-background" : "") }  style={{ backgroundImage: "url(/img/hematology/background-hematology-medicines-new.png)" }}>
       <div className="hematology-our-medicines-header">
         <Link to="/" className="logo"><img src={ process.env.PUBLIC_URL + "/img/logo.png" } alt="BMS logo" /></Link>
         <span>This Information is intended for US Healthcare Professionals only.</span>
@@ -112,7 +112,7 @@ const OurMedicines = () =>
           <Modal.Body>
             { modalName === "abecma-general" &&
               <div className="general-section-wrapper">
-                <a href="https://packageinserts.bms.com/pi/pi_abecma.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer"><img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/abecma.png" } alt="Abecma" /></a>
+                <a href="https://packageinserts.bms.com/pi/pi_abecma.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer"><img src={ process.env.PUBLIC_URL + "/img/hematology/our-medicines/abecma-new.png" } alt="Abecma" /></a>
                 <Link to="#" onClick={ () => setModalName("abecma-detailed") } className="button-pink">Learn More</Link>
               </div>
             }
@@ -124,7 +124,11 @@ const OurMedicines = () =>
                 <p className="p-please-see">Please see U.S Full Prescribing Information, including <b>Boxed WARNINGS</b>, available at the link below.</p>
                 <PinkLinkIconButton name="Visit AbecmaHCP.com" link="https://www.abecmahcp.com/" blank={ true } />
                 <p className="click-a-button-below">Click a button below to learn more about ABECMA</p>
-                <GrayDownloadIconButton name="ABECMA Prescribing Information" link="https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0" blank={ true } />
+                <GrayDownloadIconButton name="ABECMA Prescribing Information" link="https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0" blank={ true }  className="details-link"/>
+                <GrayDownloadIconButton name="ABECMA HCP Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-20-0165.pdf" blank={ true }  className="details-link"/>
+                <GrayDownloadIconButton name="ABECMA Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-21-0051.pdf" blank={ true } className="details-link" />
+                <GrayDownloadIconButton name="ABECMA Clinical Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/2012-US-2100041_US-IDE-21-0208.pdf" blank={ true }  className="details-link"/>
+                <GrayDownloadIconButton name="ABECMA MOA Video" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/%20US-IDE-20-0041.mp4" blank={ true }  className="details-link"/>
               </div>
             }
 
