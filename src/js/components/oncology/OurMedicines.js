@@ -61,7 +61,7 @@ const OurMedicines = () =>
               <Row>
                 <Col md={12} className="our-medicines-slide-4-wrapper">
                   <h2>Learn more about a new approval!</h2>
-                  <a href="https://www.opdivogastroeso.com/" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
+                  <a href="http://OpdivoRX.com/UC" target="_blank" rel="noreferrer" className="button-pink">Click Here</a>
                 </Col>
               </Row>
             </Container>
@@ -74,16 +74,16 @@ const OurMedicines = () =>
         <Container>
           <div className="medicines-card card-fullwidth">
             <div className="medicines-inner">
-              <Link to="/oncology/our-medicines/opdivo-yervoy">
+              <a href="https://www.opdivocombotherapy.com/" target="_blank" rel="noreferrer" >
                 <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-yervoy" + (isMobile ? "-mobile" : "") + ".svg" } alt="Opdivo + Yervoy" />
-              </Link>
+              </a>
             </div>
             <h3>Opdivo<sup>&reg;</sup> + Yervoy<sup>&reg;</sup></h3>
           </div>
 
           <div className="medicines-card">
             <div className="medicines-inner">
-              <a href="/oncology/our-medicines/opdivo-cabometyx">
+              <a href="https://www.opdivoclinicaldata.com/advanced-rcc-opdivo-cabometyx" target="_blank" rel="noreferrer">
                 <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-cabometyx" + (isMobile ? "-mobile" : "") + ".svg" } alt="Opdivo + Cabomeryx" />
               </a>
             </div>
@@ -92,7 +92,7 @@ const OurMedicines = () =>
 
           <div className="medicines-card">
             <div className="medicines-inner">
-              <a href="/oncology/our-medicines/opdivo-folfox">
+              <a href="https://www.opdivogastroeso.com/metastatic-GC-GEJC-EAC-efficacy" target="_blank" rel="noreferrer">
                 <img src={ process.env.PUBLIC_URL + "/img/icons/opdivo-folfox.svg" } alt="Opdivo + Folfox or CapeOX" />
               </a>
             </div>
@@ -120,7 +120,7 @@ const OurMedicines = () =>
       </section>
 
       <Container>
-        <p className="please-see-paragraph">Please see Full Prescribing Information, including <span className="boxed">BOXED WARNING</span> for <a href="https://packageinserts.bms.com/pi/pi_abraxane.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="abraxane">Abraxane</a>.</p>
+        <p className="please-see-paragraph">Please see U.S. Full Prescribing Information for <a href="https://packageinserts.bms.com/pi/pi_opdivo.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="abraxane">OPDIVO</a> for <a href="https://packageinserts.bms.com/pi/pi_yervoy.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="abraxane">YERVOY</a>. Please see Full Prescribing Information, including <span className="boxed">BOXED WARNING</span> for <a href="https://packageinserts.bms.com/pi/pi_abraxane.pdf?#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="abraxane">Abraxane</a>.</p>
       </Container>
 
       <section className="our-medicines-bottom-wrapper">
