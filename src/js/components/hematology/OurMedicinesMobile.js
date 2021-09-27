@@ -11,7 +11,7 @@ const linksData = {
   abecma: {
     name: "Abecma",
     heroImage: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/Abecma%20US-IDE-21-0062.png",
-    description: "This Information is intended for US Healthcare Professionals only. Please see FULL PRESCRIBING INFORMATION, including Boxed WARNINGS, available in the link below.",
+    description: "Please see U.S Full Prescribing Information, including Boxed WARNINGS, available at the link below.",
     assets: [
       {
         name: "Visit AbecmaHCP.com",

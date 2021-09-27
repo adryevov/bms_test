@@ -23,6 +23,10 @@ const OurMedicines = () =>
     {
       setModalName("r2-detailed");
     }
+    else if(modalName === "abecma-moa-video")
+    {
+      setModalName("abecma-detailed");
+    }
     else
     {
       setModalName("");
@@ -128,7 +132,13 @@ const OurMedicines = () =>
                 <GrayDownloadIconButton name="ABECMA HCP Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-20-0165.pdf#view=Fit&toolbar=0" blank={ true }  className="details-link"/>
                 <GrayDownloadIconButton name="ABECMA Patient Brochure" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/US-IDE-21-0051.pdf#view=Fit&toolbar=0" blank={ true } className="details-link" />
                 <GrayDownloadIconButton name="ABECMA Clinical Guide" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/2012-US-2100041_US-IDE-21-0208.pdf#view=Fit&toolbar=0" blank={ true }  className="details-link"/>
-                <GrayDownloadIconButton name="ABECMA MOA Video" link="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/%20US-IDE-20-0041.mp4" blank={ true }  className="details-link"/>
+                <GrayDownloadIconButton name="ABECMA MOA Video" onClick={ () => setModalName("abecma-moa-video") }  className="details-link"/>
+              </div>
+            }
+            { modalName === "abecma-moa-video" &&
+              <div className="video-section-wrapper">
+                <VideoPlayer src="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/%20US-IDE-20-0041.mp4" />
+                <a href="https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="video-link-bottom">Please see Full Prescribing Information for ABECMA (luspatercept-aamt).</a>
               </div>
             }
 
