@@ -138,7 +138,7 @@ const OurMedicines = () =>
             { modalName === "abecma-moa-video" &&
               <div className="video-section-wrapper">
                 <VideoPlayer src="https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/%20US-IDE-20-0041.mp4" />
-                <a href="https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="video-link-bottom">Please see Full Prescribing Information for ABECMA (luspatercept-aamt).</a>
+                <a href="https://packageinserts.bms.com/pi/pi_abecma.pdf#view=Fit&toolbar=0" target="_blank" rel="noreferrer" className="video-link-bottom">Please see Full Prescribing Information for ABECMA.</a>
               </div>
             }
 
