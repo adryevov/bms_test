@@ -34,7 +34,7 @@ const linksData = {
         type: "doc",
       },
       {
-        name: "ABECMA Clinical Guide",
+        name: "ABECMA Clinician Guide",
         url: "https://gc-static-content.s3.amazonaws.com/bms/1839_Q3/01%20Abecma/2012-US-2100041_US-IDE-21-0208.pdf",
         type: "doc",
       },
