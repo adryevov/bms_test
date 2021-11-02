@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/BMSHumanity/BMSHumanity-Thin.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 100;
+  font-style: italic;
+  src: url('../fonts/BMSHumanity/BMSHumanity-ThinItalic.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/BMSHumanity/BMSHumanity-Light.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 300;
+  font-style: italic;
+  src: url('../fonts/BMSHumanity/BMSHumanity-LightItalic.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 400;
+  font-style: normal;
+  src: local('BMS Humanity'), url('../fonts/BMSHumanity/BMSHumanity-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 400;
+  font-style: italic;
+  src: url('../fonts/BMSHumanity/BMSHumanity-Italic.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/BMSHumanity/BMSHumanity-Bold.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 700;
+  font-style: italic;
+  src: url('../fonts/BMSHumanity/BMSHumanity-BoldItalic.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'BMS Humanity';
+  font-weight: 800;
+  font-style: normal;
+  src: url('../fonts/BMSHumanity/BMSHumanity-ExtraBold.ttf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Klavika';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/Klavika/KlavikaBasic-Light.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Klavika';
+  font-weight: 400;
+  font-style: normal;
+  src: local('BMS Humanity'), url('../fonts/Klavika/KlavikaBasic-Medium.otf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
